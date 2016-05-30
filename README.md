@@ -3,6 +3,15 @@ currency-rate
 
 Converter for fiat and crypto currencies
 
+Installation
+------------
+
+    gem install currency-rate
+
+or in Gemfile
+
+    gem "currency-rate"
+
 Usage
 -----
 Basically, all you'll need is to the top level class to fetch any rates you want.
