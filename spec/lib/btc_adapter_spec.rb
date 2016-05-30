@@ -39,8 +39,8 @@ RSpec.describe CurrencyRate::BtcAdapter do
 
   it "when checking for rates, only calls fetch_rates! if they were checked long time ago or never" do
     uri_mock = double('uri mock')
-    expect(URI).to      receive(:parse).and_return(uri_mock).twice
-    expect(uri_mock).to receive(:read).and_return('{ "USD": 534.4343 }').twice
+    expect(URI).to      receive(:parse).and_return(uri_mock).once
+    expect(uri_mock).to receive(:read).and_return('{ "USD": 534.4343 }').once
     @exchange_adapter.rate_for('USD')
     @exchange_adapter.rate_for('USD') # not calling fetch_rates! because we've just checked
     @exchange_adapter.instance_variable_set(:@rates_updated_at, Time.now-1900)

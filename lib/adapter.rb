@@ -5,8 +5,8 @@ module CurrencyRate
     class FetchingFailed       < Exception; end
     class CurrencyNotSupported < Exception; end
 
-    def initialize(rates_expire_in: 1800)
-      @rates_expire_in = rates_expire_in # in seconds
+    def initialize(rates_expire_in: 1800, storage: Storage)
+      @storage = storage.new(timeout: rates_expire_in) # in seconds
     end
 
     def fetch_rates!
@@ -21,8 +21,8 @@ module CurrencyRate
     end
 
     def rate_for(currency_code)
-      if !@rates_updated_at || (Time.now - @rates_updated_at) > @rates_expire_in
-        fetch_rates!
+      @storage.fetch(self.class.to_s) do
+        self.fetch_rates!
       end
       nil # this should be changed in descendant classes
     end
