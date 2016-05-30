@@ -5,8 +5,8 @@ module CurrencyRate
     class FetchingFailed       < Exception; end
     class CurrencyNotSupported < Exception; end
 
-    def initialize(rates_expire_in: 1800, storage: Storage)
-      @storage = storage.new(timeout: rates_expire_in) # in seconds
+    def initialize
+      @storage = Storage.new
     end
 
     def fetch_rates!

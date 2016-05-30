@@ -43,7 +43,7 @@ module CurrencyRate
 
     def self.adapter_class(s)
       return s unless s.kind_of?(String) # if we pass class, no need to convert
-      "#{s}_adapter".classify(CurrencyRate).instance
+      adapter = "#{s}_adapter".classify(CurrencyRate).instance
     end
 
 end
