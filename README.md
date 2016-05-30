@@ -14,7 +14,7 @@ or in Gemfile
 
 Usage
 -----
-Basically, all you'll need is to the top level class to fetch any rates you want.
+Basically, all you'll need is to use the top level class to fetch any rates you want.
 For example:
 
     CurrencyRate.convert('Bitstamp', amount: 5, from: 'BTC', to: 'USD')
@@ -24,7 +24,7 @@ For example:
 In the third case, because Bitstamp doesn't really support direct conversion from
 USD to EUR, the 1000 will first be converted to BTC, then the BTC amount will be converted to EUR.
 
-This intrduced the concept of anchor currency. For all Btc adapters in this lib, it's set to BTC
+This introduced the concept of anchor currency. For all Btc adapters in this lib, it's set to BTC
 by default. For all Fiat adapters it's set to USD by default. To specify anchor currency manually,
 simply pass it as another argument, for example:
 
@@ -49,4 +49,4 @@ for how and when to store/fetch data, not other classes.
 
 Credits
 -------
-This gem was extracted from [straight gem](https://github.com/MyceliumGear/straight), thanks to all the people who addedvarious exchange rate adapters and contributed code.
+This gem was extracted from [straight gem](https://github.com/MyceliumGear/straight), thanks to all the people who added various exchange rate adapters and contributed code.
