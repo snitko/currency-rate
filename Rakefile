@@ -14,8 +14,8 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
-  gem.name = "currency_rate"
-  gem.homepage = "http://github.com/snitko/currency_rate"
+  gem.name = "currency-rate"
+  gem.homepage = "http://github.com/snitko/currency-rate"
   gem.license = "MIT"
   gem.summary = %Q{Converter for fiat and crypto currencies}
   gem.description = %Q{Fetches exchange rates from various sources and does the conversion}
