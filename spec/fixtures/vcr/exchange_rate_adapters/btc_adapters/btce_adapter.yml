@@ -1,0 +1,223 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://btc-e.com/api/2/btc_usd/ticker
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 18 Jun 2016 15:50:04 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d32dfa667b372f8073615fe78df5017ea1466265003; expires=Sun, 18-Jun-17
+        15:50:03 GMT; path=/; domain=.btc-e.com; HttpOnly
+      X-Frame-Options:
+      - DENY
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2b4fe50db57130d8-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ticker":{"high":733,"low":712.77301,"avg":722.886505,"vol":4306562.83402,"vol_cur":5950.47112,"last":723.872,"buy":725.418,"sell":723.623,"updated":1466265002,"server_time":1466265004}}'
+    http_version: 
+  recorded_at: Sat, 18 Jun 2016 15:50:04 GMT
+- request:
+    method: get
+    uri: https://btc-e.com/api/2/btc_eur/ticker
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 18 Jun 2016 15:50:05 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d17fedad8cf8b29b59bf476a5fdb2462a1466265004; expires=Sun, 18-Jun-17
+        15:50:04 GMT; path=/; domain=.btc-e.com; HttpOnly
+      X-Frame-Options:
+      - DENY
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2b4fe517151c316e-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ticker":{"high":672.828,"low":651.29999,"avg":662.063995,"vol":27723.14423,"vol_cur":41.71361,"last":665.022,"buy":670.99599,"sell":665.022,"updated":1466265004,"server_time":1466265005}}'
+    http_version: 
+  recorded_at: Sat, 18 Jun 2016 15:50:05 GMT
+- request:
+    method: get
+    uri: https://btc-e.com/api/2/btc_rur/ticker
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 18 Jun 2016 15:50:07 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dec62e312934b2116f75bcbb3aeec3d431466265006; expires=Sun, 18-Jun-17
+        15:50:06 GMT; path=/; domain=.btc-e.com; HttpOnly
+      X-Frame-Options:
+      - DENY
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2b4fe520c154114d-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ticker":{"high":45000,"low":41900,"avg":43450,"vol":7707996.27269,"vol_cur":178.09678,"last":44000,"buy":43999.98,"sell":43546.24001,"updated":1466265006,"server_time":1466265007}}'
+    http_version: 
+  recorded_at: Sat, 18 Jun 2016 15:50:07 GMT
+- request:
+    method: get
+    uri: https://btc-e.com/api/2/usd_rur/ticker
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 18 Jun 2016 15:50:08 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd864797f24d890bc6c808fe36582f2911466265007; expires=Sun, 18-Jun-17
+        15:50:07 GMT; path=/; domain=.btc-e.com; HttpOnly
+      X-Frame-Options:
+      - DENY
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2b4fe52a486e111d-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ticker":{"high":60.8,"low":58.2649,"avg":59.53245,"vol":2455565.7229,"vol_cur":41223.02557,"last":60.5,"buy":60.5,"sell":60.1595,"updated":1466265008,"server_time":1466265008}}'
+    http_version: 
+  recorded_at: Sat, 18 Jun 2016 15:50:08 GMT
+- request:
+    method: get
+    uri: https://btc-e.com/api/2/eur_rur/ticker
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 18 Jun 2016 15:50:10 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8355c48441f2a532d755197b102013dc1466265009; expires=Sun, 18-Jun-17
+        15:50:09 GMT; path=/; domain=.btc-e.com; HttpOnly
+      X-Frame-Options:
+      - DENY
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2b4fe533bccb319e-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ticker":{"high":66.6,"low":63.13646,"avg":64.86823,"vol":609270.38881,"vol_cur":9429.27385,"last":65.63,"buy":65.8254,"sell":65.4312,"updated":1466265010,"server_time":1466265010}}'
+    http_version: 
+  recorded_at: Sat, 18 Jun 2016 15:50:10 GMT
+recorded_with: VCR 3.0.3

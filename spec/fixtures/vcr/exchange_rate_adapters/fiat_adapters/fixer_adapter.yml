@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.fixer.io/latest?base=USD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.9.15
+      Date:
+      - Mon, 30 May 2016 12:37:31 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '448'
+      Connection:
+      - keep-alive
+      Last-Modified:
+      - Fri, 27 May 2016 00:00:00 GMT
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: '{"base":"USD","date":"2016-05-27","rates":{"AUD":1.3864,"BGN":1.7513,"BRL":3.6094,"CAD":1.3037,"CHF":0.99105,"CNY":6.5617,"CZK":24.201,"DKK":6.6589,"GBP":0.68271,"HKD":7.7664,"HRK":6.7071,"HUF":281.35,"IDR":13572.0,"ILS":3.8447,"INR":67.037,"JPY":109.65,"KRW":1179.2,"MXN":18.5,"MYR":4.079,"NOK":8.3112,"NZD":1.4851,"PHP":46.648,"PLN":3.9319,"RON":4.0324,"RUB":66.038,"SEK":8.2981,"SGD":1.3754,"THB":35.683,"TRY":2.9484,"ZAR":15.625,"EUR":0.89542}}'
+    http_version: 
+  recorded_at: Mon, 30 May 2016 12:37:31 GMT
+recorded_with: VCR 3.0.3

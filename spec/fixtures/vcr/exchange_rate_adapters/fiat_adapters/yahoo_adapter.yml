@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://query.yahooapis.com/v1/public/yql?env=store://datatables.org/alltableswithkeys&format=json&q=SELECT%20*%20FROM%20yahoo.finance.xchange%20WHERE%20pair%20IN(%22USDAUD%22,%22USDBGN%22,%22USDBRL%22,%22USDCAD%22,%22USDCHF%22,%22USDCNY%22,%22USDCZK%22,%22USDDKK%22,%22USDGBP%22,%22USDHKD%22,%22USDHRK%22,%22USDHUF%22,%22USDIDR%22,%22USDILS%22,%22USDINR%22,%22USDJPY%22,%22USDKRW%22,%22USDMXN%22,%22USDMYR%22,%22USDNOK%22,%22USDNZD%22,%22USDPHP%22,%22USDPLN%22,%22USDRON%22,%22USDRUB%22,%22USDSEK%22,%22USDSGD%22,%22USDTHB%22,%22USDTRY%22,%22USDUSD%22,%22USDZAR%22,%22USDEUR%22)
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Yql-Host:
+      - main-232793b2-1df8-11e6-a4df-d4ae52974c31
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Cache-Control:
+      - no-cache
+      Date:
+      - Mon, 30 May 2016 12:37:31 GMT
+      Age:
+      - '0'
+      Server:
+      - ATS
+      Via:
+      - http/1.1 a06.ue.bf1.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Y-Trace:
+      - BAEAQAAAAACnJeMgJVAUZgAAAAAAAAAA8mnMwQ6B9T4AAAAAAAAAAAAFNA6FJaMLAAU0DoUm7O3PhG_5AAAAAA--
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"query":{"count":32,"created":"2016-05-30T12:37:31Z","lang":"en-US","results":{"rate":[{"id":"USDAUD","Name":"USD/AUD","Rate":"1.3924","Date":"5/30/2016","Time":"11:12am","Ask":"1.3928","Bid":"1.3924"},{"id":"USDBGN","Name":"USD/BGN","Rate":"1.7575","Date":"5/30/2016","Time":"12:57pm","Ask":"1.7662","Bid":"1.7575"},{"id":"USDBRL","Name":"USD/BRL","Rate":"3.6109","Date":"5/30/2016","Time":"11:31am","Ask":"3.6146","Bid":"3.6109"},{"id":"USDCAD","Name":"USD/CAD","Rate":"1.3064","Date":"5/30/2016","Time":"10:47am","Ask":"1.3066","Bid":"1.3064"},{"id":"USDCHF","Name":"USD/CHF","Rate":"0.9926","Date":"5/30/2016","Time":"10:13am","Ask":"0.9928","Bid":"0.9926"},{"id":"USDCNY","Name":"USD/CNY","Rate":"6.5819","Date":"5/30/2016","Time":"10:14am","Ask":"6.5830","Bid":"6.5819"},{"id":"USDCZK","Name":"USD/CZK","Rate":"24.2735","Date":"5/30/2016","Time":"9:55am","Ask":"24.2800","Bid":"24.2735"},{"id":"USDDKK","Name":"USD/DKK","Rate":"6.6796","Date":"5/30/2016","Time":"10:15am","Ask":"6.6800","Bid":"6.6796"},{"id":"USDGBP","Name":"USD/GBP","Rate":"0.6855","Date":"5/30/2016","Time":"10:48am","Ask":"0.6855","Bid":"0.6855"},{"id":"USDHKD","Name":"USD/HKD","Rate":"7.7689","Date":"5/30/2016","Time":"11:32am","Ask":"7.7702","Bid":"7.7689"},{"id":"USDHRK","Name":"USD/HRK","Rate":"6.7509","Date":"5/30/2016","Time":"4:05am","Ask":"6.7884","Bid":"6.7509"},{"id":"USDHUF","Name":"USD/HUF","Rate":"281.9750","Date":"5/30/2016","Time":"11:31am","Ask":"282.0600","Bid":"281.9750"},{"id":"USDIDR","Name":"USD/IDR","Rate":"13620.0000","Date":"5/30/2016","Time":"12:51pm","Ask":"13625.0000","Bid":"13620.0000"},{"id":"USDILS","Name":"USD/ILS","Rate":"3.8484","Date":"5/30/2016","Time":"10:51am","Ask":"3.8500","Bid":"3.8484"},{"id":"USDINR","Name":"USD/INR","Rate":"67.2899","Date":"5/30/2016","Time":"9:47am","Ask":"67.3000","Bid":"67.2899"},{"id":"USDJPY","Name":"USD/JPY","Rate":"111.2850","Date":"5/30/2016","Time":"9:44am","Ask":"111.3000","Bid":"111.2850"},{"id":"USDKRW","Name":"USD/KRW","Rate":"1190.7950","Date":"5/30/2016","Time":"11:13am","Ask":"1192.1000","Bid":"1190.7950"},{"id":"USDMXN","Name":"USD/MXN","Rate":"18.4697","Date":"5/30/2016","Time":"1:12pm","Ask":"18.4726","Bid":"18.4697"},{"id":"USDMYR","Name":"USD/MYR","Rate":"4.1182","Date":"5/30/2016","Time":"9:55am","Ask":"4.1246","Bid":"4.1182"},{"id":"USDNOK","Name":"USD/NOK","Rate":"8.3515","Date":"5/30/2016","Time":"1:03pm","Ask":"8.3541","Bid":"8.3515"},{"id":"USDNZD","Name":"USD/NZD","Rate":"1.4924","Date":"5/30/2016","Time":"1:26pm","Ask":"1.4927","Bid":"1.4924"},{"id":"USDPHP","Name":"USD/PHP","Rate":"46.7295","Date":"5/30/2016","Time":"9:58am","Ask":"46.7400","Bid":"46.7295"},{"id":"USDPLN","Name":"USD/PLN","Rate":"3.9458","Date":"5/30/2016","Time":"10:19am","Ask":"3.9464","Bid":"3.9458"},{"id":"USDRON","Name":"USD/RON","Rate":"4.0461","Date":"5/30/2016","Time":"10:22am","Ask":"4.0486","Bid":"4.0461"},{"id":"USDRUB","Name":"USD/RUB","Rate":"66.0995","Date":"5/30/2016","Time":"4:01am","Ask":"66.7000","Bid":"66.0995"},{"id":"USDSEK","Name":"USD/SEK","Rate":"8.3238","Date":"5/30/2016","Time":"11:35am","Ask":"8.3286","Bid":"8.3238"},{"id":"USDSGD","Name":"USD/SGD","Rate":"1.3806","Date":"5/30/2016","Time":"10:51am","Ask":"1.3807","Bid":"1.3806"},{"id":"USDTHB","Name":"USD/THB","Rate":"35.7460","Date":"5/30/2016","Time":"1:03pm","Ask":"35.8140","Bid":"35.7460"},{"id":"USDTRY","Name":"USD/TRY","Rate":"2.9585","Date":"5/30/2016","Time":"10:50am","Ask":"2.9588","Bid":"2.9585"},{"id":"USDUSD","Name":"USD/USD","Rate":"1.0000","Date":"N/A","Time":"N/A","Ask":"1.0000","Bid":"1.0000"},{"id":"USDZAR","Name":"USD/ZAR","Rate":"15.7878","Date":"5/30/2016","Time":"9:50am","Ask":"15.7968","Bid":"15.7878"},{"id":"USDEUR","Name":"USD/EUR","Rate":"0.8978","Date":"5/30/2016","Time":"1:02pm","Ask":"0.8980","Bid":"0.8978"}]}}}'
+    http_version: 
+  recorded_at: Mon, 30 May 2016 12:37:31 GMT
+recorded_with: VCR 3.0.3

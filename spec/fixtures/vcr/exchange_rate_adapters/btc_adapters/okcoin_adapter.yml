@@ -1,0 +1,207 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.okcoin.com/api/v1/ticker.do?symbol=ltc_usd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 18 Jun 2016 17:13:22 GMT
+      Content-Type:
+      - text/html;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d54b9b2ef78b8ab5afdc1544d4eefe7851466270002; expires=Sun, 18-Jun-17
+        17:13:22 GMT; path=/; domain=.okcoin.com; HttpOnly
+      - coin_session_id_o=18547993-3305-4fe5-9181-746f999c04d6OROA; Domain=okcoin.com;
+        Path=/; Secure; HttpOnly
+      - language=1; Expires=Sat, 25-Jun-2016 17:13:22 GMT; Path=/
+      Cache-Control:
+      - no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - https://img.okcoin.com
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2b505f1c1f0b3132-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"date":"1466270002","ticker":{"buy":"5.661","high":"5.989","last":"5.661","low":"5.386","sell":"5.663","vol":"91684.538"}}'
+    http_version: 
+  recorded_at: Sat, 18 Jun 2016 17:13:22 GMT
+- request:
+    method: get
+    uri: https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 18 Jun 2016 17:13:23 GMT
+      Content-Type:
+      - text/html;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dcccbf67194b5cb96029f601c9bfd3a581466270003; expires=Sun, 18-Jun-17
+        17:13:23 GMT; path=/; domain=.okcoin.com; HttpOnly
+      - coin_session_id_o=bd9c892b-ff15-46f7-9552-8f438f5f53bfxuST; Domain=okcoin.com;
+        Path=/; Secure; HttpOnly
+      - language=0; Expires=Sat, 25-Jun-2016 17:13:23 GMT; Path=/
+      Cache-Control:
+      - no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - https://img.okcoin.com
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2b505f1f88e231fe-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"date":"1466270003","ticker":{"buy":"769.38","high":"775.51","last":"769.05","low":"725.01","sell":"769.39","vol":"11944.5331"}}'
+    http_version: 
+  recorded_at: Sat, 18 Jun 2016 17:13:23 GMT
+- request:
+    method: get
+    uri: https://www.okcoin.cn/api/ticker.do?symbol=btc_cny
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 18 Jun 2016 17:13:26 GMT
+      Content-Type:
+      - text/html;charset=UTF-8
+      Content-Length:
+      - '147'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - coin_session_id_o=bbb48e4c-ae94-4acf-83aa-77b35644656aSooe; Domain=okcoin.cn;
+        Path=/; Secure; HttpOnly
+      - language=0; Expires=Sat, 25-Jun-2016 17:13:26 GMT; Path=/
+      Cache-Control:
+      - no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - https://img.okcoin.cn
+    body:
+      encoding: UTF-8
+      string: '{"date":"1466270006","ticker":{"buy":"5112.95","change":0.02,"high":"5160.0","last":"5113.0","low":"4841.12","sell":"5113.0","vol":"1292892.0608"}}'
+    http_version: 
+  recorded_at: Sat, 18 Jun 2016 17:13:26 GMT
+- request:
+    method: get
+    uri: https://www.okcoin.cn/api/ticker.do?symbol=ltc_cny
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 18 Jun 2016 17:13:27 GMT
+      Content-Type:
+      - text/html;charset=UTF-8
+      Content-Length:
+      - '144'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - coin_session_id_o=d98d2276-90bb-4dd8-8b53-7cc2e9dc4627aNON; Domain=okcoin.cn;
+        Path=/; Secure; HttpOnly
+      - language=0; Expires=Sat, 25-Jun-2016 17:13:27 GMT; Path=/
+      Cache-Control:
+      - no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - https://img.okcoin.cn
+    body:
+      encoding: UTF-8
+      string: '{"date":"1466270007","ticker":{"buy":"37.67","change":0.014,"high":"38.2","last":"37.68","low":"36.2","sell":"37.68","vol":"98101757.02760004"}}'
+    http_version: 
+  recorded_at: Sat, 18 Jun 2016 17:13:27 GMT
+recorded_with: VCR 3.0.3

@@ -14,5 +14,3 @@ doc
 
 # jeweler generated
 pkg
-
-spec/fixtures/vcr
