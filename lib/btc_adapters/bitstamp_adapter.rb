@@ -1,14 +1,32 @@
 module CurrencyRate
   class BitstampAdapter < BtcAdapter
 
-    FETCH_URL = 'https://www.bitstamp.net/api/ticker/'
+    FETCH_URL = {
+      'btcusd' => 'https://www.bitstamp.net/api/v2/ticker/btcusd/',
+      'btceur' => 'https://www.bitstamp.net/api/v2/ticker/btceur/',
+      'eurusd' => 'https://www.bitstamp.net/api/v2/ticker/eurusd/'
+    }
 
     def rate_for(to,from)
       raise CurrencyNotSupported unless ["BTC", "USD", "EUR"].include?(to) && ["BTC", "USD", "EUR"].include?(from)
       super
-      rate = get_rate_value_from_hash(@rates, "last")
-      rate = rate_to_f(rate)
+      rate = rate_to_f(currency_pair_rate(to,from))
       invert_rate(to,from,rate)
+    end
+
+    # Because Bitstamp has USD/EUR pair
+    def invert_rate(to,from,rate)
+      if to == 'BTC' || (from == 'USD' && to == 'EUR')
+        1/rate.to_f
+      else
+        rate
+      end
+    end
+
+    def currency_pair_rate(currency1, currency2)
+      rate = @rates["#{currency1.downcase}#{currency2.downcase}"] || @rates["#{currency2.downcase}#{currency1.downcase}"]
+      raise CurrencyNotSupported unless rate
+      rate['last']
     end
 
   end

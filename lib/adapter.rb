@@ -2,8 +2,8 @@ module CurrencyRate
   class Adapter
     include Singleton
 
-    class FetchingFailed       < Exception; end
-    class CurrencyNotSupported < Exception; end
+    class FetchingFailed          < Exception; end
+    class CurrencyNotSupported    < Exception; end
 
     def initialize
       @storage = Storage.new
@@ -11,9 +11,17 @@ module CurrencyRate
 
     def fetch_rates!
       raise "FETCH_URL is not defined!" unless self.class::FETCH_URL
-      uri = URI.parse(self.class::FETCH_URL)
       begin
-        @rates            = JSON.parse(uri.read(read_timeout: 4))
+        if self.class::FETCH_URL.kind_of?(Hash)
+          @rates = {}
+          self.class::FETCH_URL.each do |name, url|
+            uri = URI.parse(url)
+            @rates[name] = JSON.parse(uri.read(read_timeout: 4))
+          end
+        else
+          uri = URI.parse(self.class::FETCH_URL)
+          @rates = JSON.parse(uri.read(read_timeout: 4))
+        end
         @rates_updated_at = Time.now
       rescue OpenURI::HTTPError => e
         raise FetchingFailed
@@ -27,10 +35,10 @@ module CurrencyRate
       nil # this should be changed in descendant classes
     end
 
-    # This method will get value we are interested in from hash and
-    # prevent failing with 'undefined method [] for Nil' if at some point hash doesn't have such key value pair
-    def get_rate_value_from_hash(rates_hash, *keys)
-      rates_hash.deep_get(*keys) || raise(CurrencyNotSupported)
+    # Must be implemented inside every descendant class
+    # because storage format may be completely different
+    def get_rate_value_from_source(rates_hash, *keys)
+      raise "Please implement this method in your Adapter"
     end
 
     # We dont want to have false positive rate, because nil.to_f is 0.0

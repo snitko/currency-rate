@@ -15,8 +15,13 @@ RSpec.describe CurrencyRate::BitpayAdapter do
   end
 
   it "finds the rate for currency code" do
-    expect(@exchange_adapter.rate_for('USD')).to be_kind_of(Float)
-    expect( -> { @exchange_adapter.rate_for('FEDcoin') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
+    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(1)
+    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(1)
+    expect(@exchange_adapter.rate_for('EUR', 'BTC')).to eq(1)
+    expect(@exchange_adapter.rate_for('BTC', 'EUR')).to eq(1)
+    expect(@exchange_adapter.rate_for('EUR', 'USD')).to eq(1)
+    expect(@exchange_adapter.rate_for('USD', 'EUR')).to eq(1)
+    expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 
   it "raises exception if rate is nil" do
@@ -28,7 +33,7 @@ RSpec.describe CurrencyRate::BitpayAdapter do
     allow(URI).to      receive(:parse).and_return(uri_mock)
     3.times do
       @exchange_adapter.fetch_rates!
-      expect( -> { @exchange_adapter.rate_for('USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
+      expect( -> { @exchange_adapter.rate_for('FEDcoin') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
     end
   end
 
