@@ -1,13 +1,34 @@
 module CurrencyRate
   class BtceAdapter < BtcAdapter
 
-    FETCH_URL = 'https://btc-e.com/api/2/btc_usd/ticker'
+    FETCH_URL = {
+      'btc_usd' => 'https://btc-e.com/api/2/btc_usd/ticker',
+      'btc_eur' => 'https://btc-e.com/api/2/btc_eur/ticker',
+      'btc_rub' => 'https://btc-e.com/api/2/btc_rur/ticker',
+      'usd_rub' => 'https://btc-e.com/api/2/usd_rur/ticker',
+      'eur_rub' => 'https://btc-e.com/api/2/eur_rur/ticker'
+    }
+
 
     def rate_for(to,from)
+      raise CurrencyNotSupported unless ["BTC", "USD", "EUR", "RUB"].include?(to) && ["BTC", "USD", "EUR", "RUB"].include?(from)
       super
-      raise CurrencyNotSupported if !FETCH_URL.include?("btc_#{currency_code.downcase}")
-      rate = get_rate_value_from_hash(@rates, 'ticker', 'last')
-      rate_to_f(rate)
+      rate = rate_to_f(currency_pair_rate(to,from))
+      invert_rate(to,from,rate)
+    end
+
+    def currency_pair_rate(currency1, currency2)
+      rate = @rates["#{currency1.downcase}_#{currency2.downcase}"] || @rates["#{currency2.downcase}_#{currency1.downcase}"]
+      raise CurrencyNotSupported unless rate
+      rate['ticker']['last']
+    end
+
+    def invert_rate(to,from,rate)
+      if to == 'BTC' || (from == 'RUB' && to == 'USD') || (from == 'RUB' && to == 'EUR')
+        1/rate.to_f
+      else
+        rate
+      end
     end
 
   end
