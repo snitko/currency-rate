@@ -20,7 +20,7 @@ module CurrencyRate
       end
     end
 
-    def rate_for(currency_code)
+    def rate_for(to,from)
       @storage.fetch(self.class.to_s) do
         self.fetch_rates!
       end

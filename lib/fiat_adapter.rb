@@ -13,16 +13,11 @@ module CurrencyRate
     # http://apidock.com/ruby/BigDecimal/mode/class
     BigDecimal.mode BigDecimal::ROUND_MODE, :banker
 
-    def rate_for(currency_code)
-      return 1 if currency_code == CROSS_RATE_CURRENCY
-      raise CurrencyNotSupported unless SUPPORTED_CURRENCIES.include?(currency_code)
+    def rate_for(to,from)
+      return 1 if to == CROSS_RATE_CURRENCY
+      raise CurrencyNotSupported unless SUPPORTED_CURRENCIES.include?(to)
       super
       # call 'super' in descendant classes and return real rate
-    end
-
-    def convert_from_currency(amount_in_currency, currency: CROSS_RATE_CURRENCY)
-      return amount_in_currency if currency == CROSS_RATE_CURRENCY
-      amount_in_currency.to_f / rate_for(currency)
     end
 
   end
