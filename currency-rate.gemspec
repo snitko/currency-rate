@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Roman Snitko"]
-  s.date = "2016-05-30"
+  s.date = "2016-06-18"
   s.description = "Fetches exchange rates from various sources and does the conversion"
   s.email = "roman.snitko@gmail.com"
   s.extra_rdoc_files = [
@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
+    "currency-rate.gemspec",
     "lib/adapter.rb",
     "lib/btc_adapter.rb",
     "lib/btc_adapters/average_rate_adapter.rb",
