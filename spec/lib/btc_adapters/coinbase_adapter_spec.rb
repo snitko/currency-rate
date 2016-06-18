@@ -31,6 +31,7 @@ RSpec.describe CurrencyRate::CoinbaseAdapter do
       @exchange_adapter.fetch_rates!
       expect( -> { @exchange_adapter.rate_for('FEDCoin', 'BTC') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
     end
+
   end
 
 end
