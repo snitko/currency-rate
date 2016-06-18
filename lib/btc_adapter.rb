@@ -8,9 +8,8 @@ module CurrencyRate
 
     def invert_rate(from,to,rate)
       if from == 'BTC'
-        to,from     = from,to 
-        invert_rate = true
-        1/rate
+        to,from = from,to 
+        1/rate.to_f
       else
         rate
       end

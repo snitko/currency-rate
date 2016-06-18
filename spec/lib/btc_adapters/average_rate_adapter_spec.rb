@@ -23,7 +23,7 @@ RSpec.describe CurrencyRate::AverageRateAdapter do
     uri_mock = double('uri mock')
     allow(uri_mock).to receive(:read).with(read_timeout: 4).and_return(json_response_bistamp, json_response_bitpay)
     allow(URI).to      receive(:parse).and_return(uri_mock)
-    expect(@average_rates_adapter.rate_for('USD')).to eq 150
+    expect(@average_rates_adapter.rate_for('USD', 'BTC')).to eq 150
   end
 
   it "fetches rates for all adapters" do
@@ -40,7 +40,7 @@ RSpec.describe CurrencyRate::AverageRateAdapter do
   end
 
   it "raises exception if all adapters fail to get rates" do
-    expect( -> { @average_rates_adapter.rate_for('FEDcoin') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
+    expect( -> { @average_rates_adapter.rate_for('FEDcoin', 'BTC') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 
   it "raises exception if unallowed method is called" do # fetch_rates! is not to be used in AverageRateAdapter itself

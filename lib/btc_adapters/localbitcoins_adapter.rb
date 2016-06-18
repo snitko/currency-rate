@@ -3,7 +3,7 @@ module CurrencyRate
 
     FETCH_URL = 'https://localbitcoins.com/bitcoinaverage/ticker-all-currencies/'
 
-    def rate_for(currency_code)
+    def rate_for(to,from)
       super
       rate = get_rate_value_from_hash(@rates, currency_code.upcase, 'rates', 'last')
       rate_to_f(rate)

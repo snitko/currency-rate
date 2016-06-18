@@ -20,11 +20,11 @@ module CurrencyRate
       end
     end
 
-    def rate_for(currency_code)
+    def rate_for(to, from)
       rates = []
       @adapters.each do |adapter|
         begin
-          rates << adapter.rate_for(currency_code)
+          rates << adapter.rate_for(to,from)
         rescue CurrencyNotSupported
           rates << nil
         end
@@ -32,7 +32,8 @@ module CurrencyRate
 
       unless rates.select(&:nil?).size == @adapters.size
         rates.compact!
-        rates.inject {|sum, rate| sum + rate} / rates.size
+        rate = rates.inject {|sum, rate| sum + rate} / rates.size
+        invert_rate(to,from, rate)
       else
         raise CurrencyNotSupported
       end
