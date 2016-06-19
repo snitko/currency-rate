@@ -6,9 +6,9 @@ module CurrencyRate
     FETCH_URL = "http://query.yahooapis.com/v1/public/yql?" + URI.encode_www_form(
       format: 'json',
       env: "store://datatables.org/alltableswithkeys",
-      q: "SELECT * FROM yahoo.finance.xchange WHERE pair IN" +
+      q: "SELECT * FROM yahoo.finance.xchange WHERE pair IN" + ''
         # The following line is building array string in SQL: '("USDJPY", "USDRUB", ...)'
-        "(#{SUPPORTED_CURRENCIES.map{|x| '"' + CROSS_RATE_CURRENCY.upcase + x.upcase + '"'}.join(',')})"
+        #"(#{SUPPORTED_CURRENCIES.map{|x| '"' + CROSS_RATE_CURRENCY.upcase + x.upcase + '"'}.join(',')})"
     )
 
     def rate_for(to,from)
