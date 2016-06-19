@@ -30,6 +30,19 @@ simply pass it as another argument, for example:
 
     CurrencyRate.convert('Bitstamp', amount: 1000, from: 'USD', to: 'EUR', anchor_currency: 'BTC')
 
+You can also use `#get` method to get just the rate. It basically works as `#convert`, but only returns the rate and the method signature (attributes passed) is different - attributes are not named:
+
+    CurrencyRate.get('Bitstamp', 'BTC', 'USD') # => 750
+    CurrencyRate.get('Bitstamp', 'USD', 'BTC') # => 0.001818182
+
+In the second case, we are trying to get the exchange rate for USD/BTC pair, which literally means
+"how much in BTC would 1 USD be?". If the source (Bitstamp, in this case) doesn't provide the
+inverted rate, the Adapter inverts the rate itself using the exchange rate for BTC/USD.
+
+You can also using `anchor_currency` with `#get`:
+
+    CurrencyRate.get('Bitstamp', 'USD', 'EUR', anchor_currency: 'BTC')
+
 For a list of available adapters, please see
 [lib/btc_adapters](https://github.com/snitko/currency-rate/tree/master/lib/btc_adapters)
 and [lib/fiat_adapters](https://github.com/snitko/currency-rate/tree/master/lib/fiat_adapters).
