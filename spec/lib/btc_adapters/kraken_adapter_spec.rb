@@ -15,10 +15,10 @@ RSpec.describe CurrencyRate::KrakenAdapter do
   end
 
   it "finds the rate for currency code" do
-    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(755.15)
-    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(0.0013242402171753957)
-    expect(@exchange_adapter.rate_for('EUR', 'BTC')).to eq(671.215)
-    expect(@exchange_adapter.rate_for('BTC', 'EUR')).to eq(0.0014898355966419105)
+    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(755.15)
+    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.0013242402171753957)
+    expect(@exchange_adapter.rate_for('BTC', 'EUR')).to eq(671.215)
+    expect(@exchange_adapter.rate_for('EUR', 'BTC')).to eq(0.0014898355966419105)
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 

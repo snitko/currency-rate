@@ -7,15 +7,15 @@ module CurrencyRate
       'eur_usd' => 'https://www.bitstamp.net/api/v2/ticker/eurusd/'
     }
 
-    def rate_for(to,from)
+    def rate_for(from,to)
       raise CurrencyNotSupported unless ["BTC", "USD", "EUR"].include?(to) && ["BTC", "USD", "EUR"].include?(from)
       super
       rate = rate_to_f(currency_pair_rate(to,from))
-      invert_rate(to,from,rate)
+      invert_rate(from,to,rate)
     end
 
     # Because Bitstamp has USD/EUR pair
-    def invert_rate(to,from,rate)
+    def invert_rate(from,to,rate)
       if to == 'BTC' || (from == 'USD' && to == 'EUR')
         1/rate.to_f
       else

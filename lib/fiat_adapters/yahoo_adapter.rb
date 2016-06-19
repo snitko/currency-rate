@@ -20,7 +20,7 @@ module CurrencyRate
         "(#{SUPPORTED_CURRENCIES.map{|x| '"' + CROSS_RATE_CURRENCY + x.upcase + '"'}.join(',')})"
     )
 
-    def invert_rate(to,from,rate)
+    def invert_rate(from,to,rate)
       if to == 'USD'
         (1/rate.to_f).round(DECIMAL_PRECISION)
       else

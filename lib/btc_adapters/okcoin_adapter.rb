@@ -8,17 +8,10 @@ module CurrencyRate
       'btc_cny' => 'https://www.okcoin.cn/api/ticker.do?symbol=btc_cny'
     }
 
-    def rate_for(to,from)
-      super
-      raise CurrencyNotSupported if currency_code != 'USD'
-      rate = get_rate_value_from_hash(@rates, 'ticker', 'last')
-      rate_to_f(rate)
-    end
-
-    def rate_for(to,from)
+    def rate_for(from,to)
       super
       rate = rate_to_f(currency_pair_rate(to,from))
-      invert_rate(to,from,rate)
+      invert_rate(from,to,rate)
     end
 
     def currency_pair_rate(currency1, currency2)
@@ -28,7 +21,7 @@ module CurrencyRate
     end
 
     # Because OKCoin has LTC
-    def invert_rate(to,from,rate)
+    def invert_rate(from,to,rate)
       if ['BTC', 'LTC'].include?(to)
         1/rate.to_f
       else

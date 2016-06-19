@@ -3,12 +3,12 @@ module CurrencyRate
 
     FETCH_URL = 'https://bitpay.com/api/rates'
 
-    def rate_for(to,from)
+    def rate_for(from,to)
       super
       rate = nil
       @rates.each do |rt|
         if rt['code'] == to
-          rate = invert_rate(to,from, currency_pair_rate(to,from,rt))
+          rate = invert_rate(from,to, currency_pair_rate(to,from,rt))
           return rate_to_f(rate)
         end
       end

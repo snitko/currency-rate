@@ -3,11 +3,11 @@ module CurrencyRate
 
     FETCH_URL = 'https://localbitcoins.com/bitcoinaverage/ticker-all-currencies/'
 
-    def rate_for(to,from)
+    def rate_for(from,to)
       super
       rate = currency_pair_rate(to,from)
       rate = rate_to_f(rate)
-      invert_rate(to,from,rate)
+      invert_rate(from,to,rate)
     end
 
     def currency_pair_rate(currency1, currency2)

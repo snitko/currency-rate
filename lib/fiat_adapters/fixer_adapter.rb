@@ -14,7 +14,7 @@ module CurrencyRate
       rate.round(DECIMAL_PRECISION)
     end
 
-    def invert_rate(to,from,rate)
+    def invert_rate(from,to,rate)
       if (to == 'USD' || to == 'EUR')
         (1/rate.to_f).round(DECIMAL_PRECISION)
       else

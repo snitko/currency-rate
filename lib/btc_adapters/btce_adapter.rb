@@ -10,11 +10,11 @@ module CurrencyRate
     }
 
 
-    def rate_for(to,from)
+    def rate_for(from,to)
       raise CurrencyNotSupported unless ["BTC", "USD", "EUR", "RUB"].include?(to) && ["BTC", "USD", "EUR", "RUB"].include?(from)
       super
       rate = rate_to_f(currency_pair_rate(to,from))
-      invert_rate(to,from,rate)
+      invert_rate(from,to,rate)
     end
 
     def currency_pair_rate(currency1, currency2)
@@ -23,7 +23,7 @@ module CurrencyRate
       rate['ticker']['last']
     end
 
-    def invert_rate(to,from,rate)
+    def invert_rate(from,to,rate)
       if to == 'BTC' || (from == 'RUB' && to == 'USD') || (from == 'RUB' && to == 'EUR')
         1/rate.to_f
       else
