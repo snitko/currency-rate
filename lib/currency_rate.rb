@@ -12,7 +12,7 @@ Dir["#{File.expand_path File.dirname(__FILE__)}/**/*.rb"].each { |f| require f }
 
 module CurrencyRate
 
-  def self.get(adapter_name, to, from, anchor_currency: nil)
+  def self.get(adapter_name, from, to, anchor_currency: nil)
 
     a = adapter_class(adapter_name)
 
@@ -27,16 +27,16 @@ module CurrencyRate
     # None of the currencies is anchor currency?
     # No problem, convert the amount given into the anchor currency first.
     if [to, from].include?(anchor_currency)
-      a.rate_for(to, from)
+      a.rate_for(from, to)
     else
-      rate_from = get(adapter_name, from, anchor_currency)
-      rate_to   = get(adapter_name, to,   anchor_currency)
+      rate_from = get(adapter_name, anchor_currency, from)
+      rate_to   = get(adapter_name, anchor_currency, to  )
       rate_to.to_f/rate_from.to_f
     end
   end
 
   def self.convert(adapter_name, amount:, from:, to:, anchor_currency: nil)
-    result = amount*get(adapter_name, to, from, anchor_currency: nil)
+    result = amount*get(adapter_name, from, to, anchor_currency: nil)
     to == 'BTC' ? result : result.round(2)
   end
 

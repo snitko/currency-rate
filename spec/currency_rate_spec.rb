@@ -3,17 +3,17 @@ require 'spec_helper'
 describe CurrencyRate do
 
   before :each do
-    allow(CurrencyRate::BitstampAdapter.instance).to receive('rate_for').with('USD', 'BTC').and_return(550)
-    allow(CurrencyRate::BitstampAdapter.instance).to receive('rate_for').with('BTC', 'USD').and_return(1.to_f/550.to_f)
-    allow(CurrencyRate::BitstampAdapter.instance).to receive('rate_for').with('RUB', 'BTC').and_return(33100)
-    allow(CurrencyRate::YahooAdapter.instance).to receive('rate_for').with('RUB', 'USD').and_return(60)
-    allow(CurrencyRate::YahooAdapter.instance).to receive('rate_for').with('USD', 'RUB').and_return(1.to_f/60.to_f)
+    allow(CurrencyRate::BitstampAdapter.instance).to receive('rate_for').with('BTC', 'USD').and_return(550)
+    allow(CurrencyRate::BitstampAdapter.instance).to receive('rate_for').with('USD', 'BTC').and_return(1.to_f/550.to_f)
+    allow(CurrencyRate::BitstampAdapter.instance).to receive('rate_for').with('BTC', 'RUB').and_return(33100)
+    allow(CurrencyRate::YahooAdapter.instance).to receive('rate_for').with('USD', 'RUB').and_return(60)
+    allow(CurrencyRate::YahooAdapter.instance).to receive('rate_for').with('RUB', 'USD').and_return(1.to_f/60.to_f)
   end
 
   it "fetches currency rate from a specified exchange" do
-    expect(CurrencyRate.get('Bitstamp', 'USD', 'BTC')).to eq(550)
-    expect(CurrencyRate.get('Bitstamp', 'BTC', 'USD')).to eq(1.to_f/550.to_f)
-    expect(CurrencyRate.get('Bitstamp', 'RUB', 'USD').round(2)).to eq(60.18)
+    expect(CurrencyRate.get('Bitstamp', 'BTC', 'USD')).to eq(550)
+    expect(CurrencyRate.get('Bitstamp', 'USD', 'BTC')).to eq(1.to_f/550.to_f)
+    expect(CurrencyRate.get('Bitstamp', 'USD', 'RUB').round(2)).to eq(60.18)
   end
   
   it "converts one currency into another" do
