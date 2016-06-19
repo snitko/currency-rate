@@ -11,12 +11,12 @@ module CurrencyRate
       raise CurrencyNotSupported unless rates
       rate = rates["rates"][currency1] || rates["rates"][currency2]
       raise CurrencyNotSupported unless rate
-      rate.round(2)
+      rate.round(DECIMAL_PRECISION)
     end
 
     def invert_rate(to,from,rate)
       if (to == 'USD' || to == 'EUR')
-        (1/rate.to_f).round(2)
+        (1/rate.to_f).round(DECIMAL_PRECISION)
       else
         rate
       end
