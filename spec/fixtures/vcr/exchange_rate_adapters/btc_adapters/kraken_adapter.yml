@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 30 May 2016 12:37:29 GMT
+      - Sun, 19 Jun 2016 08:30:57 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,17 +27,57 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dbd6ea46575d2ff9961080b11e8bf15881464611848; expires=Tue, 30-May-17
-        12:37:28 GMT; path=/; domain=.kraken.com; HttpOnly
+      - __cfduid=d402539a115cb70a2e55852cc8cfce6771466325056; expires=Mon, 19-Jun-17
+        08:30:56 GMT; path=/; domain=.kraken.com; HttpOnly
       Vary:
       - Accept-Encoding
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2ab23cd310a24267-OSL
+      - 2b559f31f6791111-SIN
     body:
       encoding: ASCII-8BIT
-      string: '{"error":[],"result":{"XXBTZUSD":{"a":["538.99900","1","1.000"],"b":["536.95000","2","2.000"],"c":["537.00100","0.08000000"],"v":["508.29854798","2193.00889458"],"p":["530.41973","528.71116"],"t":[586,1566],"l":["518.97700","470.00000"],"h":["540.00000","549.00000"],"o":"518.98200"}}}'
+      string: '{"error":[],"result":{"XXBTZUSD":{"a":["758.50900","53","53.000"],"b":["755.35300","3","3.000"],"c":["755.15000","0.88350000"],"v":["644.83315964","5488.21581492"],"p":["752.37956","763.98299"],"t":[983,5366],"l":["745.03000","745.00000"],"h":["761.02000","781.14800"],"o":"758.11000"}}}'
     http_version: 
-  recorded_at: Mon, 30 May 2016 12:37:29 GMT
+  recorded_at: Sun, 19 Jun 2016 08:30:57 GMT
+- request:
+    method: get
+    uri: https://api.kraken.com/0/public/Ticker?pair=xbteur
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 19 Jun 2016 08:30:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd39c75a5254396276fe351f6dcfb329d1466325057; expires=Mon, 19-Jun-17
+        08:30:57 GMT; path=/; domain=.kraken.com; HttpOnly
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2b559f3ae86601cb-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":[],"result":{"XXBTZEUR":{"a":["671.21500","1","1.000"],"b":["671.21400","1","1.000"],"c":["671.21500","0.08714000"],"v":["1548.25746642","11325.90266782"],"p":["667.89052","675.58056"],"t":[3023,17388],"l":["660.01500","660.00000"],"h":["675.00000","694.26000"],"o":"674.30000"}}}'
+    http_version: 
+  recorded_at: Sun, 19 Jun 2016 08:30:58 GMT
 recorded_with: VCR 3.0.3
