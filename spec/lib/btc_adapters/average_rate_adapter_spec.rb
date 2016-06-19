@@ -2,11 +2,11 @@ require 'spec_helper'
 
 RSpec.describe CurrencyRate::AverageRateAdapter do
 
-  before :all do
+  before :each do
     VCR.insert_cassette 'exchange_rate_adapters/btc_adapters/average_rate_adapter'
   end
 
-  after :all do
+  after :each do
     VCR.eject_cassette
   end
 
