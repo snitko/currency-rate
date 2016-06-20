@@ -39,7 +39,7 @@ In the second case, we are trying to get the exchange rate for USD/BTC pair, whi
 "how much in BTC would 1 USD be?". If the source (Bitstamp, in this case) doesn't provide the
 inverted rate, the Adapter inverts the rate itself using the exchange rate for BTC/USD.
 
-You can also using `anchor_currency` with `#get`:
+You can also use `anchor_currency` argument with `#get`:
 
     CurrencyRate.get('Bitstamp', 'USD', 'EUR', anchor_currency: 'BTC')
 
