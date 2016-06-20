@@ -63,3 +63,13 @@ for how and when to store/fetch data, not other classes.
 Credits
 -------
 This gem was extracted from [straight gem](https://github.com/MyceliumGear/straight), thanks to all the people who added various exchange rate adapters and contributed code.
+
+TODO
+----
+
+1. Remove code duplication in Adapters, specifically for
+   `#rate_for`, `#invert_rate` and `#currency_pair_rate` methods.
+
+2. Allow both lower case and upper case currency codes.
+
+3. Clean up tests, I have a feeling there some completely useless ones.
