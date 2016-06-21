@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.huobi.com/staticmarket/ticker_btc_json.js
+    uri: https://data.btcchina.com/data/ticker
     body:
       encoding: US-ASCII
       string: ''
@@ -18,66 +18,37 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Mon, 20 Jun 2016 07:13:19 GMT
-      Content-Type:
-      - application/javascript;charset=UTF-8
-      Content-Length:
-      - '152'
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __jsluid=4232513531b381fc752eef8d4dd55251; path=/
+      Access-Control-Allow-Methods:
+      - GET
       Access-Control-Allow-Origin:
       - "*"
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Cache:
-      - bypass
-    body:
-      encoding: UTF-8
-      string: '{"time":"1466406799","ticker":{"open":5108.77,"vol":512967.119,"symbol":"btccny","last":5084.51,"buy":5084.51,"sell":5084.93,"high":5138,"low":5010.5}
-        }'
-    http_version: 
-  recorded_at: Mon, 20 Jun 2016 07:13:19 GMT
-- request:
-    method: get
-    uri: http://api.huobi.com/staticmarket/ticker_ltc_json.js
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Mon, 20 Jun 2016 07:13:20 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
       Content-Type:
-      - application/javascript;charset=UTF-8
-      Content-Length:
-      - '147'
+      - application/json
+      Date:
+      - Tue, 21 Jun 2016 08:28:10 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Front-End-Https:
+      - 'on'
+      Pragma:
+      - no-cache
+      Server:
+      - nginx/1.8.1
+      Set-Cookie:
+      - btcchina_lang=en; expires=Wed, 21-Jun-2017 08:28:10 GMT; path=/; domain=.btcc.com
+      X-Cache-Cfc:
+      - "- 1466497690.039"
+      X-Powered-By:
+      - PHP/5.4.45
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
-      Set-Cookie:
-      - __jsluid=7312808630c655d05ce1143b909ff703; path=/
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Cache:
-      - bypass
     body:
       encoding: UTF-8
-      string: '{"time":"1466406800","ticker":{"open":37.46,"vol":46953638.9983,"symbol":"ltccny","last":36.92,"buy":36.91,"sell":36.92,"high":37.59,"low":36.59}
-        }'
+      string: '{"ticker":{"high":"5090.00","low":"4615.02","buy":"4785.55","sell":"4786.12","last":"4785.55","vol":"58752.19850000","date":1466497687,"vwap":"4738.11","prev_close":"4931.64","open":"4931.65"}}'
     http_version: 
-  recorded_at: Mon, 20 Jun 2016 07:13:20 GMT
+  recorded_at: Tue, 21 Jun 2016 08:28:10 GMT
 recorded_with: VCR 3.0.3

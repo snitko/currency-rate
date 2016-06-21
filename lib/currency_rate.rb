@@ -40,11 +40,15 @@ module CurrencyRate
     to == 'BTC' ? result : result.round(2)
   end
 
-    private
+  private
 
     def self.adapter_class(s)
       return s unless s.kind_of?(String) # if we pass class, no need to convert
-      adapter = "#{s}_adapter".classify(CurrencyRate).instance
+      adapter = classify_string("#{s}_adapter", CurrencyRate).instance
+    end
+
+    def self.classify_string(s, prefix="")
+      Kernel.const_get(prefix.to_s + "::" + s.split('_').collect(&:capitalize).join)
     end
 
 end

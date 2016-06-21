@@ -5,7 +5,8 @@ module CurrencyRate
 
     def rate_for(from,to)
       super
-      rate = rate_to_f(@rates['ticker']['last'])
+      raise raise CurrencyNotSupported unless [from,to].include?('CNY')
+      rate = rate_to_f(@rates['ticker'] && @rates['ticker']['last'])
       invert_rate(from,to,rate)
     end
 

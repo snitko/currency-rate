@@ -15,10 +15,10 @@ RSpec.describe CurrencyRate::HuobiAdapter do
   end
 
   it "finds the rate for currency code" do
-    expect(@exchange_adapter.rate_for('BTC', 'CNY')).to eq(5081.0)
-    expect(@exchange_adapter.rate_for('CNY', 'BTC')).to eq(0.000196811651249754)
-    expect(@exchange_adapter.rate_for('LTC', 'CNY')).to eq(36.9)
-    expect(@exchange_adapter.rate_for('CNY', 'LTC')).to eq(0.02710027100271003)
+    expect(@exchange_adapter.rate_for('BTC', 'CNY')).to eq(4791.5)
+    expect(@exchange_adapter.rate_for('CNY', 'BTC')).to eq(0.0002087029114056141)
+    expect(@exchange_adapter.rate_for('LTC', 'CNY')).to eq(34.25)
+    expect(@exchange_adapter.rate_for('CNY', 'LTC')).to eq(0.029197080291970802)
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 
