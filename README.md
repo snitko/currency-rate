@@ -73,3 +73,5 @@ TODO
 2. Allow both lower case and upper case currency codes.
 
 3. Clean up tests, I have a feeling there some completely useless ones.
+
+4. Adapters should have a default "to" currency. For example, everyone knows Bitfinex trades BTC for USD mostly.
