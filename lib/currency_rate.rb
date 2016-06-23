@@ -31,13 +31,13 @@ module CurrencyRate
     else
       rate_from = get(adapter_name, anchor_currency, from)
       rate_to   = get(adapter_name, anchor_currency, to  )
-      rate_to.to_f/rate_from.to_f
+      BigDecimal.new(rate_to.to_s)/BigDecimal.new(rate_from.to_s)
     end
   end
 
   def self.convert(adapter_name, amount:, from:, to:, anchor_currency: nil)
-    result = amount*get(adapter_name, from, to, anchor_currency: nil)
-    to == 'BTC' ? result : result.round(2)
+    result = BigDecimal.new(amount.to_s)*BigDecimal.new(get(adapter_name, from, to, anchor_currency: nil).to_s)
+    to == 'BTC' ? result.round(9) : result.round(2)
   end
 
   private
