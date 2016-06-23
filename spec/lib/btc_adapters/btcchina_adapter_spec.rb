@@ -16,7 +16,7 @@ RSpec.describe CurrencyRate::BTCChinaAdapter do
 
   it "finds the rate for currency code" do
     expect(@exchange_adapter.rate_for('BTC', 'CNY')).to eq(4785.55)
-    expect(@exchange_adapter.rate_for('CNY', 'BTC')).to eq(0.00020896239721662085)
+    expect(@exchange_adapter.rate_for('CNY', 'BTC')).to eq(0.000208962)
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 

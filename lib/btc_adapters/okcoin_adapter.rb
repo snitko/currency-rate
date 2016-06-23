@@ -23,7 +23,7 @@ module CurrencyRate
     # Because OKCoin has LTC
     def invert_rate(from,to,rate)
       if ['BTC', 'LTC'].include?(to)
-        1/rate.to_f
+        _invert_rate(rate)
       else
         rate
       end

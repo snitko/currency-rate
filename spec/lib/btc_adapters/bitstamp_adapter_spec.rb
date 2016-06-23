@@ -16,10 +16,10 @@ RSpec.describe CurrencyRate::BitstampAdapter do
 
   it "finds the rate for currency code" do
     expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(751.97)
-    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.0013298402861816295)
+    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.00132984)
     expect(@exchange_adapter.rate_for('BTC', 'EUR')).to eq(674.5)
-    expect(@exchange_adapter.rate_for('EUR', 'BTC')).to eq(0.0014825796886582653)
-    expect(@exchange_adapter.rate_for('USD', 'EUR')).to eq(0.9008846687447073)
+    expect(@exchange_adapter.rate_for('EUR', 'BTC')).to eq(0.00148258)
+    expect(@exchange_adapter.rate_for('USD', 'EUR')).to eq(0.900884669)
     expect(@exchange_adapter.rate_for('EUR', 'USD')).to eq(1.11002)
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end

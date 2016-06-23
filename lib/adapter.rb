@@ -46,5 +46,19 @@ module CurrencyRate
     def rate_to_f(rate)
       rate ? rate.to_f : raise(CurrencyNotSupported)
     end
+
+
+    private
+
+      def _invert_rate(rate)
+        r = (BigDecimal.new('1')/BigDecimal.new(rate.to_s))
+        r = r.round(decimal_precision) if decimal_precision
+        r
+      end
+
+      def decimal_precision
+        nil
+      end
+
   end
 end

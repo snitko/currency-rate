@@ -21,7 +21,7 @@ RSpec.describe CurrencyRate::BtcAdapter do
   it "inverts currency rate when needed" do
     allow(SomeExchangeAdapter.instance).to receive(:fetch_rates!)
     @exchange_adapter = SomeExchangeAdapter.instance
-    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.0013333333333333333)
+    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.001333333)
   end
 
 

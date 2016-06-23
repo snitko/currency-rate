@@ -25,7 +25,7 @@ module CurrencyRate
 
     def invert_rate(from,to,rate)
       if to == 'BTC' || (from == 'RUB' && to == 'USD') || (from == 'RUB' && to == 'EUR')
-        1/rate.to_f
+        _invert_rate(rate)
       else
         rate
       end

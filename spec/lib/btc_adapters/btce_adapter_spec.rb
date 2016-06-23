@@ -16,13 +16,13 @@ RSpec.describe CurrencyRate::BtceAdapter do
 
   it "finds the rate for currency code" do
     expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(723.872)
-    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.0013814597055833075)
+    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.00138146)
     expect(@exchange_adapter.rate_for('BTC', 'EUR')).to eq(665.022)
-    expect(@exchange_adapter.rate_for('EUR', 'BTC')).to eq(0.0015037096517107704)
+    expect(@exchange_adapter.rate_for('EUR', 'BTC')).to eq(0.00150371)
     expect(@exchange_adapter.rate_for('USD', 'RUB')).to eq(60.5)
-    expect(@exchange_adapter.rate_for('RUB', 'USD')).to eq(0.01652892561983471)
+    expect(@exchange_adapter.rate_for('RUB', 'USD')).to eq(0.016528926)
     expect(@exchange_adapter.rate_for('EUR', 'RUB')).to eq(65.63)
-    expect(@exchange_adapter.rate_for('RUB', 'EUR')).to eq(0.015236934328813043)
+    expect(@exchange_adapter.rate_for('RUB', 'EUR')).to eq(0.015236934)
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 

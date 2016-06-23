@@ -17,7 +17,7 @@ module CurrencyRate
     # Because Bitstamp has USD/EUR pair
     def invert_rate(from,to,rate)
       if to == 'BTC' || (from == 'USD' && to == 'EUR')
-        1/rate.to_f
+        _invert_rate(rate)
       else
         rate
       end

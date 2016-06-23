@@ -22,7 +22,7 @@ module CurrencyRate
 
     def invert_rate(from,to,rate)
       if to == 'USD'
-        (1/rate.to_f).round(DECIMAL_PRECISION)
+        _invert_rate(rate)
       else
         rate
       end
@@ -36,8 +36,8 @@ module CurrencyRate
         rates.find { |x| x['id'] == "#{CROSS_RATE_CURRENCY}#{currency1.upcase}" }
       end
       raise CurrencyNotSupported unless rate
-      rate = rate['Rate'].to_f
-      rate.round(DECIMAL_PRECISION)
+      rate = BigDecimal.new(rate['Rate'])
+      rate.round(decimal_precision)
     end
 
   end
