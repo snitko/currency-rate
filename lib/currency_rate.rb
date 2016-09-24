@@ -48,7 +48,12 @@ module CurrencyRate
     end
 
     def self.classify_string(s, prefix="")
-      Kernel.const_get(prefix.to_s + "::" + s.split('_').collect(&:capitalize).join)
+      s = if s !~ /[[:upper:]]/ # contains uppercase characters? Must be a class name already!
+        s.split('_').collect(&:capitalize).join
+      else
+        s.sub("_adapter", "Adapter")
+      end
+      Kernel.const_get(prefix.to_s + "::" + s)
     end
 
 end
