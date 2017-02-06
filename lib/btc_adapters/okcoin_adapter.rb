@@ -7,7 +7,7 @@ module CurrencyRate
       'ltc_cny' => 'https://www.okcoin.cn/api/ticker.do?symbol=ltc_cny',
       'btc_cny' => 'https://www.okcoin.cn/api/ticker.do?symbol=btc_cny'
     }
-    DEFAULT_CURRENCIES = { from: "BTC", to: "CNY" }
+    DEFAULT_CURRENCIES = ["CNY", "BTC"]
 
     def rate_for(from,to)
       super

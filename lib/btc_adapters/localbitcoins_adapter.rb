@@ -2,7 +2,7 @@ module CurrencyRate
   class LocalbitcoinsAdapter < BtcAdapter
 
     FETCH_URL = 'https://localbitcoins.com/bitcoinaverage/ticker-all-currencies/'
-    DEFAULT_CURRENCIES   = { from: "BTC", to: "USD" }
+    DEFAULT_CURRENCIES = ["USD", "BTC"]
 
     def rate_for(from,to)
       super

@@ -5,7 +5,7 @@ module CurrencyRate
       "usd_btc" => 'https://api.kraken.com/0/public/Ticker?pair=xbtusd',
       "eur_btc" => 'https://api.kraken.com/0/public/Ticker?pair=xbteur'
     }
-    DEFAULT_CURRENCIES   = { from: "BTC", to: "USD" }
+    DEFAULT_CURRENCIES = ["USD", "BTC"]
 
     def rate_for(to,from)
       super

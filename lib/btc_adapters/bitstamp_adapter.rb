@@ -6,7 +6,7 @@ module CurrencyRate
       'btc_eur' => 'https://www.bitstamp.net/api/v2/ticker/btceur/',
       'eur_usd' => 'https://www.bitstamp.net/api/v2/ticker/eurusd/'
     }
-    DEFAULT_CURRENCIES   = { from: "BTC", to: "USD" }
+    DEFAULT_CURRENCIES = ["USD", "BTC"]
 
     def rate_for(from,to)
       super

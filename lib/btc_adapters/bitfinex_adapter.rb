@@ -5,7 +5,7 @@ module CurrencyRate
       'btc_usd' => 'https://api.bitfinex.com/v1/pubticker/btcusd',
       'ltc_usd' => 'https://api.bitfinex.com/v1/pubticker/ltcusd'
     }
-    DEFAULT_CURRENCIES   = { from: "BTC", to: "USD" }
+    DEFAULT_CURRENCIES = ["USD", "BTC"]
 
     def rate_for(from,to)
       super

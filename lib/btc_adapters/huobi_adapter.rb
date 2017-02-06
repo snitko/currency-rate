@@ -5,7 +5,7 @@ module CurrencyRate
       'btc_cny' => 'http://api.huobi.com/staticmarket/ticker_btc_json.js',
       'ltc_cny' => 'http://api.huobi.com/staticmarket/ticker_ltc_json.js'
     }
-    DEFAULT_CURRENCIES   = { from: "BTC", to: "CNY" }
+    DEFAULT_CURRENCIES = ["CNY", "BTC"]
 
     def rate_for(from,to)
       super

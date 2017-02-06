@@ -2,7 +2,7 @@ module CurrencyRate
   class BitpayAdapter < BtcAdapter
 
     FETCH_URL = 'https://bitpay.com/api/rates'
-    DEFAULT_CURRENCIES   = { from: "BTC", to: "USD" }
+    DEFAULT_CURRENCIES = ["USD", "BTC"]
 
     def rate_for(from,to)
       super

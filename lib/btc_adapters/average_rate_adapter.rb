@@ -1,7 +1,7 @@
 module CurrencyRate
   class AverageRateAdapter < BtcAdapter
 
-    DEFAULT_CURRENCIES = { from: "BTC", to: "USD" }
+    DEFAULT_CURRENCIES = ["USD", "BTC"]
 
     # Takes exchange rate adapters instances or classes as arguments
     def self.instance(*adapters)

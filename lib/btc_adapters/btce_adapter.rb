@@ -8,7 +8,7 @@ module CurrencyRate
       'usd_rub' => 'https://btc-e.com/api/2/usd_rur/ticker',
       'eur_rub' => 'https://btc-e.com/api/2/eur_rur/ticker'
     }
-    DEFAULT_CURRENCIES   = { from: "BTC", to: "USD" }
+    DEFAULT_CURRENCIES = ["USD", "BTC"]
 
 
     def rate_for(from,to)
