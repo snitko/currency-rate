@@ -2,11 +2,11 @@ require 'spec_helper'
 
 RSpec.describe CurrencyRate::OkcoinAdapter do
 
-  before :all do
+  before :each do
     VCR.insert_cassette 'exchange_rate_adapters/btc_adapters/okcoin_adapter'
   end
 
-  after :all do
+  after :each do
     VCR.eject_cassette
   end
 
@@ -15,15 +15,15 @@ RSpec.describe CurrencyRate::OkcoinAdapter do
   end
 
   it "finds the rate for currency code" do
-    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(769.05)
-    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.001300306)
-    expect(@exchange_adapter.rate_for('BTC', 'CNY')).to eq(5113.0)
-    expect(@exchange_adapter.rate_for('CNY', 'BTC')).to eq(0.000195580)
+    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(1021.09)
+    expect(@exchange_adapter.rate_for('USD', 'BTC').to_f).to eq(0.000979346)
+    expect(@exchange_adapter.rate_for('BTC', 'CNY')).to eq(7203.0)
+    expect(@exchange_adapter.rate_for('CNY', 'BTC').to_f).to eq(0.000138831)
 
-    expect(@exchange_adapter.rate_for('LTC', 'USD')).to eq(5.661)
-    expect(@exchange_adapter.rate_for('USD', 'LTC')).to eq(0.176647235)
-    expect(@exchange_adapter.rate_for('LTC', 'CNY')).to eq(37.68)
-    expect(@exchange_adapter.rate_for('CNY', 'LTC')).to eq(0.026539278)
+    expect(@exchange_adapter.rate_for('LTC', 'USD')).to eq(3.987)
+    expect(@exchange_adapter.rate_for('USD', 'LTC').to_f).to eq(0.250815149)
+    expect(@exchange_adapter.rate_for('LTC', 'CNY')).to eq(28.0)
+    expect(@exchange_adapter.rate_for('CNY', 'LTC').to_f).to eq(0.035714286)
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 

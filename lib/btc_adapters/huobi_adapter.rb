@@ -5,6 +5,7 @@ module CurrencyRate
       'btc_cny' => 'http://api.huobi.com/staticmarket/ticker_btc_json.js',
       'ltc_cny' => 'http://api.huobi.com/staticmarket/ticker_ltc_json.js'
     }
+    DEFAULT_CURRENCIES   = { from: "BTC", to: "CNY" }
 
     def rate_for(from,to)
       super
@@ -23,6 +24,14 @@ module CurrencyRate
         _invert_rate(rate)
       else
         rate
+      end
+    end
+
+    def supported_currency_pairs
+      cache_supported_currency_pairs do
+        @rates.each do |k,v|
+          @supported_currency_pairs << k.sub("_", "/").upcase
+        end
       end
     end
 

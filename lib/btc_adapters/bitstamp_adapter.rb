@@ -6,9 +6,9 @@ module CurrencyRate
       'btc_eur' => 'https://www.bitstamp.net/api/v2/ticker/btceur/',
       'eur_usd' => 'https://www.bitstamp.net/api/v2/ticker/eurusd/'
     }
+    DEFAULT_CURRENCIES   = { from: "BTC", to: "USD" }
 
     def rate_for(from,to)
-      raise CurrencyNotSupported unless ["BTC", "USD", "EUR"].include?(to) && ["BTC", "USD", "EUR"].include?(from)
       super
       rate = rate_to_f(currency_pair_rate(to,from))
       invert_rate(from,to,rate)
@@ -27,6 +27,14 @@ module CurrencyRate
       rate = @rates["#{currency1.downcase}_#{currency2.downcase}"] || @rates["#{currency2.downcase}_#{currency1.downcase}"]
       raise CurrencyNotSupported unless rate
       rate['last']
+    end
+
+    def supported_currency_pairs
+      cache_supported_currency_pairs do
+        @rates.each do |k,v|
+          @supported_currency_pairs << k.sub("_", "/").upcase
+        end
+      end
     end
 
   end

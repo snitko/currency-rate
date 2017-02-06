@@ -2,8 +2,8 @@ module CurrencyRate
   class Adapter
     include Singleton
 
-    class FetchingFailed          < Exception; end
-    class CurrencyNotSupported    < Exception; end
+    class FetchingFailed       < Exception; end
+    class CurrencyNotSupported < Exception; end
 
     def initialize
       @storage = Storage.new
@@ -23,16 +23,48 @@ module CurrencyRate
           @rates = JSON.parse(uri.read(read_timeout: 4))
         end
         @rates_updated_at = Time.now
-      rescue OpenURI::HTTPError => e
+      rescue Exception => e
+        # TODO: Try average rate adapter
         raise FetchingFailed
       end
     end
 
     def rate_for(from,to)
+
       @storage.fetch(self.class.to_s) do
         self.fetch_rates!
       end
-      nil # this should be changed in descendant classes
+
+      raise CurrencyNotSupported unless supports_currency_pair?(from,to)
+
+    end
+
+    def supports_currency_pair?(c1,c2)
+      supported_currency_pairs.include?("#{c1}/#{c2}".upcase) || supported_currency_pairs.include?("#{c2}/#{c1}".upcase)
+    end
+
+    # This method is supposed to be implemented for each individual adapter because the format of
+    # the contents of the @rate variable is specific to each adapter. It would parse @rates and
+    # extract currency pairs. Returns an array of supported currency pairs: ["USD/BTC", "EUR/BTC"]
+    #
+    # If you're implementing this method please note that you don't need to return a reversed pair
+    # that is ["USD/BTC", "BTC/USD"] would be excessive and just ["USD/BTC"] would work,
+    # because it is assumed that the adapter supports a reverse pair (see #rate_for implementation above).
+    #
+    # It would also be wise to use caching when implementing, that is:
+    #
+    #   return @supported_currency_pairs if @supported_currency_pairs
+    #
+    # Which would make this method parse @rates only once.
+    def supported_currency_pairs
+      raise "Please implement #supported_currency_pairs in your Adapter"
+    end
+
+    def cache_supported_currency_pairs
+      return @supported_currency_pairs if @supported_currency_pairs
+      @supported_currency_pairs = []
+      yield
+      @supported_currency_pairs
     end
 
     # Must be implemented inside every descendant class

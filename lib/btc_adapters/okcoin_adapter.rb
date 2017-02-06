@@ -7,6 +7,7 @@ module CurrencyRate
       'ltc_cny' => 'https://www.okcoin.cn/api/ticker.do?symbol=ltc_cny',
       'btc_cny' => 'https://www.okcoin.cn/api/ticker.do?symbol=btc_cny'
     }
+    DEFAULT_CURRENCIES = { from: "BTC", to: "CNY" }
 
     def rate_for(from,to)
       super
@@ -26,6 +27,14 @@ module CurrencyRate
         _invert_rate(rate)
       else
         rate
+      end
+    end
+
+    def supported_currency_pairs
+      cache_supported_currency_pairs do
+        @rates.each do |k,v|
+          @supported_currency_pairs << k.sub("_", "/").upcase
+        end
       end
     end
 

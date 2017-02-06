@@ -50,7 +50,7 @@ Gem::Specification.new do |s|
     "spec/currency_rate_spec.rb",
     "spec/fixtures/vcr/exchange_rate_adapters/btc_adapters/average_rate_adapter.yml",
     "spec/fixtures/vcr/exchange_rate_adapters/btc_adapters/bitfinex_adapter.yml",
-    "spec/fixtures/vcr/exchange_rate_adapters/btc_adapters/bitpay_adapter_yml.yml",
+    "spec/fixtures/vcr/exchange_rate_adapters/btc_adapters/bitpay_adapter.yml",
     "spec/fixtures/vcr/exchange_rate_adapters/btc_adapters/bitstamp_adapter.yml",
     "spec/fixtures/vcr/exchange_rate_adapters/btc_adapters/btcchina_adapter.yml",
     "spec/fixtures/vcr/exchange_rate_adapters/btc_adapters/btce_adapter.yml",

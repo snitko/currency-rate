@@ -2,11 +2,11 @@ require 'spec_helper'
 
 RSpec.describe CurrencyRate::BitpayAdapter do
 
-  before :all do
-    VCR.insert_cassette 'exchange_rate_adapters/btc_adapters/bitpay_adapter.yml'
+  before :each do
+    VCR.insert_cassette 'exchange_rate_adapters/btc_adapters/average_rate_adapter' # contains request to Bitpay
   end
 
-  after :all do
+  after :each do
     VCR.eject_cassette
   end
 
@@ -15,9 +15,9 @@ RSpec.describe CurrencyRate::BitpayAdapter do
   end
 
   it "finds the rate for currency code" do
-    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(748.02)
+    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(1015.59)
     expect(@exchange_adapter.rate_for('BTC', 'BTC')).to eq(1)
-    expect(@exchange_adapter.rate_for('BTC', 'EUR')).to eq(663.359096)
+    expect(@exchange_adapter.rate_for('BTC', 'EUR')).to eq(941.895743)
     expect(@exchange_adapter.rate_for('EUR', 'BTC')).to eq(1)
     expect( -> { @exchange_adapter.rate_for('USD', 'EUR') }).to raise_exception(CurrencyRate::Adapter::CurrencyNotSupported)
     expect( -> { @exchange_adapter.rate_for('EUR', 'USD') }).to raise_exception(CurrencyRate::Adapter::CurrencyNotSupported)

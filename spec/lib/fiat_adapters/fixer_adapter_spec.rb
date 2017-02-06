@@ -2,11 +2,11 @@ require 'spec_helper'
 
 RSpec.describe CurrencyRate::FixerAdapter do
 
-  before :all do
+  before :each do
     VCR.insert_cassette 'exchange_rate_adapters/fiat_adapters/fixer_adapter'
   end
 
-  after :all do
+  after :each do
     VCR.eject_cassette
   end
 
@@ -15,9 +15,9 @@ RSpec.describe CurrencyRate::FixerAdapter do
   end
 
   it "finds the rate for currency code" do
-    expect(@exchange_adapter.rate_for('EUR', 'USD')).to eq(1.12)
-    expect(@exchange_adapter.rate_for('USD', 'EUR')).to eq(0.88)
-    expect(@exchange_adapter.rate_for('USD', 'RUB')).to eq(65.12)
+    expect(@exchange_adapter.rate_for('EUR', 'USD')).to eq(1.08)
+    expect(@exchange_adapter.rate_for('USD', 'EUR')).to eq(0.93)
+    expect(@exchange_adapter.rate_for('USD', 'RUB')).to eq(59.22)
     expect(@exchange_adapter.rate_for('RUB', 'USD')).to eq(0.02)
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end

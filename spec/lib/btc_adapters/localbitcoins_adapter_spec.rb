@@ -2,11 +2,11 @@ require 'spec_helper'
 
 RSpec.describe CurrencyRate::LocalbitcoinsAdapter do
 
-  before :all do
+  before :each do
     VCR.insert_cassette 'exchange_rate_adapters/btc_adapters/localbitcoins_adapter'
   end
 
-  after :all do
+  after :each do
     VCR.eject_cassette
   end
 
@@ -15,8 +15,8 @@ RSpec.describe CurrencyRate::LocalbitcoinsAdapter do
   end
 
   it "finds the rate for currency code" do
-    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(591.95)
-    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(BigDecimal.new('0.001689332'))
+    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(1420.45)
+    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(BigDecimal.new('0.000704002'))
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 

@@ -22,5 +22,16 @@ module CurrencyRate
       end
     end
 
+    def supported_currency_pairs
+      cache_supported_currency_pairs do
+        @rates.each do |base_name, content|
+          currency1 = content["base"]
+          content["rates"].each do |currency2, rate|
+            @supported_currency_pairs << "#{currency1}/#{currency2}"
+          end
+        end
+      end
+    end
+
   end
 end

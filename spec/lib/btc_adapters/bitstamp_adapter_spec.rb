@@ -2,11 +2,11 @@ require 'spec_helper'
 
 RSpec.describe CurrencyRate::BitstampAdapter do
 
-  before :all do
-    VCR.insert_cassette 'exchange_rate_adapters/btc_adapters/bitstamp_adapter'
+  before :each do
+    VCR.insert_cassette 'exchange_rate_adapters/btc_adapters/average_rate_adapter' # contains request to Bistamp
   end
 
-  after :all do
+  after :each do
     VCR.eject_cassette
   end
 
@@ -15,12 +15,12 @@ RSpec.describe CurrencyRate::BitstampAdapter do
   end
 
   it "finds the rate for currency code" do
-    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(751.97)
-    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.00132984)
-    expect(@exchange_adapter.rate_for('BTC', 'EUR')).to eq(674.5)
-    expect(@exchange_adapter.rate_for('EUR', 'BTC')).to eq(0.00148258)
-    expect(@exchange_adapter.rate_for('USD', 'EUR')).to eq(0.900884669)
-    expect(@exchange_adapter.rate_for('EUR', 'USD')).to eq(1.11002)
+    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(1017.17)
+    expect(@exchange_adapter.rate_for('USD', 'BTC').to_f).to eq(0.00098312)
+    expect(@exchange_adapter.rate_for('BTC', 'EUR')).to eq(946.0)
+    expect(@exchange_adapter.rate_for('EUR', 'BTC').to_f).to eq(0.001057082)
+    expect(@exchange_adapter.rate_for('USD', 'EUR').to_f).to eq(0.933619643)
+    expect(@exchange_adapter.rate_for('EUR', 'USD')).to eq(1.0711)
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 

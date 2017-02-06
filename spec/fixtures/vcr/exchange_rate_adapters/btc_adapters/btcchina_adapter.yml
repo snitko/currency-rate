@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 21 Jun 2016 08:28:10 GMT
+      - Mon, 06 Feb 2017 05:24:45 GMT
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Front-End-Https:
@@ -35,20 +35,21 @@ http_interactions:
       Pragma:
       - no-cache
       Server:
-      - nginx/1.8.1
+      - nginx
       Set-Cookie:
-      - btcchina_lang=en; expires=Wed, 21-Jun-2017 08:28:10 GMT; path=/; domain=.btcc.com
+      - PHPSESSID=6n5qmvt5a5g23n79aes5fm9ad0; path=/; domain=.btcc.com
+      - btcchina_lang=en; expires=Tue, 06-Feb-2018 05:24:44 GMT; path=/; domain=.btcc.com
       X-Cache-Cfc:
-      - "- 1466497690.039"
+      - "- 1486358684.080"
       X-Powered-By:
       - PHP/5.4.45
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '186'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"ticker":{"high":"5090.00","low":"4615.02","buy":"4785.55","sell":"4786.12","last":"4785.55","vol":"58752.19850000","date":1466497687,"vwap":"4738.11","prev_close":"4931.64","open":"4931.65"}}'
+      string: '{"ticker":{"high":"7281.62","low":"7130.00","buy":"7225.01","sell":"7243.00","last":"7243.99","vol":"9205.16760000","date":1486358683,"vwap":"7219.33","prev_close":"7180","open":"7180"}}'
     http_version: 
-  recorded_at: Tue, 21 Jun 2016 08:28:10 GMT
+  recorded_at: Mon, 06 Feb 2017 05:24:45 GMT
 recorded_with: VCR 3.0.3

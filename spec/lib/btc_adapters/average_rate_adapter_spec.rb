@@ -18,12 +18,7 @@ RSpec.describe CurrencyRate::AverageRateAdapter do
   end
 
   it "calculates average rate" do
-    json_response_bistamp = '{"high": "232.89", "last": "100", "timestamp": "1423457015", "bid": "224.00", "vwap": "224.57", "volume": "14810.41127494", "low": "217.28", "ask": "224.13"}'
-    json_response_bitpay = '[{"code":"USD","name":"US Dollar","rate":200},{"code":"EUR","name":"Eurozone Euro","rate":197.179544}]'
-    uri_mock = double('uri mock')
-    allow(uri_mock).to receive(:read).with(read_timeout: 4).and_return(json_response_bistamp, json_response_bitpay)
-    allow(URI).to      receive(:parse).and_return(uri_mock)
-    expect(@average_rates_adapter.rate_for('BTC', 'USD')).to eq 150
+    expect(@average_rates_adapter.rate_for('BTC', 'USD')).to eq 1016.38
   end
 
   it "fetches rates for all adapters" do

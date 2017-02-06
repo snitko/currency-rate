@@ -40,5 +40,13 @@ module CurrencyRate
       rate.round(decimal_precision)
     end
 
+    def supported_currency_pairs
+      cache_supported_currency_pairs do
+        @rates["query"]["results"]["rate"].each do |r|
+          @supported_currency_pairs << r["Name"]
+        end
+      end
+    end
+
   end
 end

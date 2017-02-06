@@ -2,11 +2,11 @@ require 'spec_helper'
 
 RSpec.describe CurrencyRate::CoinbaseAdapter do
 
-  before :all do
+  before :each do
     VCR.insert_cassette 'exchange_rate_adapters/btc_adapters/coinbase_adapter'
   end
 
-  after :all do
+  after :each do
     VCR.eject_cassette
   end
 
@@ -15,8 +15,8 @@ RSpec.describe CurrencyRate::CoinbaseAdapter do
   end
 
   it "finds the rate for currency code" do
-    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(760.85)
-    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.001314)
+    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(1019.98)
+    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.00098)
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 

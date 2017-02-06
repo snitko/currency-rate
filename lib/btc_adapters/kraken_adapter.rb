@@ -5,6 +5,7 @@ module CurrencyRate
       "usd_btc" => 'https://api.kraken.com/0/public/Ticker?pair=xbtusd',
       "eur_btc" => 'https://api.kraken.com/0/public/Ticker?pair=xbteur'
     }
+    DEFAULT_CURRENCIES   = { from: "BTC", to: "USD" }
 
     def rate_for(to,from)
       super
@@ -17,6 +18,14 @@ module CurrencyRate
       raise CurrencyNotSupported unless rate || [currency1, currency2].include?("BTC")
       currency = currency1 == "BTC" ? currency2 : currency1
       rate['result']["XXBTZ#{currency}"]['c'].first
+    end
+
+    def supported_currency_pairs
+      cache_supported_currency_pairs do
+        @rates.each do |k,v|
+          @supported_currency_pairs << k.sub("_", "/").upcase
+        end
+      end
     end
 
   end

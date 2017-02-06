@@ -2,11 +2,11 @@ require 'spec_helper'
 
 RSpec.describe CurrencyRate::BTCChinaAdapter do
 
-  before :all do
+  before :each do
     VCR.insert_cassette 'exchange_rate_adapters/btc_adapters/btcchina_adapter'
   end
 
-  after :all do
+  after :each do
     VCR.eject_cassette
   end
 
@@ -15,8 +15,8 @@ RSpec.describe CurrencyRate::BTCChinaAdapter do
   end
 
   it "finds the rate for currency code" do
-    expect(@exchange_adapter.rate_for('BTC', 'CNY')).to eq(4785.55)
-    expect(@exchange_adapter.rate_for('CNY', 'BTC')).to eq(0.000208962)
+    expect(@exchange_adapter.rate_for('BTC', 'CNY')).to eq(7243.99)
+    expect(@exchange_adapter.rate_for('CNY', 'BTC').to_f).to eq(0.000138045)
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 

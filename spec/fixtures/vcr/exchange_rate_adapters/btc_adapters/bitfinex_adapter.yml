@@ -18,49 +18,47 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
       Date:
-      - Mon, 20 Jun 2016 06:58:42 GMT
+      - Mon, 06 Feb 2017 05:24:39 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
+      Set-Cookie:
+      - __cfduid=d0c0b5ffd0e2f172c8ae2dbe0652ab5b11486358678; expires=Tue, 06-Feb-18
+        05:24:38 GMT; path=/; domain=.bitfinex.com; HttpOnly
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Vary:
       - Accept-Encoding
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"59136e30c95f01b5c136770220aa846e"'
+      - '"ace1421ffbebc7f9646b5775d2d31d4f"'
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - c753494b3227cfad50f8945966d39c8d
+      - 5adab457-c532-4bd6-a592-82cb5a22732c
       X-Runtime:
-      - '0.007791'
-      X-Rack-Cache:
-      - miss
+      - '0.009736'
       Expires:
-      - Mon, 20 Jun 2016 06:58:41 GMT
-      X-Frame-Options:
-      - SAMEORIGIN
-      Set-Cookie:
-      - incap_ses_220_116519=8b+gI3trGBYpDLXOOqINAyGUZ1cAAAAAQM8WsGM6w+YwPHmncx+niw==;
-        path=/; Domain=.bitfinex.com
-      - nlbi_116519=HuwXBwJMIxm8yM1pAW4sjgAAAABRTx8p7HVHSrl6wTiQvNNI; path=/; Domain=.bitfinex.com
-      - visid_incap_116519=L54xa4vmRP6KAQ4z4aLnMSGUZ1cAAAAAQUIPAAAAAADfguZq9rKJ6IjaTgC2Q5+V;
-        expires=Mon, 19 Jun 2017 07:26:37 GMT; path=/; Domain=.bitfinex.com
-      X-Iinfo:
-      - 10-121398064-121388225 PNNN RT(1466405921277 608) q(0 0 0 -1) r(1 1) U5
-      X-Cdn:
-      - Incapsula
+      - Mon, 06 Feb 2017 05:24:38 GMT
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 32cc2d4b797231b0-SIN
     body:
       encoding: ASCII-8BIT
-      string: '{"mid":"763.26999999999995","bid":"763.23","ask":"763.3099999999999","last_price":"763.0","low":"743.1","high":"775.0","volume":"25691.14266963","timestamp":"1466405921.347352017"}'
+      string: '{"mid":"1016.85","bid":"1016.8","ask":"1016.9","last_price":"1016.9","low":"995.1","high":"1030.0","volume":"16534.79967545","timestamp":"1486358679.270216686"}'
     http_version: 
-  recorded_at: Mon, 20 Jun 2016 06:58:43 GMT
+  recorded_at: Mon, 06 Feb 2017 05:24:39 GMT
 - request:
     method: get
     uri: https://api.bitfinex.com/v1/pubticker/ltcusd
@@ -79,47 +77,45 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
       Date:
-      - Mon, 20 Jun 2016 06:58:44 GMT
+      - Mon, 06 Feb 2017 05:24:41 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
+      Set-Cookie:
+      - __cfduid=d44447d298960568c25dac40ff4886a621486358680; expires=Tue, 06-Feb-18
+        05:24:40 GMT; path=/; domain=.bitfinex.com; HttpOnly
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Vary:
       - Accept-Encoding
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"631b709f658a68d802be723ff93619e4"'
+      - '"c861897fcc79195fa6c297affec0e42a"'
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - b8e3581e6fa3c87e585e313877b1e1ec
+      - e7b0ea57-ae26-4a83-bec1-cd13be72e9fd
       X-Runtime:
-      - '0.005262'
-      X-Rack-Cache:
-      - miss
+      - '0.004825'
       Expires:
-      - Mon, 20 Jun 2016 06:58:43 GMT
-      X-Frame-Options:
-      - SAMEORIGIN
-      Set-Cookie:
-      - incap_ses_220_116519=GIbaZrYdtxMQEbXOOqINAyOUZ1cAAAAAycnlvhfe0Isz+HA9+Pp/NQ==;
-        path=/; Domain=.bitfinex.com
-      - nlbi_116519=VnM6Dh8v/je+PlhWAW4sjgAAAACgdvqJaRM1yNUCSKWSWKd1; path=/; Domain=.bitfinex.com
-      - visid_incap_116519=X2lKapZlTTqMla2h0a3lqSOUZ1cAAAAAQUIPAAAAAABmZgMQLk1YH1cryK/6D7ZS;
-        expires=Mon, 19 Jun 2017 07:26:37 GMT; path=/; Domain=.bitfinex.com
-      X-Iinfo:
-      - 8-96464173-96432433 PNNN RT(1466405922881 596) q(0 0 0 -1) r(1 1) U5
-      X-Cdn:
-      - Incapsula
+      - Mon, 06 Feb 2017 05:24:39 GMT
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 32cc2d5619f41792-SIN
     body:
       encoding: ASCII-8BIT
-      string: '{"mid":"5.5237","bid":"5.5105","ask":"5.5369","last_price":"5.5105","low":"5.4952","high":"5.6365","volume":"17967.21301685","timestamp":"1466405918.717334694"}'
+      string: '{"mid":"3.93805","bid":"3.9321","ask":"3.944","last_price":"3.9526","low":"3.895","high":"4.0084","volume":"10408.11372017","timestamp":"1486358680.942981676"}'
     http_version: 
-  recorded_at: Mon, 20 Jun 2016 06:58:44 GMT
+  recorded_at: Mon, 06 Feb 2017 05:24:41 GMT
 recorded_with: VCR 3.0.3

@@ -2,11 +2,11 @@ require 'spec_helper'
 
 RSpec.describe CurrencyRate::HuobiAdapter do
 
-  before :all do
+  before :each do
     VCR.insert_cassette 'exchange_rate_adapters/btc_adapters/huobi_adapter'
   end
 
-  after :all do
+  after :each do
     VCR.eject_cassette
   end
 
@@ -15,10 +15,10 @@ RSpec.describe CurrencyRate::HuobiAdapter do
   end
 
   it "finds the rate for currency code" do
-    expect(@exchange_adapter.rate_for('BTC', 'CNY')).to eq(4791.5)
-    expect(@exchange_adapter.rate_for('CNY', 'BTC')).to eq(0.000208703)
-    expect(@exchange_adapter.rate_for('LTC', 'CNY')).to eq(34.25)
-    expect(@exchange_adapter.rate_for('CNY', 'LTC')).to eq(0.02919708)
+    expect(@exchange_adapter.rate_for('BTC', 'CNY')).to eq(7216.25)
+    expect(@exchange_adapter.rate_for('CNY', 'BTC').to_f).to eq(0.000138576)
+    expect(@exchange_adapter.rate_for('LTC', 'CNY')).to eq(27.99)
+    expect(@exchange_adapter.rate_for('CNY', 'LTC').to_f).to eq(0.035727045)
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 

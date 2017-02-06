@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 19 Jun 2016 08:30:57 GMT
+      - Mon, 06 Feb 2017 05:24:58 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,19 +27,19 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d402539a115cb70a2e55852cc8cfce6771466325056; expires=Mon, 19-Jun-17
-        08:30:56 GMT; path=/; domain=.kraken.com; HttpOnly
+      - __cfduid=deb478f2bbc3b2d0079764973622b4cd51486358697; expires=Tue, 06-Feb-18
+        05:24:57 GMT; path=/; domain=.kraken.com; HttpOnly
       Vary:
       - Accept-Encoding
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2b559f31f6791111-SIN
+      - 32cc2dc4ee4e1123-SIN
     body:
       encoding: ASCII-8BIT
-      string: '{"error":[],"result":{"XXBTZUSD":{"a":["758.50900","53","53.000"],"b":["755.35300","3","3.000"],"c":["755.15000","0.88350000"],"v":["644.83315964","5488.21581492"],"p":["752.37956","763.98299"],"t":[983,5366],"l":["745.03000","745.00000"],"h":["761.02000","781.14800"],"o":"758.11000"}}}'
+      string: '{"error":[],"result":{"XXBTZUSD":{"a":["1018.00000","1","1.000"],"b":["1017.71000","24","24.000"],"c":["1018.00000","0.00139780"],"v":["140.87496222","1186.97757850"],"p":["1019.57961","1017.84325"],"t":[407,2092],"l":["1013.75000","1005.40000"],"h":["1024.00000","1030.00000"],"o":"1017.88600"}}}'
     http_version: 
-  recorded_at: Sun, 19 Jun 2016 08:30:57 GMT
+  recorded_at: Mon, 06 Feb 2017 05:24:58 GMT
 - request:
     method: get
     uri: https://api.kraken.com/0/public/Ticker?pair=xbteur
@@ -59,7 +59,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 19 Jun 2016 08:30:58 GMT
+      - Mon, 06 Feb 2017 05:25:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -67,17 +67,17 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dd39c75a5254396276fe351f6dcfb329d1466325057; expires=Mon, 19-Jun-17
-        08:30:57 GMT; path=/; domain=.kraken.com; HttpOnly
+      - __cfduid=d28404188131d0b4033e5ad505afba3711486358699; expires=Tue, 06-Feb-18
+        05:24:59 GMT; path=/; domain=.kraken.com; HttpOnly
       Vary:
       - Accept-Encoding
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2b559f3ae86601cb-SIN
+      - 32cc2dcdab5030ae-SIN
     body:
       encoding: ASCII-8BIT
-      string: '{"error":[],"result":{"XXBTZEUR":{"a":["671.21500","1","1.000"],"b":["671.21400","1","1.000"],"c":["671.21500","0.08714000"],"v":["1548.25746642","11325.90266782"],"p":["667.89052","675.58056"],"t":[3023,17388],"l":["660.01500","660.00000"],"h":["675.00000","694.26000"],"o":"674.30000"}}}'
+      string: '{"error":[],"result":{"XXBTZEUR":{"a":["946.99900","1","1.000"],"b":["945.33000","6","6.000"],"c":["945.33000","0.33190000"],"v":["350.90083527","4825.99524551"],"p":["945.36841","944.38709"],"t":[687,6669],"l":["940.00000","935.00000"],"h":["948.00000","959.08900"],"o":"943.60000"}}}'
     http_version: 
-  recorded_at: Sun, 19 Jun 2016 08:30:58 GMT
+  recorded_at: Mon, 06 Feb 2017 05:25:00 GMT
 recorded_with: VCR 3.0.3

@@ -2,11 +2,11 @@ require 'spec_helper'
 
 RSpec.describe CurrencyRate::KrakenAdapter do
 
-  before :all do
+  before :each do
     VCR.insert_cassette 'exchange_rate_adapters/btc_adapters/kraken_adapter'
   end
 
-  after :all do
+  after :each do
     VCR.eject_cassette
   end
 
@@ -15,10 +15,10 @@ RSpec.describe CurrencyRate::KrakenAdapter do
   end
 
   it "finds the rate for currency code" do
-    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(755.15)
-    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.00132424)
-    expect(@exchange_adapter.rate_for('BTC', 'EUR')).to eq(671.215)
-    expect(@exchange_adapter.rate_for('EUR', 'BTC')).to eq(0.001489836)
+    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(1018.0)
+    expect(@exchange_adapter.rate_for('USD', 'BTC').to_f).to eq(0.000982318)
+    expect(@exchange_adapter.rate_for('BTC', 'EUR')).to eq(945.33)
+    expect(@exchange_adapter.rate_for('EUR', 'BTC').to_f).to eq(0.001057832)
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 

@@ -2,11 +2,11 @@ require 'spec_helper'
 
 RSpec.describe CurrencyRate::YahooAdapter do
 
-  before :all do
+  before :each do
     VCR.insert_cassette 'exchange_rate_adapters/fiat_adapters/yahoo_adapter'
   end
 
-  after :all do
+  after :each do
     VCR.eject_cassette
   end
 
@@ -15,9 +15,9 @@ RSpec.describe CurrencyRate::YahooAdapter do
   end
 
   it "finds the rate for currency code" do
-    expect(@exchange_adapter.rate_for('EUR', 'USD')).to eq(1.12)
-    expect(@exchange_adapter.rate_for('USD', 'EUR')).to eq(0.89)
-    expect(@exchange_adapter.rate_for('USD', 'RUB')).to eq(64.78)
+    expect(@exchange_adapter.rate_for('EUR', 'USD')).to eq(1.08)
+    expect(@exchange_adapter.rate_for('USD', 'EUR')).to eq(0.93)
+    expect(@exchange_adapter.rate_for('USD', 'RUB')).to eq(59.51)
     expect(@exchange_adapter.rate_for('RUB', 'USD')).to eq(0.02)
     expect( -> { @exchange_adapter.rate_for('USD', 'FEDcoin') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end

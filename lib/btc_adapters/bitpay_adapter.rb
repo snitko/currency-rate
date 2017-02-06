@@ -2,6 +2,7 @@ module CurrencyRate
   class BitpayAdapter < BtcAdapter
 
     FETCH_URL = 'https://bitpay.com/api/rates'
+    DEFAULT_CURRENCIES   = { from: "BTC", to: "USD" }
 
     def rate_for(from,to)
       super
@@ -12,13 +13,19 @@ module CurrencyRate
           return rate_to_f(rate)
         end
       end
-      raise CurrencyNotSupported
     end
 
     def currency_pair_rate(currency1, currency2, rt)
       rate = rt['rate'] if [currency1, currency2].include?(rt['code'])
-      raise CurrencyNotSupported if !rate || !([currency1, currency2].include?('BTC'))
       rate
+    end
+
+    def supported_currency_pairs
+      cache_supported_currency_pairs do
+        @rates.each do |r|
+          @supported_currency_pairs << "#{r["code"]}/BTC"
+        end
+      end
     end
 
   end

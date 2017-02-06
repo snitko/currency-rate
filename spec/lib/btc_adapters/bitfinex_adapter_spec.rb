@@ -2,11 +2,11 @@ require 'spec_helper'
 
 RSpec.describe CurrencyRate::BitfinexAdapter do
 
-  before :all do
+  before :each do
     VCR.insert_cassette 'exchange_rate_adapters/btc_adapters/bitfinex_adapter'
   end
 
-  after :all do
+  after :each do
     VCR.eject_cassette
   end
 
@@ -15,10 +15,10 @@ RSpec.describe CurrencyRate::BitfinexAdapter do
   end
 
   it "finds the rate for currency code" do
-    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(763.0)
-    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.001310616)
-    expect(@exchange_adapter.rate_for('LTC', 'USD')).to eq(5.5105)
-    expect(@exchange_adapter.rate_for('USD', 'LTC')).to eq(0.181471736)
+    expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(1016.9)
+    expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.000983381)
+    expect(@exchange_adapter.rate_for('LTC', 'USD')).to eq(3.9526)
+    expect(@exchange_adapter.rate_for('USD', 'LTC')).to eq(0.252998027)
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 

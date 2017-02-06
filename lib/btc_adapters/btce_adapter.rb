@@ -8,10 +8,10 @@ module CurrencyRate
       'usd_rub' => 'https://btc-e.com/api/2/usd_rur/ticker',
       'eur_rub' => 'https://btc-e.com/api/2/eur_rur/ticker'
     }
+    DEFAULT_CURRENCIES   = { from: "BTC", to: "USD" }
 
 
     def rate_for(from,to)
-      raise CurrencyNotSupported unless ["BTC", "USD", "EUR", "RUB"].include?(to) && ["BTC", "USD", "EUR", "RUB"].include?(from)
       super
       rate = rate_to_f(currency_pair_rate(to,from))
       invert_rate(from,to,rate)
@@ -28,6 +28,14 @@ module CurrencyRate
         _invert_rate(rate)
       else
         rate
+      end
+    end
+
+    def supported_currency_pairs
+      cache_supported_currency_pairs do
+        @rates.each do |k,v|
+          @supported_currency_pairs << k.sub("_", "/").upcase
+        end
       end
     end
 
