@@ -40,6 +40,10 @@ module CurrencyRate
     to == 'BTC' ? result.round(9) : result.round(2)
   end
 
+  def self.default_currencies_for(adapter_name)
+    adapter_class(adapter_name).class::DEFAULT_CURRENCIES
+  end
+
   private
 
     def self.adapter_class(s)

@@ -28,5 +28,9 @@ describe CurrencyRate do
     expect(CurrencyRate.convert('Bitstamp', amount: 60181.81, from: 'RUB', to: 'USD')).to eq(1000)
   end
   
+  it "gets default currencies for an adapter" do
+    expect(CurrencyRate.default_currencies_for("Bitstamp")).to eq(["USD", "BTC"])
+  end
+  
   
 end
