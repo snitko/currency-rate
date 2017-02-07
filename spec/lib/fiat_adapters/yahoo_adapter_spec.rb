@@ -17,7 +17,7 @@ RSpec.describe CurrencyRate::YahooAdapter do
   it "finds the rate for currency code" do
     expect(@exchange_adapter.rate_for('EUR', 'USD')).to eq(1.08)
     expect(@exchange_adapter.rate_for('USD', 'EUR')).to eq(0.93)
-    expect(@exchange_adapter.rate_for('USD', 'RUB')).to eq(59.51)
+    expect(@exchange_adapter.rate_for('USD', 'RUB')).to eq(58.91)
     expect(@exchange_adapter.rate_for('RUB', 'USD')).to eq(0.02)
     expect( -> { @exchange_adapter.rate_for('USD', 'FEDcoin') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
