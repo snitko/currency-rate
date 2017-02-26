@@ -12,9 +12,10 @@ Dir["#{File.expand_path File.dirname(__FILE__)}/**/*.rb"].each { |f| require f }
 
 module CurrencyRate
 
-  def self.get(adapter_name, from, to, anchor_currency: nil)
+  def self.get(adapter_name, from, to, anchor_currency: nil, try_storage_on_fetching_failed: false)
 
     a = adapter_class(adapter_name)
+    a.try_storage_on_fetching_failed = try_storage_on_fetching_failed
 
     # Setting default values for anchor currency depending on
     # which adapter type is un use.
@@ -35,8 +36,8 @@ module CurrencyRate
     end
   end
 
-  def self.convert(adapter_name, amount:, from:, to:, anchor_currency: nil)
-    result = BigDecimal.new(amount.to_s)*BigDecimal.new(get(adapter_name, from, to, anchor_currency: nil).to_s)
+  def self.convert(adapter_name, amount:, from:, to:, anchor_currency: nil, try_storage_on_fetching_failed: false)
+    result = BigDecimal.new(amount.to_s)*BigDecimal.new(get(adapter_name, from, to, anchor_currency: nil, try_storage_on_fetching_failed: try_storage_on_fetching_failed).to_s)
     to == 'BTC' ? result.round(9) : result.round(2)
   end
 

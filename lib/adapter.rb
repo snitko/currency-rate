@@ -5,6 +5,8 @@ module CurrencyRate
     class FetchingFailed       < Exception; end
     class CurrencyNotSupported < Exception; end
 
+    attr_accessor :try_storage_on_fetching_failed
+
     def initialize
       @storage = Storage.new
     end
@@ -31,11 +33,20 @@ module CurrencyRate
 
     def rate_for(from,to)
 
-      @storage.fetch(self.class.to_s) do
-        self.fetch_rates!
+      begin
+        @storage.fetch(self.class.to_s) { self.fetch_rates! }
+      rescue FetchingFailed => e
+        if @try_storage_on_fetching_failed
+          @rates = @storage.data[self.class.to_s][:content]
+        else
+          raise e
+        end
       end
 
       raise CurrencyNotSupported unless supports_currency_pair?(from,to)
+
+      # This method is further reloaded in Adapter classes, that's why
+      # here it doesn't really return anything useful!
 
     end
 
