@@ -23,6 +23,7 @@ module CurrencyRate
           @rates = JSON.parse(uri.read(read_timeout: 4))
         end
         @rates_updated_at = Time.now
+        @rates
       rescue Exception => e
         raise FetchingFailed
       end
