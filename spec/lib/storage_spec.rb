@@ -21,5 +21,12 @@ describe CurrencyRate::Storage do
     @storage.instance_variable_set(:@timeout, 1800)
     expect(@storage.fetch('hello_world') { '' }).to eq('hello')
   end
+
+  it "fetches from storage regardless if the timestamp expired if :force_from_storage is true" do
+    allow(@source).to receive(:get).twice.and_return('hi', 'hello')
+    @storage.fetch('hello_world') { @source.get }
+    @storage.instance_variable_set(:@timeout, 1800)
+    expect(@storage.fetch('hello_world') { '' }).to eq('hi')
+  end
   
 end

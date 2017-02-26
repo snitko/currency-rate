@@ -24,7 +24,6 @@ module CurrencyRate
         end
         @rates_updated_at = Time.now
       rescue Exception => e
-        # TODO: Try average rate adapter
         raise FetchingFailed
       end
     end
