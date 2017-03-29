@@ -35,7 +35,7 @@ module CurrencyRate
     def rate_for(from,to)
 
       begin
-        self.storage.fetch(self.class.to_s) { self.fetch_rates! }
+        @rates = self.storage.fetch(self.class.to_s) { self.fetch_rates! }
       rescue FetchingFailed => e
         if @try_storage_on_fetching_failed
           @rates = self.storage.data[self.class.to_s][:content]

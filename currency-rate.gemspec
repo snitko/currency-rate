@@ -6,12 +6,12 @@
 
 Gem::Specification.new do |s|
   s.name = "currency-rate"
-  s.version = "0.3.6"
+  s.version = "0.3.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Roman Snitko"]
-  s.date = "2017-02-06"
+  s.date = "2017-03-29"
   s.description = "Fetches exchange rates from various sources and does the conversion"
   s.email = "roman.snitko@gmail.com"
   s.extra_rdoc_files = [
