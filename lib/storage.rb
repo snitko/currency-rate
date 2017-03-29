@@ -3,9 +3,10 @@ module CurrencyRate
 
     attr_reader :data
 
-    def initialize(timeout: 1800)
-      @timeout = timeout
-      @data    = {}
+    def initialize(adapter_name: nil, timeout: 1800)
+      @timeout      = timeout
+      @data         = {}
+      @adapter_name = adapter_name
     end
 
     def fetch(key)

@@ -9,7 +9,7 @@ module CurrencyRate
     attr_reader   :storage
 
     def initialize
-      @storage = Storage.new
+      @storage = Storage.new(adapter_name: self.class.to_s)
     end
 
     def fetch_rates!
