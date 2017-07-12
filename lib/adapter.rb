@@ -33,7 +33,6 @@ module CurrencyRate
     end
 
     def rate_for(from,to)
-
       begin
         @rates = self.storage.fetch(self.class.to_s) { self.fetch_rates! }
       rescue FetchingFailed => e
