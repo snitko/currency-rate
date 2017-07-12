@@ -17,6 +17,8 @@ RSpec.describe CurrencyRate::CoinbaseAdapter do
   it "finds the rate for currency code" do
     expect(@exchange_adapter.rate_for('BTC', 'USD')).to eq(1019.98)
     expect(@exchange_adapter.rate_for('USD', 'BTC')).to eq(0.00098)
+    expect(@exchange_adapter.rate_for('LTC', 'USD')).to eq(3.95)
+    expect(@exchange_adapter.rate_for('USD', 'LTC')).to eq(0.253165)
     expect( -> { @exchange_adapter.rate_for('FEDcoin', 'USD') }).to raise_error(CurrencyRate::Adapter::CurrencyNotSupported)
   end
 

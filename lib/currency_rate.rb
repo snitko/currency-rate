@@ -19,7 +19,7 @@ module CurrencyRate
 
     # Setting default values for anchor currency depending on
     # which adapter type is un use.
-    anchor_currency = if a.kind_of?(BtcAdapter)
+    anchor_currency ||= if a.kind_of?(BtcAdapter)
       'BTC' if anchor_currency.nil?
     else
       'USD' if anchor_currency.nil?
