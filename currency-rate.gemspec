@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Roman Snitko"]
-  s.date = "2017-07-12"
+  s.date = "2017-07-26"
   s.description = "Fetches exchange rates from various sources and does the conversion"
   s.email = "roman.snitko@gmail.com"
   s.extra_rdoc_files = [
