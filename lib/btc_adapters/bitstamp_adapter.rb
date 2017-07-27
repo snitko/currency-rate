@@ -4,9 +4,12 @@ module CurrencyRate
     FETCH_URL = {
       'btc_usd' => 'https://www.bitstamp.net/api/v2/ticker/btcusd/',
       'btc_eur' => 'https://www.bitstamp.net/api/v2/ticker/btceur/',
+      'ltc_usd' => 'https://www.bitstamp.net/api/v2/ticker/ltcusd/',
+      'ltc_eur' => 'https://www.bitstamp.net/api/v2/ticker/ltceur/',
       'eur_usd' => 'https://www.bitstamp.net/api/v2/ticker/eurusd/'
     }
     DEFAULT_CURRENCIES = ["USD", "BTC"]
+    CRYPTO_CURRENCIES = ["BTC", "LTC"]
 
     def rate_for(from,to)
       super
@@ -16,7 +19,7 @@ module CurrencyRate
 
     # Because Bitstamp has USD/EUR pair
     def invert_rate(from,to,rate)
-      if to == 'BTC' || (from == 'USD' && to == 'EUR')
+      if CRYPTO_CURRENCIES.include?(to) || (from == 'USD' && to == 'EUR')
         _invert_rate(rate)
       else
         rate
