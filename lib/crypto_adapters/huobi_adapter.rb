@@ -1,13 +1,12 @@
 module CurrencyRate
-  class OkcoinAdapter < BtcAdapter
+  class HuobiAdapter < CryptoAdapter
 
     FETCH_URL = {
-      'ltc_usd' => 'https://www.okcoin.com/api/v1/ticker.do?symbol=ltc_usd',
-      'btc_usd' => 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd',
-      'ltc_cny' => 'https://www.okcoin.cn/api/ticker.do?symbol=ltc_cny',
-      'btc_cny' => 'https://www.okcoin.cn/api/ticker.do?symbol=btc_cny'
+      'btc_cny' => 'http://api.huobi.com/staticmarket/ticker_btc_json.js',
+      'ltc_cny' => 'http://api.huobi.com/staticmarket/ticker_ltc_json.js'
     }
     DEFAULT_CURRENCIES = ["CNY", "BTC"]
+    SUPPORTED_CRYPTO_CURRENCIES = ["BTC", "LTC"]
 
     def rate_for(from,to)
       super
@@ -18,12 +17,11 @@ module CurrencyRate
     def currency_pair_rate(currency1, currency2)
       rate = @rates["#{currency1.downcase}_#{currency2.downcase}"] || @rates["#{currency2.downcase}_#{currency1.downcase}"]
       raise CurrencyNotSupported unless rate
-      rate['ticker']['last']
+      rate["ticker"]['last']
     end
 
-    # Because OKCoin has LTC
     def invert_rate(from,to,rate)
-      if ['BTC', 'LTC'].include?(to)
+      if self.class::SUPPORTED_CRYPTO_CURRENCIES.include?(to)
         _invert_rate(rate)
       else
         rate

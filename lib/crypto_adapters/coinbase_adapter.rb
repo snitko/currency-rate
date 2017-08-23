@@ -1,8 +1,9 @@
 module CurrencyRate
-  class CoinbaseAdapter < BtcAdapter
+  class CoinbaseAdapter < CryptoAdapter
 
     FETCH_URL = 'https://coinbase.com/api/v1/currencies/exchange_rates'
     DEFAULT_CURRENCIES = ["USD", "BTC"]
+    SUPPORTED_CRYPTO_CURRENCIES = ["BTC", "LTC"]
 
     def rate_for(from,to)
       super

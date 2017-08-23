@@ -1,5 +1,5 @@
 module CurrencyRate
-  class KrakenAdapter < BtcAdapter
+  class KrakenAdapter < CryptoAdapter
 
     FETCH_URL = {
       "usd_btc" => 'https://api.kraken.com/0/public/Ticker?pair=xbtusd',
@@ -8,7 +8,7 @@ module CurrencyRate
       "eur_ltc" => 'https://api.kraken.com/0/public/Ticker?pair=ltceur',
     }
     DEFAULT_CURRENCIES = ["USD", "BTC"]
-    CRYPTO_CURRENCIES = ["BTC", "LTC"]
+    SUPPORTED_CRYPTO_CURRENCIES = ["BTC", "LTC"]
     ASSET_MAP = {
       "BTC" => "XBT",
     }
@@ -21,8 +21,8 @@ module CurrencyRate
 
     def currency_pair_rate(currency1, currency2)
       rate = @rates["#{currency1.downcase}_#{currency2.downcase}"] || @rates["#{currency2.downcase}_#{currency1.downcase}"]
-      raise CurrencyNotSupported unless rate || ([currency1, currency2] & CRYPTO_CURRENCIES).any?
-      fiat, crypto = CRYPTO_CURRENCIES.include?(currency1) ? [currency2, currency1] : [currency1, currency2]
+      raise CurrencyNotSupported unless rate || ([currency1, currency2] & self.class::SUPPORTED_CRYPTO_CURRENCIES).any?
+      fiat, crypto = self.class::SUPPORTED_CRYPTO_CURRENCIES.include?(currency1) ? [currency2, currency1] : [currency1, currency2]
       rate['result']["X#{ta(crypto)}Z#{ta(fiat)}"]['c'].first
     end
 
