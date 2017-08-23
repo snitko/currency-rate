@@ -1,8 +1,9 @@
 module CurrencyRate
-  class LocalbitcoinsAdapter < BtcAdapter
+  class LocalbitcoinsAdapter < CryptoAdapter
 
     FETCH_URL = 'https://localbitcoins.com/bitcoinaverage/ticker-all-currencies/'
     DEFAULT_CURRENCIES = ["USD", "BTC"]
+    SUPPORTED_CRYPTO_CURRENCIES = ["BTC"]
 
     def rate_for(from,to)
       super
@@ -13,7 +14,7 @@ module CurrencyRate
 
     def currency_pair_rate(currency1, currency2)
       rate = @rates[currency1] || @rates[currency2]
-      raise CurrencyNotSupported if !rate || !([currency1, currency2].include?('BTC'))
+      raise CurrencyNotSupported if !rate || !([currency1, currency2] & self.class::SUPPORTED_CRYPTO_CURRENCIES).any?
       rate['rates']['last']
     end
 

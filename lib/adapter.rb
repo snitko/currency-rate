@@ -5,6 +5,8 @@ module CurrencyRate
     class FetchingFailed       < Exception; end
     class CurrencyNotSupported < Exception; end
 
+    DECIMAL_PRECISION = nil
+
     attr_accessor :try_storage_on_fetching_failed
     attr_reader   :storage
 
@@ -97,13 +99,8 @@ module CurrencyRate
 
       def _invert_rate(rate)
         r = (BigDecimal.new('1')/BigDecimal.new(rate.to_s))
-        r = r.round(decimal_precision) if decimal_precision
+        r = r.round(self.class::DECIMAL_PRECISION) if self.class::DECIMAL_PRECISION
         r
       end
-
-      def decimal_precision
-        nil
-      end
-
   end
 end

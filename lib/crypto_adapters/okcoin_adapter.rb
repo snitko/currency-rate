@@ -1,15 +1,14 @@
 module CurrencyRate
-  class BtceAdapter < BtcAdapter
+  class OkcoinAdapter < CryptoAdapter
 
     FETCH_URL = {
-      'btc_usd' => 'https://btc-e.com/api/2/btc_usd/ticker',
-      'btc_eur' => 'https://btc-e.com/api/2/btc_eur/ticker',
-      'btc_rub' => 'https://btc-e.com/api/2/btc_rur/ticker',
-      'usd_rub' => 'https://btc-e.com/api/2/usd_rur/ticker',
-      'eur_rub' => 'https://btc-e.com/api/2/eur_rur/ticker'
+      'ltc_usd' => 'https://www.okcoin.com/api/v1/ticker.do?symbol=ltc_usd',
+      'btc_usd' => 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd',
+      'ltc_cny' => 'https://www.okcoin.cn/api/ticker.do?symbol=ltc_cny',
+      'btc_cny' => 'https://www.okcoin.cn/api/ticker.do?symbol=btc_cny'
     }
-    DEFAULT_CURRENCIES = ["USD", "BTC"]
-
+    DEFAULT_CURRENCIES = ["CNY", "BTC"]
+    SUPPORTED_CRYPTO_CURRENCIES = ["BTC", "LTC"]
 
     def rate_for(from,to)
       super
@@ -23,8 +22,9 @@ module CurrencyRate
       rate['ticker']['last']
     end
 
+    # Because OKCoin has LTC
     def invert_rate(from,to,rate)
-      if to == 'BTC' || (from == 'RUB' && to == 'USD') || (from == 'RUB' && to == 'EUR')
+      if self.class::SUPPORTED_CRYPTO_CURRENCIES.include?(to)
         _invert_rate(rate)
       else
         rate

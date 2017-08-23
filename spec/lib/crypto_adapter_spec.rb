@@ -1,13 +1,15 @@
 require 'spec_helper'
 
-RSpec.describe CurrencyRate::BtcAdapter do
+RSpec.describe CurrencyRate::CryptoAdapter do
 
   class CurrencyRate::Adapter
     FETCH_URL            = ''
     DEFAULT_CURRENCIES   = { from: "BTC", to: "USD" }
   end
 
-  class SomeExchangeAdapter < CurrencyRate::BtcAdapter
+  class SomeExchangeAdapter < CurrencyRate::CryptoAdapter
+    SUPPORTED_CRYPTO_CURRENCIES = ["BTC"]
+
     def rate_for(from,to)
       super
       rate = rate_to_f(750)
@@ -20,7 +22,7 @@ RSpec.describe CurrencyRate::BtcAdapter do
   end
 
   before(:each) do
-    @exchange_adapter = CurrencyRate::BtcAdapter.instance
+    @exchange_adapter = CurrencyRate::CryptoAdapter.instance
   end
 
   it "inverts currency rate when needed" do
