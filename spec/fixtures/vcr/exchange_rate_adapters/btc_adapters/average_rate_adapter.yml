@@ -120,6 +120,124 @@ http_interactions:
   recorded_at: Mon, 06 Feb 2017 05:24:36 GMT
 - request:
     method: get
+    uri: https://www.bitstamp.net/api/v2/ticker/ltcusd/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 06 Feb 2017 05:24:29 GMT
+      Etag:
+      - W/"61580-b8-547d5d87cce4a"
+      Last-Modified:
+      - Mon, 06 Feb 2017 05:24:29 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - incap_ses_526_99025=rZ+ZC6n/gWdhQVcebLpMB4wImFgAAAAAPzEv9wCFV+bROOkr9Wx0Sg==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=P24SAcIds0Uk1n6/8F1n9AAAAAAxZWPGGV+bIlBfqaL6Kc1J; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=ODI6i9FxRBaKgUDHQdjhzYwImFgAAAAAQUIPAAAAAAC1HRMSoFGdC16PkB2u683N;
+        expires=Mon, 05 Feb 2018 09:10:53 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 3-13530015-13528068 2NNN RT(1486358667779 431) q(0 0 0 -1) r(4 4)
+      X-Cdn:
+      - Incapsula
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"high": "42.86", "last": "41.01", "timestamp": "1501173770", "bid":
+        "41.06", "vwap": "41.85", "volume": "19272.83690189", "low": "40.75",
+        "ask": "41.35", "open": "42.10"}'
+    http_version: 
+  recorded_at: Mon, 06 Feb 2017 05:24:29 GMT
+- request:
+    method: get
+    uri: https://www.bitstamp.net/api/v2/ticker/ltceur/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 06 Feb 2017 05:24:29 GMT
+      Etag:
+      - W/"61580-b8-547d5d87cce4a"
+      Last-Modified:
+      - Mon, 06 Feb 2017 05:24:29 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - incap_ses_526_99025=rZ+ZC6n/gWdhQVcebLpMB4wImFgAAAAAPzEv9wCFV+bROOkr9Wx0Sg==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=P24SAcIds0Uk1n6/8F1n9AAAAAAxZWPGGV+bIlBfqaL6Kc1J; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=ODI6i9FxRBaKgUDHQdjhzYwImFgAAAAAQUIPAAAAAAC1HRMSoFGdC16PkB2u683N;
+        expires=Mon, 05 Feb 2018 09:10:53 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 3-13530015-13528068 2NNN RT(1486358667779 431) q(0 0 0 -1) r(4 4)
+      X-Cdn:
+      - Incapsula
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"high": "36.69", "last": "35.62", "timestamp": "1501173975", "bid":
+        "35.49", "vwap": "35.97", "volume": "2442.41279776", "low": "35.40",
+        "ask": "35.80", "open": "36.26"}'
+    http_version: 
+  recorded_at: Mon, 06 Feb 2017 05:24:29 GMT
+- request:
+    method: get
     uri: https://www.bitstamp.net/api/v2/ticker/eurusd/
     body:
       encoding: US-ASCII

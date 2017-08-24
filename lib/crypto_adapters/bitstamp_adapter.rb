@@ -4,10 +4,12 @@ module CurrencyRate
     FETCH_URL = {
       'btc_usd' => 'https://www.bitstamp.net/api/v2/ticker/btcusd/',
       'btc_eur' => 'https://www.bitstamp.net/api/v2/ticker/btceur/',
+      'ltc_usd' => 'https://www.bitstamp.net/api/v2/ticker/ltcusd/',
+      'ltc_eur' => 'https://www.bitstamp.net/api/v2/ticker/ltceur/',
       'eur_usd' => 'https://www.bitstamp.net/api/v2/ticker/eurusd/'
     }
     DEFAULT_CURRENCIES = ["USD", "BTC"]
-    SUPPORTED_CRYPTO_CURRENCIES = ["BTC"]
+    SUPPORTED_CRYPTO_CURRENCIES = ["BTC", "LTC"]
 
     def rate_for(from,to)
       super
