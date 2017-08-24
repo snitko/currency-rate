@@ -36,7 +36,7 @@ module CurrencyRate
       end
       raise CurrencyNotSupported unless rate
       rate = BigDecimal.new(rate['Rate'])
-      rate.round(decimal_precision)
+      rate.round(self.class::DECIMAL_PRECISION)
     end
 
     def supported_currency_pairs

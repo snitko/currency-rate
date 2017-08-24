@@ -1,8 +1,9 @@
 module CurrencyRate
-  class BTCChinaAdapter < BtcAdapter
+  class BTCChinaAdapter < CryptoAdapter
 
     FETCH_URL = 'https://data.btcchina.com/data/ticker'
     DEFAULT_CURRENCIES = ["CNY", "BTC"]
+    SUPPORTED_CRYPTO_CURRENCIES = ["BTC"]
 
     def rate_for(from,to)
       super

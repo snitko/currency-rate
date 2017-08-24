@@ -1,11 +1,16 @@
 module CurrencyRate
-  class BitfinexAdapter < BtcAdapter
+  class BtceAdapter < CryptoAdapter
 
     FETCH_URL = {
-      'btc_usd' => 'https://api.bitfinex.com/v1/pubticker/btcusd',
-      'ltc_usd' => 'https://api.bitfinex.com/v1/pubticker/ltcusd'
+      'btc_usd' => 'https://btc-e.com/api/2/btc_usd/ticker',
+      'btc_eur' => 'https://btc-e.com/api/2/btc_eur/ticker',
+      'btc_rub' => 'https://btc-e.com/api/2/btc_rur/ticker',
+      'usd_rub' => 'https://btc-e.com/api/2/usd_rur/ticker',
+      'eur_rub' => 'https://btc-e.com/api/2/eur_rur/ticker'
     }
     DEFAULT_CURRENCIES = ["USD", "BTC"]
+    SUPPORTED_CRYPTO_CURRENCIES = ["BTC"]
+
 
     def rate_for(from,to)
       super
@@ -16,11 +21,11 @@ module CurrencyRate
     def currency_pair_rate(currency1, currency2)
       rate = @rates["#{currency1.downcase}_#{currency2.downcase}"] || @rates["#{currency2.downcase}_#{currency1.downcase}"]
       raise CurrencyNotSupported unless rate
-      rate['last_price']
+      rate['ticker']['last']
     end
 
     def invert_rate(from,to,rate)
-      if ['BTC', 'LTC'].include?(to)
+      if self.class::SUPPORTED_CRYPTO_CURRENCIES.include?(to) || (from == 'RUB' && to == 'USD') || (from == 'RUB' && to == 'EUR')
         _invert_rate(rate)
       else
         rate

@@ -1,5 +1,5 @@
 module CurrencyRate
-  class BitstampAdapter < BtcAdapter
+  class BitstampAdapter < CryptoAdapter
 
     FETCH_URL = {
       'btc_usd' => 'https://www.bitstamp.net/api/v2/ticker/btcusd/',
@@ -7,6 +7,7 @@ module CurrencyRate
       'eur_usd' => 'https://www.bitstamp.net/api/v2/ticker/eurusd/'
     }
     DEFAULT_CURRENCIES = ["USD", "BTC"]
+    SUPPORTED_CRYPTO_CURRENCIES = ["BTC"]
 
     def rate_for(from,to)
       super
@@ -16,7 +17,7 @@ module CurrencyRate
 
     # Because Bitstamp has USD/EUR pair
     def invert_rate(from,to,rate)
-      if to == 'BTC' || (from == 'USD' && to == 'EUR')
+      if self.class::SUPPORTED_CRYPTO_CURRENCIES.include?(to) || (from == 'USD' && to == 'EUR')
         _invert_rate(rate)
       else
         rate

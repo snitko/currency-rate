@@ -1,11 +1,12 @@
 module CurrencyRate
-  class HuobiAdapter < BtcAdapter
+  class BitfinexAdapter < CryptoAdapter
 
     FETCH_URL = {
-      'btc_cny' => 'http://api.huobi.com/staticmarket/ticker_btc_json.js',
-      'ltc_cny' => 'http://api.huobi.com/staticmarket/ticker_ltc_json.js'
+      'btc_usd' => 'https://api.bitfinex.com/v1/pubticker/btcusd',
+      'ltc_usd' => 'https://api.bitfinex.com/v1/pubticker/ltcusd'
     }
-    DEFAULT_CURRENCIES = ["CNY", "BTC"]
+    DEFAULT_CURRENCIES = ["USD", "BTC"]
+    SUPPORTED_CRYPTO_CURRENCIES = ["BTC", "LTC"]
 
     def rate_for(from,to)
       super
@@ -16,11 +17,11 @@ module CurrencyRate
     def currency_pair_rate(currency1, currency2)
       rate = @rates["#{currency1.downcase}_#{currency2.downcase}"] || @rates["#{currency2.downcase}_#{currency1.downcase}"]
       raise CurrencyNotSupported unless rate
-      rate["ticker"]['last']
+      rate['last_price']
     end
 
     def invert_rate(from,to,rate)
-      if ['BTC', 'LTC'].include?(to)
+      if self.class::SUPPORTED_CRYPTO_CURRENCIES.include?(to)
         _invert_rate(rate)
       else
         rate
