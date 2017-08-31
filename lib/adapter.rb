@@ -2,8 +2,8 @@ module CurrencyRate
   class Adapter
     include Singleton
 
-    class FetchingFailed       < Exception; end
-    class CurrencyNotSupported < Exception; end
+    class FetchingFailed       < StandardError; end
+    class CurrencyNotSupported < StandardError; end
 
     DECIMAL_PRECISION = nil
 
