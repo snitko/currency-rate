@@ -12,7 +12,7 @@ module CurrencyRate
   end
 
   def self.configuration
-    Configuration.new
+    @configuration ||= Configuration.new
   end
 
   def self.configure
