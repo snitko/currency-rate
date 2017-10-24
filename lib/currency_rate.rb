@@ -3,6 +3,7 @@ require "json"
 
 require "configuration"
 require "adapter"
+require "synchronizer"
 
 Dir["#{File.expand_path File.dirname(__FILE__)}/**/*.rb"].each { |f| require f }
 
@@ -23,7 +24,7 @@ module CurrencyRate
     @synchronizer ||= Synchronizer.new
   end
 
-  def self.sync
+  def self.sync!
     synchronizer.sync!
   end
 
