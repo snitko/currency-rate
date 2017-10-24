@@ -18,4 +18,16 @@ module CurrencyRate
   def self.configure
     yield(configuration)
   end
+
+  def self.synchronizer
+    @synchronizer ||= Synchronizer.new
+  end
+
+  def self.sync
+    synchronizer.sync!
+  end
+
+  def self.root
+    File.expand_path("../", File.dirname(__FILE__))
+  end
 end
