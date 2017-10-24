@@ -1,13 +1,26 @@
-require_relative "../lib/currency_rate"
-require 'webmock/rspec'
-require 'vcr'
+require "yaml"
+require "byebug"
+require "webmock/rspec"
 
-VCR.configure do |config|
-  config.cassette_library_dir = 'spec/fixtures/vcr'
-  config.hook_into :webmock
+require_relative "../lib/currency_rate"
+
+def root
+  File.expand_path("../", File.dirname(__FILE__))
 end
 
-if ENV['VCR_OFF']
-  WebMock.allow_net_connect!
-  VCR.turn_off! ignore_cassettes: true
+def exchange_data_for(name)
+  YAML.load_file File.join(root, "spec/fixtures/adapters/#{name}_adapter.yml")
+end
+
+def normalized_data_for(name)
+  floating = YAML.load_file File.join(root, "spec/fixtures/adapters/normalized/#{name}_adapter.yml")
+  floating.each { |k, v| floating[k] = BigDecimal.new(v.to_s) if k != "anchor" }
+end
+
+def data_for(name)
+  [exchange_data_for(name), normalized_data_for(name)]
+end
+
+RSpec.configure do |config|
+  config.default_formatter = "doc"
 end

@@ -14,3 +14,7 @@ doc
 
 # jeweler generated
 pkg
+
+.byebug_history
+
+Gemfile.lock

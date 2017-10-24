@@ -1,0 +1,40 @@
+ltc_usd:
+  date: '1490764122'
+  ticker:
+    buy: '4.166'
+    high: '4.215'
+    last: '4.18'
+    low: '4.1'
+    sell: '4.2'
+    vol: '27446.231'
+btc_usd:
+  date: '1490764123'
+  ticker:
+    buy: '1026.5'
+    high: '1062.78'
+    last: '1026.4'
+    low: '1011.15'
+    sell: '1028.48'
+    vol: '3593.469'
+ltc_cny:
+  date: '1490764125'
+  ticker:
+    buy: '27.4'
+    change: "-0.18"
+    changeRate: "-0.65%"
+    high: '27.81'
+    last: '27.45'
+    low: '27.21'
+    sell: '27.45'
+    vol: '166979.623'
+btc_cny:
+  date: '1490764126'
+  ticker:
+    buy: '6900.0'
+    change: "-85.32"
+    changeRate: "-1.22%"
+    high: '7039.99'
+    last: '6900.00'
+    low: '6830.0'
+    sell: '6911.39'
+    vol: '7150.402'

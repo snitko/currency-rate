@@ -1,0 +1,22 @@
+btc_cny:
+  time: '1490764111'
+  ticker:
+    symbol: btccny
+    open: 6955.1
+    last: 6918.06
+    low: 6856.0
+    high: 7138.0
+    vol: 5661.5942
+    buy: 6917.22
+    sell: 6918.06
+ltc_cny:
+  time: '1490764083'
+  ticker:
+    symbol: ltccny
+    open: 27.3
+    last: 27.31
+    low: 27.2
+    high: 27.48
+    vol: 110957.8191
+    buy: 27.32
+    sell: 27.33
