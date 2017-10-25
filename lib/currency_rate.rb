@@ -34,6 +34,18 @@ module CurrencyRate
     yield(configuration)
   end
 
+  def self.fetcher
+    @fetcher ||= Fetcher.new
+  end
+
+  def self.fetch_crypto(exchange, from, to)
+    fetcher.fetch_crypto(exchange, from, to)
+  end
+
+  def self.fetch_fiat(from, to)
+    fetcher.fetch_fiat(from, to)
+  end
+
   def self.synchronizer
     @synchronizer ||= Synchronizer.new
   end
