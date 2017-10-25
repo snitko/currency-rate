@@ -11,10 +11,21 @@ RSpec.describe CurrencyRate::FileStorage do
   describe "#read" do
     before do
       allow(File).to receive(:read).and_return(@serialized_data)
+      allow(File).to receive(:exist?).and_return(true)
     end
 
     it "returns deserialized data from file" do
       expect(@storage.read("exchange")).to eq(@data)
+    end
+
+    context "when exchange file doesn't exist" do
+      before do
+        allow(File).to receive(:exist?).and_return(false)
+      end
+
+      it "returns nil" do
+        expect(@storage.read("exchange")).to be_nil
+      end
     end
   end
 

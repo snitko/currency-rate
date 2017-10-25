@@ -9,11 +9,13 @@ module CurrencyRate
     end
 
     def read(exchange_name)
-      @serializer.deserialize File.read(path_for exchange_name)
+      path = path_for exchange_name.downcase
+      return nil unless File.exist?(path)
+      @serializer.deserialize File.read(path)
     end
 
     def write(exchange_name, data = "")
-      File.write path_for(exchange_name), @serializer.serialize(data)
+      File.write path_for(exchange_name.downcase), @serializer.serialize(data)
     end
 
     def path_for(exchange_name)
