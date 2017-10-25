@@ -6,12 +6,8 @@ module CurrencyRate
       @storage = storage || FileStorage.new
     end
 
-    def method_missing(m, *args, &block)
-      self.send(:adapters, m[0..-10]) if m.to_s.end_with? "_adapters"
-    end
-
     def sync!
-      [fiat_adapters, crypto_adapters].each do |adapters|
+      [CurrencyRate.fiat_adapters, CurrencyRate.crypto_adapters].each do |adapters|
         adapters.each do |adapter_name|
           begin
             adapter = CurrencyRate::const_get(adapter_name).instance
@@ -26,10 +22,5 @@ module CurrencyRate
       end
     end
 
-    def adapters(type)
-      Dir[File.join CurrencyRate.root, "lib/adapters/#{type}"].map do |file|
-        File.basename(file, ".rb").camelize
-      end
-    end
   end
 end
