@@ -3,6 +3,7 @@ require "json"
 
 require "configuration"
 require "adapter"
+require "fetcher"
 require "synchronizer"
 
 Dir["#{File.expand_path File.dirname(__FILE__)}/**/*.rb"].each { |f| require f }

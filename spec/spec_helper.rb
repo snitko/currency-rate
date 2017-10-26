@@ -4,6 +4,8 @@ require "webmock/rspec"
 
 require_relative "../lib/currency_rate"
 
+Dir[File.join CurrencyRate.root, "spec/support/**/*.rb"].each { |f| require f }
+
 def exchange_data_for(name)
   YAML.load_file File.join(CurrencyRate.root, "spec/fixtures/adapters/#{name}_adapter.yml")
 end
