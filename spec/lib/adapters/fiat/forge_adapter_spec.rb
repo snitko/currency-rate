@@ -3,6 +3,8 @@ require "spec_helper"
 RSpec.describe CurrencyRate::ForgeAdapter do
   before(:all) { @data, @normalized = data_for :forge }
 
+  before { stub_request(:get, /1forge/).to_return(body: @data) }
+
   before { @adapter = CurrencyRate::ForgeAdapter.instance }
 
   describe "#normalize" do

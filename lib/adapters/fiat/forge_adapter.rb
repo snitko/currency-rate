@@ -4,6 +4,7 @@ module CurrencyRate
     ANCHOR_CURRENCY = "USD"
     FETCH_URL = "https://forex.1forge.com/1.0.2/quotes?pairs=" +
       SUPPORTED_CURRENCIES.map { |c| "#{ANCHOR_CURRENCY}#{c}" }.join(",")
+    API_KEY_PARAMETER = "api_key"
 
     def normalize(data)
       super
@@ -12,11 +13,6 @@ module CurrencyRate
         rates[rate["symbol"].sub(self.class::ANCHOR_CURRENCY, "")] = BigDecimal.new(rate["price"].to_s)
       end
       rates
-    end
-
-    def exchange_data
-      return nil if CurrencyRate.configuration.forge_api_key.nil?
-      super
     end
 
   end
