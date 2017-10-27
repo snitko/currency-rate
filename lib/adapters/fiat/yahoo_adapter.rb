@@ -23,7 +23,7 @@ module CurrencyRate
     )
 
     def normalize(data)
-      super
+      return nil unless super
       rates = { "anchor" => self.class::ANCHOR_CURRENCY }
       data["query"]["results"]["rate"].each do |rate|
         rates[rate["Name"].split("/")[1]] = BigDecimal.new(rate["Rate"].to_s)

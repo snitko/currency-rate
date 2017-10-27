@@ -12,7 +12,7 @@ module CurrencyRate
     }
 
     def normalize(data)
-      super
+      return nil unless super
       data.reduce({}) do |result, (pair, value)|
         crypto, fiat = pair.split("_")
         result[pair] = BigDecimal.new(value["result"]["X#{ta(crypto)}Z#{ta(fiat)}"]["c"].first.to_s)

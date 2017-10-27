@@ -3,7 +3,7 @@ module CurrencyRate
     FETCH_URL = 'https://data.btcchina.com/data/ticker'
 
     def normalize(data)
-      super
+      return nil unless super
       { "btc_cny" => BigDecimal.new(data["ticker"]["last"].to_s) }
     end
 

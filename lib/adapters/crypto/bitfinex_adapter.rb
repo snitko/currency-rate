@@ -6,7 +6,7 @@ module CurrencyRate
     }
 
     def normalize(data)
-      super
+      return nil unless super
       data.reduce({}) do |result, (pair, value)|
         result[pair] = BigDecimal.new(value["last_price"].to_s)
         result

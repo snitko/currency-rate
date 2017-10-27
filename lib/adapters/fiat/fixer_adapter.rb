@@ -4,7 +4,7 @@ module CurrencyRate
     FETCH_URL = "http://api.fixer.io/latest?base=usd"
 
     def normalize(data)
-      super
+      return nil unless super
       rates = { "anchor" => ANCHOR_CURRENCY }
       data["rates"].each do |k, v|
         rates[k] = BigDecimal.new(v.to_s)
