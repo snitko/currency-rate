@@ -1,5 +1,5 @@
 module CurrencyRate
-  class BTCChinaAdapter < Adapter
+  class BtcChinaAdapter < Adapter
     FETCH_URL = 'https://data.btcchina.com/data/ticker'
 
     def normalize(data)

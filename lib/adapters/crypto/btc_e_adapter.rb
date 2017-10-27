@@ -1,5 +1,5 @@
 module CurrencyRate
-  class BTCEAdapter < Adapter
+  class BtcEAdapter < Adapter
     FETCH_URL = {
       'btc_usd' => 'https://btc-e.com/api/2/btc_usd/ticker',
       'btc_eur' => 'https://btc-e.com/api/2/btc_eur/ticker',

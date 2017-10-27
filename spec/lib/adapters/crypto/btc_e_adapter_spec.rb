@@ -1,9 +1,9 @@
 require "spec_helper"
 
-RSpec.describe CurrencyRate::BTCEAdapter do
+RSpec.describe CurrencyRate::BtcEAdapter do
   before(:all) { @data, @normalized = data_for :btce }
 
-  before { @adapter = CurrencyRate::BTCEAdapter.instance }
+  before { @adapter = CurrencyRate::BtcEAdapter.instance }
 
   describe "#normalize" do
     it "brings data to canonical form" do

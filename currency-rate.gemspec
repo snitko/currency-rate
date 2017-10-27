@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
   s.authors = ["Roman Snitko".freeze]
-  s.date = "2017-10-26"
+  s.date = "2017-10-27"
   s.description = "Fetches exchange rates from various sources and does the conversion".freeze
   s.email = "roman.snitko@gmail.com".freeze
   s.extra_rdoc_files = [
@@ -32,7 +32,6 @@ Gem::Specification.new do |s|
     "lib/adapters/crypto/bitpay_adapter.rb",
     "lib/adapters/crypto/bitstamp_adapter.rb",
     "lib/adapters/crypto/btc_china_adapter.rb",
-    "lib/adapters/crypto/btce_adapter.rb",
     "lib/adapters/crypto/coinbase_adapter.rb",
     "lib/adapters/crypto/huobi_adapter.rb",
     "lib/adapters/crypto/kraken_adapter.rb",
