@@ -1,5 +1,6 @@
 require "singleton"
 require "json"
+require "http"
 
 require "configuration"
 require "adapter"
@@ -22,7 +23,7 @@ module CurrencyRate
   end
 
   def self.adapters(type)
-    Dir[File.join self.root, "lib/adapters/#{type}"].map do |file|
+    Dir[File.join self.root, "lib/adapters/#{type}/*"].map do |file|
       File.basename(file, ".rb").camelize
     end
   end

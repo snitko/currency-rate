@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-EXCHANGE_STUB_DOMAIN = "http://exchange_stub.com"
+EXCHANGE_STUB_DOMAIN = "http://exchange.stub.com"
 
 RESPONSE = {
   "btc_usd" => 5000,
