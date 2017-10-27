@@ -1,3 +1,4 @@
+require "logger"
 require "singleton"
 require "json"
 require "http"
@@ -46,6 +47,15 @@ module CurrencyRate
 
   def self.fetch_fiat(from, to)
     fetcher.fetch_fiat(from, to)
+  end
+
+  def self.logger
+    return @logger if @logger
+    @logger = Logger.new(configuration.logger[:device])
+    @logger.progname = "CurrencyRate"
+    @logger.level = configuration.logger[:level]
+    @logger.formatter = configuration.logger[:formatter] if configuration.logger[:formatter]
+    @logger
   end
 
   def self.synchronizer

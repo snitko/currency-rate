@@ -8,13 +8,17 @@ module CurrencyRate
     def fetch_rates
       begin
         normalize exchange_data
-      rescue
+      rescue StandardError => e
+        CurrencyRate.logger.error(e)
         nil
       end
     end
 
     def normalize(data)
-      return nil if data.nil?
+      if data.nil?
+        CurrencyRate.logger.warn("#{self.class.name}#normalize: data is nil")
+        return nil
+      end
     end
 
     def exchange_data
@@ -29,7 +33,8 @@ module CurrencyRate
         else
           request self.class::FETCH_URL
         end
-      rescue
+      rescue StandardError => e
+        CurrencyRate.logger.error(e)
         nil
       end
     end

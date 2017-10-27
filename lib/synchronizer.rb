@@ -12,10 +12,14 @@ module CurrencyRate
           begin
             adapter = CurrencyRate::const_get(adapter_name).instance
             rates = adapter.fetch_rates
-            next unless rates
+            unless rates
+              CurrencyRate.logger.warn("Synchronizer#sync!: rates for #{adapter_name} not found")
+              next
+            end
             exchange_name = adapter_name[0..-8].downcase
             @storage.write(exchange_name, rates)
-          rescue
+          rescue StandardError => e
+            CurrencyRate.logger.error(e)
             next
           end
         end

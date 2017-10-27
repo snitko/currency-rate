@@ -13,8 +13,11 @@ module CurrencyRate
       fiat = to.upcase
       pair = "#{from}_#{to}"
       rates = @storage.read(exchange)
-      # Rates for selected exchange don't exist
-      return nil if rates.nil?
+
+      if rates.nil?
+        CurrencyRate.logger.warn("Fetcher#fetch_crypto: rates for #{exchange} not found in storage <#{@storage.class.name}>")
+        return nil
+      end
       return BigDecimal.new(rates[pair]) if rates[pair]
 
       supported_crypto, supported_fiat = rates.keys.reduce([[], []]) do |result, rate|
@@ -23,8 +26,11 @@ module CurrencyRate
         result[1] << f
         result
       end.map { |x| x.uniq }
-      # Exchange doesn't support requested cryptocurrency
-      return nil unless supported_crypto.include?(crypto)
+
+      unless supported_crypto.include?(crypto)
+        CurrencyRate.logger.warn("Fetcher#fetch_crypto: #{exchange} doesn't support #{crypto}")
+        return nil
+      end
 
       # If requested pair not found and exchange supports requested cryptocurrency
       # then we can convert using another supported fiat currency as an anchor
@@ -41,7 +47,8 @@ module CurrencyRate
       end
 
       # We didn't find a way to fetch rate for requested pair
-      return nil
+      CurrencyRate.logger.warn("Fetcher#fetch_crypto: cannot fetch #{from}_#{to} from #{exchange}")
+      nil
     end
 
     def fetch_fiat(from, to)
@@ -55,6 +62,7 @@ module CurrencyRate
         return BigDecimal.new(1) / BigDecimal.new(rates[left]) if anchor == right && rates[left]
         return BigDecimal.new(rates[left]) / BigDecimal.new(rates[right]) if rates[left] && rates[right]
       end
+      CurrencyRate.logger.warn("Fetcher#fetch_fiat: rate for #{from}_#{to} not found")
       nil
     end
 

@@ -10,12 +10,16 @@ module CurrencyRate
 
     def read(exchange_name)
       path = path_for exchange_name.downcase
-      return nil unless File.exist?(path)
       @serializer.deserialize File.read(path)
+    rescue StandardError => e
+      CurrencyRate.logger.error(e)
+      nil
     end
 
     def write(exchange_name, data = "")
       File.write path_for(exchange_name.downcase), @serializer.serialize(data)
+    rescue StandardError => e
+      CurrencyRate.logger.error(e)
     end
 
     def path_for(exchange_name)
