@@ -1,4 +1,4 @@
-btc_usd:
+BTC_USD:
   error: []
   result:
     XXBTZUSD:
@@ -29,7 +29,7 @@ btc_usd:
       - '2613.99300'
       - '2615.00000'
       o: '2605.64100'
-btc_eur:
+BTC_EUR:
   error: []
   result:
     XXBTZEUR:
@@ -60,7 +60,7 @@ btc_eur:
       - '2288.25800'
       - '2290.77900'
       o: '2284.69200'
-ltc_usd:
+LTC_USD:
   error: []
   result:
     XLTCZUSD:
@@ -91,7 +91,7 @@ ltc_usd:
       - '51.59990'
       - '52.10031'
       o: '51.01002'
-ltc_eur:
+LTC_EUR:
   error: []
   result:
     XLTCZEUR:

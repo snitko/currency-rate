@@ -1,4 +1,4 @@
-btc_usd:
+BTC_USD:
   ticker:
     high: 1071.99
     low: 1009.045
@@ -10,7 +10,7 @@ btc_usd:
     sell: 1026
     updated: 1490764102
     server_time: 1490764104
-btc_eur:
+BTC_EUR:
   ticker:
     high: 993
     low: 937.22257
@@ -22,7 +22,7 @@ btc_eur:
     sell: 946
     updated: 1490764104
     server_time: 1490764105
-btc_rub:
+BTC_RUB:
   ticker:
     high: 62000
     low: 58745
@@ -34,7 +34,7 @@ btc_rub:
     sell: 59237.26001
     updated: 1490764104
     server_time: 1490764106
-usd_rub:
+USD_RUB:
   ticker:
     high: 58.5
     low: 57.803
@@ -46,7 +46,7 @@ usd_rub:
     sell: 58
     updated: 1490764106
     server_time: 1490764106
-eur_rub:
+EUR_RUB:
   ticker:
     high: 63.72296
     low: 61.57091

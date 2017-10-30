@@ -5,7 +5,7 @@ module CurrencyRate
     def normalize(data)
       return nil unless super
       data.reduce({}) do |result, (fiat, value)|
-        result["btc_#{fiat.downcase}"] = BigDecimal.new(value["rates"]["last"].to_s)
+        result["BTC_#{fiat.upcase}"] = BigDecimal.new(value["rates"]["last"].to_s)
         result
       end
     end

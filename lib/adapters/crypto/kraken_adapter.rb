@@ -1,10 +1,10 @@
 module CurrencyRate
   class KrakenAdapter < Adapter
     FETCH_URL = {
-      "btc_usd" => "https://api.kraken.com/0/public/Ticker?pair=xbtusd",
-      "btc_eur" => "https://api.kraken.com/0/public/Ticker?pair=xbteur",
-      "ltc_usd" => "https://api.kraken.com/0/public/Ticker?pair=ltcusd",
-      "ltc_eur" => "https://api.kraken.com/0/public/Ticker?pair=ltceur",
+      "BTC_USD" => "https://api.kraken.com/0/public/Ticker?pair=xbtusd",
+      "BTC_EUR" => "https://api.kraken.com/0/public/Ticker?pair=xbteur",
+      "LTC_USD" => "https://api.kraken.com/0/public/Ticker?pair=ltcusd",
+      "LTC_EUR" => "https://api.kraken.com/0/public/Ticker?pair=ltceur",
     }
 
     ASSET_MAP = {
@@ -21,8 +21,7 @@ module CurrencyRate
     end
 
     def translate_asset(asset)
-      uasset = asset.upcase
-      ASSET_MAP[uasset] || uasset
+      ASSET_MAP[asset] || asset
     end
     alias_method :ta, :translate_asset
 

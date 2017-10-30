@@ -1,4 +1,4 @@
-btc_usd:
+BTC_USD:
   mid: '1026.5'
   bid: '1026.4'
   ask: '1026.6'
@@ -7,7 +7,7 @@ btc_usd:
   high: '1068.9'
   volume: '28452.12194795'
   timestamp: '1490764110.216100274'
-ltc_usd:
+LTC_USD:
   mid: '4.18425'
   bid: '4.1685'
   ask: '4.2'

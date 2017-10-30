@@ -1,10 +1,10 @@
 module CurrencyRate
   class BitstampAdapter < Adapter
     FETCH_URL = {
-      'btc_usd' => 'https://www.bitstamp.net/api/v2/ticker/btcusd/',
-      'btc_eur' => 'https://www.bitstamp.net/api/v2/ticker/btceur/',
-      'ltc_usd' => 'https://www.bitstamp.net/api/v2/ticker/ltcusd/',
-      'ltc_eur' => 'https://www.bitstamp.net/api/v2/ticker/ltceur/',
+      'BTC_USD' => 'https://www.bitstamp.net/api/v2/ticker/btcusd/',
+      'BTC_EUR' => 'https://www.bitstamp.net/api/v2/ticker/btceur/',
+      'LTC_USD' => 'https://www.bitstamp.net/api/v2/ticker/ltcusd/',
+      'LTC_EUR' => 'https://www.bitstamp.net/api/v2/ticker/ltceur/',
     }
 
     def normalize(data)

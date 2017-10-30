@@ -11,12 +11,12 @@ RSpec.describe CurrencyRate::Synchronizer do
       @kraken_data = normalized_data_for :kraken
       @crypto_adapters = ["KrakenAdapter"]
       allow(CurrencyRate::KrakenAdapter.instance).to receive(:fetch_rates).and_return(@kraken_data)
-      allow(CurrencyRate).to receive(:adapters).with("crypto").and_return(@crypto_adapters)
+      allow(CurrencyRate.configuration).to receive(:crypto_adapters).and_return(@crypto_adapters)
 
       @yahoo_data = normalized_data_for :yahoo
       @fiat_adapters = ["YahooAdapter"]
       allow(CurrencyRate::YahooAdapter.instance).to receive(:fetch_rates).and_return(@yahoo_data)
-      allow(CurrencyRate).to receive(:adapters).with("fiat").and_return(@fiat_adapters)
+      allow(CurrencyRate.configuration).to receive(:fiat_adapters).and_return(@fiat_adapters)
     end
 
     it "saves fetched rates to given storage" do

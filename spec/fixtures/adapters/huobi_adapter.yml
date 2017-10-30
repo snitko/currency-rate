@@ -1,4 +1,4 @@
-btc_cny:
+BTC_CNY:
   time: '1490764111'
   ticker:
     symbol: btccny
@@ -9,7 +9,7 @@ btc_cny:
     vol: 5661.5942
     buy: 6917.22
     sell: 6918.06
-ltc_cny:
+LTC_CNY:
   time: '1490764083'
   ticker:
     symbol: ltccny

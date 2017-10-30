@@ -1,8 +1,8 @@
 module CurrencyRate
   class HuobiAdapter < Adapter
     FETCH_URL = {
-      "btc_cny" => "http://api.huobi.com/staticmarket/ticker_btc_json.js",
-      "ltc_cny" => "http://api.huobi.com/staticmarket/ticker_ltc_json.js"
+      "BTC_CNY" => "http://api.huobi.com/staticmarket/ticker_btc_json.js",
+      "LTC_CNY" => "http://api.huobi.com/staticmarket/ticker_ltc_json.js"
     }
 
     def normalize(data)

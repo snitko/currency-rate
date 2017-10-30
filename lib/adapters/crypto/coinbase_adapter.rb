@@ -5,7 +5,7 @@ module CurrencyRate
     def normalize(data)
       return nil unless super
       data.reduce({}) do |result, (pair, value)|
-        result[pair.gsub("_to_", "_")] = BigDecimal.new(value.to_s)
+        result[pair.gsub("_to_", "_").upcase] = BigDecimal.new(value.to_s)
         result
       end
     end

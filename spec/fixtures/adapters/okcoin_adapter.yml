@@ -1,4 +1,4 @@
-ltc_usd:
+LTC_USD:
   date: '1490764122'
   ticker:
     buy: '4.166'
@@ -7,7 +7,7 @@ ltc_usd:
     low: '4.1'
     sell: '4.2'
     vol: '27446.231'
-btc_usd:
+BTC_USD:
   date: '1490764123'
   ticker:
     buy: '1026.5'
@@ -16,7 +16,7 @@ btc_usd:
     low: '1011.15'
     sell: '1028.48'
     vol: '3593.469'
-ltc_cny:
+LTC_CNY:
   date: '1490764125'
   ticker:
     buy: '27.4'
@@ -27,7 +27,7 @@ ltc_cny:
     low: '27.21'
     sell: '27.45'
     vol: '166979.623'
-btc_cny:
+BTC_CNY:
   date: '1490764126'
   ticker:
     buy: '6900.0'

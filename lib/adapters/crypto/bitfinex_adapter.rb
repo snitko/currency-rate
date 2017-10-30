@@ -1,8 +1,8 @@
 module CurrencyRate
   class BitfinexAdapter < Adapter
     FETCH_URL = {
-      "btc_usd" => "https://api.bitfinex.com/v1/pubticker/btcusd",
-      "ltc_usd" => "https://api.bitfinex.com/v1/pubticker/ltcusd",
+      "BTC_USD" => "https://api.bitfinex.com/v1/pubticker/btcusd",
+      "LTC_USD" => "https://api.bitfinex.com/v1/pubticker/ltcusd",
     }
 
     def normalize(data)

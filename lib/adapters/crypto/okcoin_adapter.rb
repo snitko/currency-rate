@@ -1,10 +1,10 @@
 module CurrencyRate
   class OkcoinAdapter < Adapter
     FETCH_URL = {
-      'ltc_usd' => 'https://www.okcoin.com/api/v1/ticker.do?symbol=ltc_usd',
-      'btc_usd' => 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd',
-      'ltc_cny' => 'https://www.okcoin.cn/api/ticker.do?symbol=ltc_cny',
-      'btc_cny' => 'https://www.okcoin.cn/api/ticker.do?symbol=btc_cny'
+      'LTC_USD' => 'https://www.okcoin.com/api/v1/ticker.do?symbol=ltc_usd',
+      'BTC_USD' => 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd',
+      'LTC_CNY' => 'https://www.okcoin.cn/api/ticker.do?symbol=ltc_cny',
+      'BTC_CNY' => 'https://www.okcoin.cn/api/ticker.do?symbol=btc_cny'
     }
 
     def normalize(data)
