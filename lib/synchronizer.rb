@@ -7,8 +7,9 @@ module CurrencyRate
     end
 
     def sync!
-      [CurrencyRate.fiat_adapters, CurrencyRate.crypto_adapters].each do |adapters|
+      [CurrencyRate.configuration.fiat_adapters, CurrencyRate.configuration.crypto_adapters].each do |adapters|
         adapters.each do |adapter_name|
+          adapter_name = "#{adapter_name}Adapter" unless adapter_name.include? "Adapter"
           begin
             adapter = CurrencyRate::const_get(adapter_name).instance
             rates = adapter.fetch_rates
