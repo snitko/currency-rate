@@ -1,3 +1,4 @@
+require "bigdecimal"
 require "logger"
 require "singleton"
 require "json"
