@@ -20,7 +20,7 @@ RSpec.describe CurrencyRate::FileStorage do
 
     context "when exchange file doesn't exist" do
       before do
-        allow(File).to receive(:exist?).and_return(false)
+        allow(File).to receive(:read).and_raise(StandardError)
       end
 
       it "returns nil" do

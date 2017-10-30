@@ -22,3 +22,7 @@ end
 RSpec.configure do |config|
   config.default_formatter = "doc"
 end
+
+CurrencyRate.configure do |config|
+  config.logger[:level] = :fatal
+end
