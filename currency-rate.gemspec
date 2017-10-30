@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
   s.authors = ["Roman Snitko".freeze]
-  s.date = "2017-10-27"
+  s.date = "2017-10-30"
   s.description = "Fetches exchange rates from various sources and does the conversion".freeze
   s.email = "roman.snitko@gmail.com".freeze
   s.extra_rdoc_files = [
@@ -42,7 +42,6 @@ Gem::Specification.new do |s|
     "lib/adapters/fiat/forge_adapter.rb",
     "lib/adapters/fiat/yahoo_adapter.rb",
     "lib/configuration.rb",
-    "lib/core_ext/string.rb",
     "lib/currency_rate.rb",
     "lib/fetcher.rb",
     "lib/storage/file_storage.rb",
@@ -97,7 +96,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "http://github.com/snitko/currency-rate".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.6.13".freeze
+  s.rubygems_version = "2.6.14".freeze
   s.summary = "Converter for fiat and crypto currencies".freeze
 
   if s.respond_to? :specification_version then
