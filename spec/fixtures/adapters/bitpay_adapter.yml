@@ -1,0 +1,486 @@
+- code: BTC
+  name: Bitcoin
+  rate: 1
+- code: USD
+  name: US Dollar
+  rate: 1019.37
+- code: EUR
+  name: Eurozone Euro
+  rate: 942.538044
+- code: GBP
+  name: Pound Sterling
+  rate: 821.229956
+- code: JPY
+  name: Japanese Yen
+  rate: 113346.501253
+- code: CAD
+  name: Canadian Dollar
+  rate: 1350.257502
+- code: AUD
+  name: Australian Dollar
+  rate: 1333.488866
+- code: CNY
+  name: Chinese Yuan
+  rate: 7025.905788
+- code: CHF
+  name: Swiss Franc
+  rate: 1011.369984
+- code: SEK
+  name: Swedish Krona
+  rate: 9001.988172
+- code: NZD
+  name: New Zealand Dollar
+  rate: 1454.988595
+- code: KRW
+  name: South Korean Won
+  rate: 1134997.1391
+- code: AED
+  name: UAE Dirham
+  rate: 3744.160281
+- code: AFN
+  name: Afghan Afghani
+  rate: 68068.853769
+- code: ALL
+  name: Albanian Lek
+  rate: 127614.9303
+- code: AMD
+  name: Armenian Dram
+  rate: 494883.7476
+- code: ANG
+  name: Netherlands Antillean Guilder
+  rate: 1820.978103
+- code: AOA
+  name: Angolan Kwanza
+  rate: 169125.205755
+- code: ARS
+  name: Argentine Peso
+  rate: 16303.090221
+- code: AWG
+  name: Aruban Florin
+  rate: 1834.861923
+- code: AZN
+  name: Azerbaijani Manat
+  rate: 1738.02585
+- code: BAM
+  name: Bosnia-Herzegovina Convertible Mark
+  rate: 1843.259493
+- code: BBD
+  name: Barbadian Dollar
+  rate: 2038.74
+- code: BDT
+  name: Bangladeshi Taka
+  rate: 82112.851874
+- code: BGN
+  name: Bulgarian Lev
+  rate: 1843.107606
+- code: BHD
+  name: Bahraini Dinar
+  rate: 384.297393
+- code: BIF
+  name: Burundian Franc
+  rate: 1730176.701
+- code: BMD
+  name: Bermudan Dollar
+  rate: 1019.37
+- code: BND
+  name: Brunei Dollar
+  rate: 1420.479863
+- code: BOB
+  name: Bolivian Boliviano
+  rate: 7068.353374
+- code: BRL
+  name: Brazilian Real
+  rate: 3200.8218
+- code: BSD
+  name: Bahamian Dollar
+  rate: 1019.37
+- code: BTN
+  name: Bhutanese Ngultrum
+  rate: 66263.864485
+- code: BWP
+  name: Botswanan Pula
+  rate: 10517.240902
+- code: BYR
+  name: Belarusian Ruble
+  rate: 20414158.4625
+- code: BZD
+  name: Belize Dollar
+  rate: 2056.214041
+- code: CDF
+  name: Congolese Franc
+  rate: 1377778.63063
+- code: CLF
+  name: Chilean Unit of Account (UF)
+  rate: 25.380274
+- code: CLP
+  name: Chilean Peso
+  rate: 678027.496772
+- code: COP
+  name: Colombian Peso
+  rate: 2981229.1146
+- code: CRC
+  name: Costa Rican Colón
+  rate: 568466.97105
+- code: CUP
+  name: Cuban Peso
+  rate: 25207.371779
+- code: CVE
+  name: Cape Verdean Escudo
+  rate: 104383.488
+- code: CZK
+  name: Czech Koruna
+  rate: 25468.18269
+- code: DJF
+  name: Djiboutian Franc
+  rate: 182436.6489
+- code: DKK
+  name: Danish Krone
+  rate: 7012.57039
+- code: DOP
+  name: Dominican Peso
+  rate: 48156.567855
+- code: DZD
+  name: Algerian Dinar
+  rate: 111391.65675
+- code: EEK
+  name: Estonian Kroon
+  rate: 14721.728288
+- code: EGP
+  name: Egyptian Pound
+  rate: 18598.915335
+- code: ETB
+  name: Ethiopian Birr
+  rate: 23291.079522
+- code: FJD
+  name: Fijian Dollar
+  rate: 2118.853308
+- code: FKP
+  name: Falkland Islands Pound
+  rate: 821.229956
+- code: GEL
+  name: Georgian Lari
+  rate: 2490.534978
+- code: GHS
+  name: Ghanaian Cedi
+  rate: 4454.839561
+- code: GIP
+  name: Gibraltar Pound
+  rate: 821.229956
+- code: GMD
+  name: Gambian Dalasi
+  rate: 46044.9429
+- code: GNF
+  name: Guinean Franc
+  rate: 9597266.613
+- code: GTQ
+  name: Guatemalan Quetzal
+  rate: 7510.810923
+- code: GYD
+  name: Guyanaese Dollar
+  rate: 212778.19695
+- code: HKD
+  name: Hong Kong Dollar
+  rate: 7918.82294
+- code: HNL
+  name: Honduran Lempira
+  rate: 23966.115511
+- code: HRK
+  name: Croatian Kuna
+  rate: 7009.239089
+- code: HTG
+  name: Haitian Gourde
+  rate: 70427.763615
+- code: HUF
+  name: Hungarian Forint
+  rate: 291946.98594
+- code: IDR
+  name: Indonesian Rupiah
+  rate: 13577015.941368
+- code: ILS
+  name: Israeli Shekel
+  rate: 3685.516944
+- code: INR
+  name: Indian Rupee
+  rate: 66212.668665
+- code: IQD
+  name: Iraqi Dinar
+  rate: 1194752.6085
+- code: IRR
+  name: Iranian Rial
+  rate: 33055885.665328
+- code: ISK
+  name: Icelandic Króna
+  rate: 112915.6149
+- code: JEP
+  name: Jersey Pound
+  rate: 821.229956
+- code: JMD
+  name: Jamaican Dollar
+  rate: 131850.41265
+- code: JOD
+  name: Jordanian Dinar
+  rate: 723.246073
+- code: KES
+  name: Kenyan Shilling
+  rate: 104847.847732
+- code: KGS
+  name: Kyrgystani Som
+  rate: 69983.114421
+- code: KHR
+  name: Cambodian Riel
+  rate: 4085889.8025
+- code: KMF
+  name: Comorian Franc
+  rate: 464543.845833
+- code: KPW
+  name: North Korean Won
+  rate: 917524.7433
+- code: KWD
+  name: Kuwaiti Dinar
+  rate: 310.64893
+- code: KYD
+  name: Cayman Islands Dollar
+  rate: 852.530731
+- code: KZT
+  name: Kazakhstani Tenge
+  rate: 322350.27825
+- code: LAK
+  name: Laotian Kip
+  rate: 8278772.941159
+- code: LBP
+  name: Lebanese Pound
+  rate: 1540879.692
+- code: LKR
+  name: Sri Lankan Rupee
+  rate: 155453.410218
+- code: LRD
+  name: Liberian Dollar
+  rate: 95816.962459
+- code: LSL
+  name: Lesotho Loti
+  rate: 13237.885406
+- code: LTL
+  name: Lithuanian Litas
+  rate: 3248.725054
+- code: LVL
+  name: Latvian Lats
+  rate: 661.260222
+- code: LYD
+  name: Libyan Dinar
+  rate: 1446.639955
+- code: MAD
+  name: Moroccan Dirham
+  rate: 10161.198407
+- code: MDL
+  name: Moldovan Leu
+  rate: 19895.553975
+- code: MGA
+  name: Malagasy Ariary
+  rate: 3298732.2885
+- code: MKD
+  name: Macedonian Denar
+  rate: 58037.83095
+- code: MMK
+  name: Myanma Kyat
+  rate: 1400257.6005
+- code: MNT
+  name: Mongolian Tugrik
+  rate: 2497527.522566
+- code: MOP
+  name: Macanese Pataca
+  rate: 8184.598183
+- code: MRO
+  name: Mauritanian Ouguiya
+  rate: 368012.9574
+- code: MUR
+  name: Mauritian Rupee
+  rate: 35879.78526
+- code: MVR
+  name: Maldivian Rufiyaa
+  rate: 15790.149353
+- code: MWK
+  name: Malawian Kwacha
+  rate: 742284.8466
+- code: MXN
+  name: Mexican Peso
+  rate: 19394.245138
+- code: MYR
+  name: Malaysian Ringgit
+  rate: 4506.600111
+- code: MZN
+  name: Mozambican Metical
+  rate: 69824.832764
+- code: NAD
+  name: Namibian Dollar
+  rate: 13164.551928
+- code: NGN
+  name: Nigerian Naira
+  rate: 321962.91765
+- code: NIO
+  name: Nicaraguan Córdoba
+  rate: 30168.25515
+- code: NOK
+  name: Norwegian Krone
+  rate: 8685.212828
+- code: NPR
+  name: Nepalese Rupee
+  rate: 106554.7461
+- code: OMR
+  name: Omani Rial
+  rate: 392.487012
+- code: PAB
+  name: Panamanian Balboa
+  rate: 1019.37
+- code: PEN
+  name: Peruvian Nuevo Sol
+  rate: 3306.322518
+- code: PGK
+  name: Papua New Guinean Kina
+  rate: 3246.853491
+- code: PHP
+  name: Philippine Peso
+  rate: 51177.216008
+- code: PKR
+  name: Pakistani Rupee
+  rate: 107213.322321
+- code: PLN
+  name: Polish Zloty
+  rate: 3997.228058
+- code: PYG
+  name: Paraguayan Guarani
+  rate: 5775036.861
+- code: QAR
+  name: Qatari Rial
+  rate: 3711.831981
+- code: RON
+  name: Romanian Leu
+  rate: 4290.830064
+- code: RSD
+  name: Serbian Dinar
+  rate: 116753.54295
+- code: RUB
+  name: Russian Ruble
+  rate: 58076.770884
+- code: RWF
+  name: Rwandan Franc
+  rate: 858340.1211
+- code: SAR
+  name: Saudi Riyal
+  rate: 3822.841374
+- code: SBD
+  name: Solomon Islands Dollar
+  rate: 7932.555892
+- code: SCR
+  name: Seychellois Rupee
+  rate: 13733.16365
+- code: SDG
+  name: Sudanese Pound
+  rate: 6837.615917
+- code: SGD
+  name: Singapore Dollar
+  rate: 1424.122072
+- code: SHP
+  name: Saint Helena Pound
+  rate: 821.229956
+- code: SLL
+  name: Sierra Leonean Leone
+  rate: 7621300.87428
+- code: SOS
+  name: Somali Shilling
+  rate: 591723.8976
+- code: SRD
+  name: Surinamese Dollar
+  rate: 7696.2435
+- code: STD
+  name: São Tomé and Príncipe Dobra
+  rate: 23046402.799897
+- code: SVC
+  name: Salvadoran Colón
+  rate: 8951.477369
+- code: SYP
+  name: Syrian Pound
+  rate: 218491.7658
+- code: SZL
+  name: Swazi Lilangeni
+  rate: 13196.741594
+- code: THB
+  name: Thai Baht
+  rate: 35198.8461
+- code: TJS
+  name: Tajikistani Somoni
+  rate: 8429.991123
+- code: TMT
+  name: Turkmenistani Manat
+  rate: 3577.968313
+- code: TND
+  name: Tunisian Dinar
+  rate: 2303.158462
+- code: TOP
+  name: Tongan Paʻanga
+  rate: 2326.3634
+- code: TRY
+  name: Turkish Lira
+  rate: 3728.77391
+- code: TTD
+  name: Trinidad and Tobago Dollar
+  rate: 6884.239862
+- code: TWD
+  name: New Taiwan Dollar
+  rate: 30805.871085
+- code: TZS
+  name: Tanzanian Shilling
+  rate: 2283032.0205
+- code: UAH
+  name: Ukrainian Hryvnia
+  rate: 27755.642854
+- code: UGX
+  name: Ugandan Shilling
+  rate: 3687570.975
+- code: UYU
+  name: Uruguayan Peso
+  rate: 29075.876851
+- code: UZS
+  name: Uzbekistan Som
+  rate: 3631352.7195
+- code: VEF
+  name: Venezuelan Bolívar Fuerte
+  rate: 10178.431876
+- code: VND
+  name: Vietnamese Dong
+  rate: 23204533.036999
+- code: VUV
+  name: Vanuatu Vatu
+  rate: 109530.834532
+- code: WST
+  name: Samoan Tala
+  rate: 2607.153964
+- code: XAF
+  name: CFA Franc BEAC
+  rate: 618348.66055
+- code: XAG
+  name: Silver (troy ounce)
+  rate: 56.477165
+- code: XAU
+  name: Gold (troy ounce)
+  rate: 0.816485
+- code: XCD
+  name: East Caribbean Dollar
+  rate: 2754.898394
+- code: XOF
+  name: CFA Franc BCEAO
+  rate: 619081.569232
+- code: XPF
+  name: CFP Franc
+  rate: 112891.758584
+- code: YER
+  name: Yemeni Rial
+  rate: 255129.597406
+- code: ZAR
+  name: South African Rand
+  rate: 13252.342111
+- code: ZMW
+  name: Zambian Kwacha
+  rate: 9758.101792
+- code: ZWL
+  name: Zimbabwean Dollar
+  rate: 328631.887974

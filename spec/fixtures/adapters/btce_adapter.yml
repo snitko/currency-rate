@@ -1,0 +1,60 @@
+BTC_USD:
+  ticker:
+    high: 1071.99
+    low: 1009.045
+    avg: 1040.5175
+    vol: 10515250.98056
+    vol_cur: 10077.08377
+    last: 1026.4
+    buy: 1026.398
+    sell: 1026
+    updated: 1490764102
+    server_time: 1490764104
+BTC_EUR:
+  ticker:
+    high: 993
+    low: 937.22257
+    avg: 965.111285
+    vol: 160501.41533
+    vol_cur: 165.6623
+    last: 946.00003
+    buy: 953.35751
+    sell: 946
+    updated: 1490764104
+    server_time: 1490764105
+BTC_RUB:
+  ticker:
+    high: 62000
+    low: 58745
+    avg: 60372.5
+    vol: 17481353.36175
+    vol_cur: 286.51306
+    last: 59237.26001
+    buy: 59685.96203
+    sell: 59237.26001
+    updated: 1490764104
+    server_time: 1490764106
+USD_RUB:
+  ticker:
+    high: 58.5
+    low: 57.803
+    avg: 58.1515
+    vol: 7504660.36204
+    vol_cur: 129259.15758
+    last: 58
+    buy: 58.2753
+    sell: 58
+    updated: 1490764106
+    server_time: 1490764106
+EUR_RUB:
+  ticker:
+    high: 63.72296
+    low: 61.57091
+    avg: 62.646935
+    vol: 180990.66998
+    vol_cur: 2877.26735
+    last: 62.4808
+    buy: 62.7861
+    sell: 62.43791
+    updated: 1490764106
+    server_time: 1490764107

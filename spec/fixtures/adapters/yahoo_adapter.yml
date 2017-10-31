@@ -1,0 +1,1119 @@
+query:
+  count: 160
+  created: '2017-10-18T22:54:10Z'
+  lang: en-US
+  results:
+    rate:
+    - id: USDAFN
+      Name: USD/AFN
+      Rate: '68.0800'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '68.2800'
+      Bid: '68.0800'
+    - id: USDEUR
+      Name: USD/EUR
+      Rate: '0.8476'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '0.8481'
+      Bid: '0.8476'
+    - id: USDALL
+      Name: USD/ALL
+      Rate: '112.8500'
+      Date: 10/18/2017
+      Time: 7:12pm
+      Ask: '113.6500'
+      Bid: '112.8500'
+    - id: USDDZD
+      Name: USD/DZD
+      Rate: '114.1140'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '116.1140'
+      Bid: '114.1140'
+    - id: USDUSD
+      Name: USD/USD
+      Rate: '1.0000'
+      Date: N/A
+      Time: N/A
+      Ask: '1.0000'
+      Bid: '1.0000'
+    - id: USDAOA
+      Name: USD/AOA
+      Rate: '165.0970'
+      Date: 10/18/2017
+      Time: 0:55am
+      Ask: '166.7480'
+      Bid: '165.0970'
+    - id: USDXCD
+      Name: USD/XCD
+      Rate: '2.7000'
+      Date: 10/18/2017
+      Time: 11:00pm
+      Ask: N/A
+      Bid: '2.7000'
+    - id: USDARS
+      Name: USD/ARS
+      Rate: '17.3290'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '17.3340'
+      Bid: '17.3290'
+    - id: USDAMD
+      Name: USD/AMD
+      Rate: '481.0000'
+      Date: 10/18/2017
+      Time: 12:45pm
+      Ask: '482.0000'
+      Bid: '481.0000'
+    - id: USDAWG
+      Name: USD/AWG
+      Rate: '1.7800'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '1.8000'
+      Bid: '1.7800'
+    - id: USDAUD
+      Name: USD/AUD
+      Rate: '1.2739'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '1.2749'
+      Bid: '1.2739'
+    - id: USDAZN
+      Name: USD/AZN
+      Rate: '1.6996'
+      Date: 10/18/2017
+      Time: 7:00am
+      Ask: '1.7006'
+      Bid: '1.6996'
+    - id: USDBSD
+      Name: USD/BSD
+      Rate: '1.0000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '1.0050'
+      Bid: '1.0000'
+    - id: USDBHD
+      Name: USD/BHD
+      Rate: '0.3768'
+      Date: 10/18/2017
+      Time: 11:41pm
+      Ask: '0.3770'
+      Bid: '0.3768'
+    - id: USDBDT
+      Name: USD/BDT
+      Rate: '82.3000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '82.5500'
+      Bid: '82.3000'
+    - id: USDBBD
+      Name: USD/BBD
+      Rate: '2.0000'
+      Date: 10/18/2017
+      Time: 11:00pm
+      Ask: N/A
+      Bid: '2.0000'
+    - id: USDBYR
+      Name: USD/BYR
+      Rate: '20020.0000'
+      Date: 6/30/2016
+      Time: 2:27pm
+      Ask: '20045.0000'
+      Bid: '20020.0000'
+    - id: USDBZD
+      Name: USD/BZD
+      Rate: '1.9977'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '2.0327'
+      Bid: '1.9977'
+    - id: USDXOF
+      Name: USD/XOF
+      Rate: '551.0000'
+      Date: 10/18/2017
+      Time: 11:41pm
+      Ask: '553.0000'
+      Bid: '551.0000'
+    - id: USDBMD
+      Name: USD/BMD
+      Rate: '1.0000'
+      Date: 10/18/2017
+      Time: 11:00pm
+      Ask: N/A
+      Bid: '1.0000'
+    - id: USDBTN
+      Name: USD/BTN
+      Rate: '64.9000'
+      Date: 10/18/2017
+      Time: 4:05am
+      Ask: '65.0000'
+      Bid: '64.9000'
+    - id: USDINR
+      Name: USD/INR
+      Rate: '65.0390'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '65.0890'
+      Bid: '65.0390'
+    - id: USDBAM
+      Name: USD/BAM
+      Rate: '1.6603'
+      Date: 10/18/2017
+      Time: 11:50pm
+      Ask: '1.6628'
+      Bid: '1.6603'
+    - id: USDBWP
+      Name: USD/BWP
+      Rate: '10.2725'
+      Date: 10/18/2017
+      Time: 10:00am
+      Ask: '10.2825'
+      Bid: '10.2725'
+    - id: USDNOK
+      Name: USD/NOK
+      Rate: '7.9543'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '7.9575'
+      Bid: '7.9543'
+    - id: USDBRL
+      Name: USD/BRL
+      Rate: '3.1712'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '3.1732'
+      Bid: '3.1712'
+    - id: USDBND
+      Name: USD/BND
+      Rate: '1.3562'
+      Date: 10/18/2017
+      Time: 11:50pm
+      Ask: '1.3572'
+      Bid: '1.3562'
+    - id: USDBGN
+      Name: USD/BGN
+      Rate: '1.6647'
+      Date: 10/18/2017
+      Time: 3:15pm
+      Ask: N/A
+      Bid: '1.6647'
+    - id: USDBIF
+      Name: USD/BIF
+      Rate: '1738.9700'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '1758.9700'
+      Bid: '1738.9700'
+    - id: USDKHR
+      Name: USD/KHR
+      Rate: '4027.0000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '4037.0000'
+      Bid: '4027.0000'
+    - id: USDXAF
+      Name: USD/XAF
+      Rate: '555.5900'
+      Date: 10/18/2017
+      Time: 11:50pm
+      Ask: '556.5900'
+      Bid: '555.5900'
+    - id: USDCAD
+      Name: USD/CAD
+      Rate: '1.2464'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '1.2464'
+      Bid: '1.2464'
+    - id: USDCVE
+      Name: USD/CVE
+      Rate: '93.5000'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '93.7500'
+      Bid: '93.5000'
+    - id: USDKYD
+      Name: USD/KYD
+      Rate: '0.8200'
+      Date: 10/18/2017
+      Time: 11:00pm
+      Ask: N/A
+      Bid: '0.8200'
+    - id: USDCLF
+      Name: USD/CLF
+      Rate: '0.0232'
+      Date: 10/18/2017
+      Time: 8:15pm
+      Ask: '0.0237'
+      Bid: '0.0232'
+    - id: USDCLP
+      Name: USD/CLP
+      Rate: '624.8500'
+      Date: 10/18/2017
+      Time: 8:54pm
+      Ask: '625.5000'
+      Bid: '624.8500'
+    - id: USDCNY
+      Name: USD/CNY
+      Rate: '6.6249'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '6.6259'
+      Bid: '6.6249'
+    - id: USDCOP
+      Name: USD/COP
+      Rate: '2921.0000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '2923.0000'
+      Bid: '2921.0000'
+    - id: USDKMF
+      Name: USD/KMF
+      Rate: '417.8800'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '418.8300'
+      Bid: '417.8800'
+    - id: USDNZD
+      Name: USD/NZD
+      Rate: '1.3965'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '1.3975'
+      Bid: '1.3965'
+    - id: USDCRC
+      Name: USD/CRC
+      Rate: '565.6800'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '575.6800'
+      Bid: '565.6800'
+    - id: USDHRK
+      Name: USD/HRK
+      Rate: '6.3600'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '6.3700'
+      Bid: '6.3600'
+    - id: USDCUC
+      Name: USD/CUC
+      Rate: '0.9950'
+      Date: 10/18/2017
+      Time: 10:00pm
+      Ask: '1.0050'
+      Bid: '0.9950'
+    - id: USDCUP
+      Name: USD/CUP
+      Rate: '1.0000'
+      Date: 10/18/2017
+      Time: 11:00pm
+      Ask: N/A
+      Bid: '1.0000'
+    - id: USDANG
+      Name: USD/ANG
+      Rate: '1.7775'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '1.7825'
+      Bid: '1.7775'
+    - id: USDCZK
+      Name: USD/CZK
+      Rate: '21.7972'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '21.8051'
+      Bid: '21.7972'
+    - id: USDDKK
+      Name: USD/DKK
+      Rate: '6.3110'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '6.3118'
+      Bid: '6.3110'
+    - id: USDDJF
+      Name: USD/DJF
+      Rate: '177.7400'
+      Date: 10/18/2017
+      Time: 11:41pm
+      Ask: '178.7400'
+      Bid: '177.7400'
+    - id: USDDOP
+      Name: USD/DOP
+      Rate: '47.3200'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '47.6200'
+      Bid: '47.3200'
+    - id: USDEGP
+      Name: USD/EGP
+      Rate: '17.6000'
+      Date: 10/18/2017
+      Time: 6:59pm
+      Ask: '17.7000'
+      Bid: '17.6000'
+    - id: USDSVC
+      Name: USD/SVC
+      Rate: '8.7500'
+      Date: 10/18/2017
+      Time: 11:00pm
+      Ask: N/A
+      Bid: '8.7500'
+    - id: USDERN
+      Name: USD/ERN
+      Rate: '15.2900'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '15.4900'
+      Bid: '15.2900'
+    - id: USDETB
+      Name: USD/ETB
+      Rate: '26.9000'
+      Date: 10/18/2017
+      Time: 7:12pm
+      Ask: '27.6500'
+      Bid: '26.9000'
+    - id: USDFKP
+      Name: USD/FKP
+      Rate: '0.7573'
+      Date: 10/18/2017
+      Time: 9:00pm
+      Ask: '0.7583'
+      Bid: '0.7573'
+    - id: USDFJD
+      Name: USD/FJD
+      Rate: '2.0425'
+      Date: 10/18/2017
+      Time: 7:13pm
+      Ask: '2.0525'
+      Bid: '2.0425'
+    - id: USDXPF
+      Name: USD/XPF
+      Rate: '101.2700'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '102.2700'
+      Bid: '101.2700'
+    - id: USDGMD
+      Name: USD/GMD
+      Rate: '47.0500'
+      Date: 10/18/2017
+      Time: 7:01pm
+      Ask: '47.8500'
+      Bid: '47.0500'
+    - id: USDGEL
+      Name: USD/GEL
+      Rate: '2.4744'
+      Date: 10/18/2017
+      Time: 9:00pm
+      Ask: '2.4944'
+      Bid: '2.4744'
+    - id: USDGHS
+      Name: USD/GHS
+      Rate: '4.4185'
+      Date: 10/18/2017
+      Time: 11:41pm
+      Ask: '4.4385'
+      Bid: '4.4185'
+    - id: USDGIP
+      Name: USD/GIP
+      Rate: '0.7576'
+      Date: 10/18/2017
+      Time: 9:00pm
+      Ask: '0.7581'
+      Bid: '0.7576'
+    - id: USDGTQ
+      Name: USD/GTQ
+      Rate: '7.3435'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '7.3465'
+      Bid: '7.3435'
+    - id: USDGBP
+      Name: USD/GBP
+      Rate: '0.7571'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '0.7571'
+      Bid: '0.7571'
+    - id: USDGNF
+      Name: USD/GNF
+      Rate: '8975.0000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '9075.0000'
+      Bid: '8975.0000'
+    - id: USDGYD
+      Name: USD/GYD
+      Rate: '204.2900'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '209.2900'
+      Bid: '204.2900'
+    - id: USDHTG
+      Name: USD/HTG
+      Rate: '62.0100'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '63.0100'
+      Bid: '62.0100'
+    - id: USDHNL
+      Name: USD/HNL
+      Rate: '23.3860'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '23.4860'
+      Bid: '23.3860'
+    - id: USDHKD
+      Name: USD/HKD
+      Rate: '7.8080'
+      Date: 10/18/2017
+      Time: 11:53pm
+      Ask: '7.8083'
+      Bid: '7.8080'
+    - id: USDHUF
+      Name: USD/HUF
+      Rate: '260.9700'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '261.1700'
+      Bid: '260.9700'
+    - id: USDISK
+      Name: USD/ISK
+      Rate: '105.3700'
+      Date: 10/18/2017
+      Time: 7:13pm
+      Ask: '105.6700'
+      Bid: '105.3700'
+    - id: USDIDR
+      Name: USD/IDR
+      Rate: '13515.0000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '13525.0000'
+      Bid: '13515.0000'
+    - id: USDXDR
+      Name: USD/XDR
+      Rate: '0.7096'
+      Date: 10/18/2017
+      Time: 2:05pm
+      Ask: N/A
+      Bid: '0.7096'
+    - id: USDIQD
+      Name: USD/IQD
+      Rate: '1167.0000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '1169.0000'
+      Bid: '1167.0000'
+    - id: USDILS
+      Name: USD/ILS
+      Rate: '3.4975'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '3.5075'
+      Bid: '3.4975'
+    - id: USDJMD
+      Name: USD/JMD
+      Rate: '126.6800'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '127.3800'
+      Bid: '126.6800'
+    - id: USDJPY
+      Name: USD/JPY
+      Rate: '113.0000'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '113.0090'
+      Bid: '113.0000'
+    - id: USDJOD
+      Name: USD/JOD
+      Rate: '0.7080'
+      Date: 10/18/2017
+      Time: 11:41pm
+      Ask: '0.7095'
+      Bid: '0.7080'
+    - id: USDKZT
+      Name: USD/KZT
+      Rate: '333.3700'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '333.4200'
+      Bid: '333.3700'
+    - id: USDKES
+      Name: USD/KES
+      Rate: '103.0500'
+      Date: 10/18/2017
+      Time: 11:41pm
+      Ask: '103.3500'
+      Bid: '103.0500'
+    - id: USDKWD
+      Name: USD/KWD
+      Rate: '0.3018'
+      Date: 10/18/2017
+      Time: 11:41pm
+      Ask: '0.3038'
+      Bid: '0.3018'
+    - id: USDKGS
+      Name: USD/KGS
+      Rate: '68.5890'
+      Date: 10/18/2017
+      Time: 11:00am
+      Ask: '68.6390'
+      Bid: '68.5890'
+    - id: USDLAK
+      Name: USD/LAK
+      Rate: '8299.0000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '8334.0000'
+      Bid: '8299.0000'
+    - id: USDLBP
+      Name: USD/LBP
+      Rate: '1504.0000'
+      Date: 10/18/2017
+      Time: 11:41pm
+      Ask: '1511.0000'
+      Bid: '1504.0000'
+    - id: USDLSL
+      Name: USD/LSL
+      Rate: '13.5600'
+      Date: 10/18/2017
+      Time: 7:04pm
+      Ask: '13.5700'
+      Bid: '13.5600'
+    - id: USDZAR
+      Name: USD/ZAR
+      Rate: '13.5604'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '13.5745'
+      Bid: '13.5604'
+    - id: USDLRD
+      Name: USD/LRD
+      Rate: '117.9700'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '118.9700'
+      Bid: '117.9700'
+    - id: USDLYD
+      Name: USD/LYD
+      Rate: '1.3658'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '1.3728'
+      Bid: '1.3658'
+    - id: USDCHF
+      Name: USD/CHF
+      Rate: '0.9810'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '0.9811'
+      Bid: '0.9810'
+    - id: USDLTL
+      Name: USD/LTL
+      Rate: '3.0487'
+      Date: 6/22/2015
+      Time: 9:39am
+      Ask: '3.0491'
+      Bid: '3.0487'
+    - id: USDMOP
+      Name: USD/MOP
+      Rate: '8.0420'
+      Date: 10/18/2017
+      Time: 11:50pm
+      Ask: '8.0430'
+      Bid: '8.0420'
+    - id: USDMGA
+      Name: USD/MGA
+      Rate: '3050.0000'
+      Date: 10/12/2017
+      Time: 7:55pm
+      Ask: '3070.0000'
+      Bid: '3050.0000'
+    - id: USDMWK
+      Name: USD/MWK
+      Rate: '716.1900'
+      Date: 10/18/2017
+      Time: 11:41pm
+      Ask: '736.1900'
+      Bid: '716.1900'
+    - id: USDMYR
+      Name: USD/MYR
+      Rate: '4.2220'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '4.2270'
+      Bid: '4.2220'
+    - id: USDMVR
+      Name: USD/MVR
+      Rate: '15.5700'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '15.7700'
+      Bid: '15.5700'
+    - id: USDMRO
+      Name: USD/MRO
+      Rate: '352.4200'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '357.4200'
+      Bid: '352.4200'
+    - id: USDMUR
+      Name: USD/MUR
+      Rate: '33.8500'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '34.8500'
+      Bid: '33.8500'
+    - id: USDMXN
+      Name: USD/MXN
+      Rate: '18.8810'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '18.8859'
+      Bid: '18.8810'
+    - id: USDMXV
+      Name: USD/MXV
+      Rate: '3.2375'
+      Date: 10/18/2017
+      Time: 2:30pm
+      Ask: '3.2375'
+      Bid: '3.2375'
+    - id: USDMNT
+      Name: USD/MNT
+      Rate: '2448.0000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '2455.0000'
+      Bid: '2448.0000'
+    - id: USDMAD
+      Name: USD/MAD
+      Rate: '9.4155'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '9.4255'
+      Bid: '9.4155'
+    - id: USDMZN
+      Name: USD/MZN
+      Rate: '60.6300'
+      Date: 10/18/2017
+      Time: 11:26pm
+      Ask: '61.6300'
+      Bid: '60.6300'
+    - id: USDMMK
+      Name: USD/MMK
+      Rate: '1359.0000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '1363.0000'
+      Bid: '1359.0000'
+    - id: USDNAD
+      Name: USD/NAD
+      Rate: '13.5570'
+      Date: 10/18/2017
+      Time: 11:34pm
+      Ask: '13.5600'
+      Bid: '13.5570'
+    - id: USDNPR
+      Name: USD/NPR
+      Rate: '103.5500'
+      Date: 10/17/2017
+      Time: 11:58am
+      Ask: '104.1500'
+      Bid: '103.5500'
+    - id: USDNIO
+      Name: USD/NIO
+      Rate: '30.3000'
+      Date: 10/18/2017
+      Time: 7:13pm
+      Ask: '30.8000'
+      Bid: '30.3000'
+    - id: USDNGN
+      Name: USD/NGN
+      Rate: '352.0000'
+      Date: 10/18/2017
+      Time: 7:05pm
+      Ask: '361.0000'
+      Bid: '352.0000'
+    - id: USDOMR
+      Name: USD/OMR
+      Rate: '0.3842'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '0.3844'
+      Bid: '0.3842'
+    - id: USDPKR
+      Name: USD/PKR
+      Rate: '105.1000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '105.3000'
+      Bid: '105.1000'
+    - id: USDPAB
+      Name: USD/PAB
+      Rate: '1.0000'
+      Date: 10/18/2017
+      Time: 11:00pm
+      Ask: N/A
+      Bid: '1.0000'
+    - id: USDPGK
+      Name: USD/PGK
+      Rate: '3.1975'
+      Date: 10/18/2017
+      Time: 1:00pm
+      Ask: '3.2025'
+      Bid: '3.1975'
+    - id: USDPYG
+      Name: USD/PYG
+      Rate: '5632.0000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '5682.0000'
+      Bid: '5632.0000'
+    - id: USDPEN
+      Name: USD/PEN
+      Rate: '3.2347'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '3.2397'
+      Bid: '3.2347'
+    - id: USDPHP
+      Name: USD/PHP
+      Rate: '51.3800'
+      Date: 10/18/2017
+      Time: 11:37pm
+      Ask: '51.4300'
+      Bid: '51.3800'
+    - id: USDPLN
+      Name: USD/PLN
+      Rate: '3.5896'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '3.5913'
+      Bid: '3.5896'
+    - id: USDQAR
+      Name: USD/QAR
+      Rate: '3.6377'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '3.6387'
+      Bid: '3.6377'
+    - id: USDRON
+      Name: USD/RON
+      Rate: '3.8870'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '3.8919'
+      Bid: '3.8870'
+    - id: USDRUB
+      Name: USD/RUB
+      Rate: '57.3981'
+      Date: 10/18/2017
+      Time: 11:50pm
+      Ask: '57.4081'
+      Bid: '57.3981'
+    - id: USDRWF
+      Name: USD/RWF
+      Rate: '830.4800'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '845.4800'
+      Bid: '830.4800'
+    - id: USDWST
+      Name: USD/WST
+      Rate: '2.5629'
+      Date: 10/18/2017
+      Time: 11:50pm
+      Ask: '2.5679'
+      Bid: '2.5629'
+    - id: USDSTD
+      Name: USD/STD
+      Rate: '20775.0000'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '20825.0000'
+      Bid: '20775.0000'
+    - id: USDSAR
+      Name: USD/SAR
+      Rate: '3.7500'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '3.7505'
+      Bid: '3.7500'
+    - id: USDRSD
+      Name: USD/RSD
+      Rate: '100.9818'
+      Date: 10/18/2017
+      Time: 9:30am
+      Ask: '101.5896'
+      Bid: '100.9818'
+    - id: USDSCR
+      Name: USD/SCR
+      Rate: '13.4230'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '13.6230'
+      Bid: '13.4230'
+    - id: USDSLL
+      Name: USD/SLL
+      Rate: '7620.0000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '7720.0000'
+      Bid: '7620.0000'
+    - id: USDSGD
+      Name: USD/SGD
+      Rate: '1.3568'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '1.3570'
+      Bid: '1.3568'
+    - id: USDSBD
+      Name: USD/SBD
+      Rate: '7.7494'
+      Date: 10/18/2017
+      Time: 7:40pm
+      Ask: '7.7544'
+      Bid: '7.7494'
+    - id: USDSOS
+      Name: USD/SOS
+      Rate: '557.0000'
+      Date: 10/18/2017
+      Time: 7:09pm
+      Ask: '623.0000'
+      Bid: '557.0000'
+    - id: USDLKR
+      Name: USD/LKR
+      Rate: '153.6000'
+      Date: 10/18/2017
+      Time: 12:32pm
+      Ask: '153.6500'
+      Bid: '153.6000'
+    - id: USDSDG
+      Name: USD/SDG
+      Rate: '6.6599'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '6.6929'
+      Bid: '6.6599'
+    - id: USDSRD
+      Name: USD/SRD
+      Rate: '7.3800'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '7.4300'
+      Bid: '7.3800'
+    - id: USDSZL
+      Name: USD/SZL
+      Rate: '13.5600'
+      Date: 10/18/2017
+      Time: 11:52pm
+      Ask: '13.6100'
+      Bid: '13.5600'
+    - id: USDSEK
+      Name: USD/SEK
+      Rate: '8.1385'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '8.1417'
+      Bid: '8.1385'
+    - id: USDSYP
+      Name: USD/SYP
+      Rate: '514.9800'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '515.4800'
+      Bid: '514.9800'
+    - id: USDTJS
+      Name: USD/TJS
+      Rate: '8.8044'
+      Date: 10/18/2017
+      Time: 3:00am
+      Ask: '8.8054'
+      Bid: '8.8044'
+    - id: USDTHB
+      Name: USD/THB
+      Rate: '33.1100'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '33.1600'
+      Bid: '33.1100'
+    - id: USDTOP
+      Name: USD/TOP
+      Rate: '2.2123'
+      Date: 10/18/2017
+      Time: 11:50pm
+      Ask: '2.2173'
+      Bid: '2.2123'
+    - id: USDTTD
+      Name: USD/TTD
+      Rate: '6.6782'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '6.7282'
+      Bid: '6.6782'
+    - id: USDTND
+      Name: USD/TND
+      Rate: '2.4697'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '2.4717'
+      Bid: '2.4697'
+    - id: USDTRY
+      Name: USD/TRY
+      Rate: '3.6746'
+      Date: 10/18/2017
+      Time: 11:54pm
+      Ask: '3.6798'
+      Bid: '3.6746'
+    - id: USDTMT
+      Name: USD/TMT
+      Rate: '3.4000'
+      Date: 10/18/2017
+      Time: 7:11pm
+      Ask: '3.6000'
+      Bid: '3.4000'
+    - id: USDUGX
+      Name: USD/UGX
+      Rate: '3652.0000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '3662.0000'
+      Bid: '3652.0000'
+    - id: USDUAH
+      Name: USD/UAH
+      Rate: '26.4100'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '26.6600'
+      Bid: '26.4100'
+    - id: USDAED
+      Name: USD/AED
+      Rate: '3.6725'
+      Date: 10/18/2017
+      Time: 11:43pm
+      Ask: '3.6730'
+      Bid: '3.6725'
+    - id: USDUYU
+      Name: USD/UYU
+      Rate: '29.4100'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '29.5100'
+      Bid: '29.4100'
+    - id: USDUZS
+      Name: USD/UZS
+      Rate: '8030.0000'
+      Date: 10/18/2017
+      Time: 7:13pm
+      Ask: '8080.0000'
+      Bid: '8030.0000'
+    - id: USDVUV
+      Name: USD/VUV
+      Rate: '106.8700'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '108.8700'
+      Bid: '106.8700'
+    - id: USDVND
+      Name: USD/VND
+      Rate: '22718.0000'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '22728.0000'
+      Bid: '22718.0000'
+    - id: USDYER
+      Name: USD/YER
+      Rate: '249.9500'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '250.0500'
+      Bid: '249.9500'
+    - id: USDZMW
+      Name: USD/ZMW
+      Rate: '9.7300'
+      Date: 10/18/2017
+      Time: 11:25pm
+      Ask: '9.9300'
+      Bid: '9.7300'
+    - id: USDZWL
+      Name: USD/ZWL
+      Rate: '322.3550'
+      Date: 7/1/2016
+      Time: 0:13am
+      Ask: '325.5800'
+      Bid: '322.3550'
+    - id: USDXAU
+      Name: USD/XAU
+      Rate: '0.0008'
+      Date: 10/18/2017
+      Time: 11:53pm
+      Ask: N/A
+      Bid: '0.0008'
+    - id: USDXPD
+      Name: USD/XPD
+      Rate: '0.0010'
+      Date: 10/18/2017
+      Time: 11:53pm
+      Ask: N/A
+      Bid: '0.0010'
+    - id: USDXPT
+      Name: USD/XPT
+      Rate: '0.0011'
+      Date: 10/18/2017
+      Time: 11:53pm
+      Ask: N/A
+      Bid: '0.0011'
+    - id: USDXAG
+      Name: USD/XAG
+      Rate: '0.0588'
+      Date: 10/18/2017
+      Time: 11:53pm
+      Ask: N/A
+      Bid: '0.0588'
+    - id: USDFRF
+      Name: USD/FRF
+      Rate: '1700.2722'
+      Date: 2/27/2017
+      Time: 10:21pm
+      Ask: '1700.4215'
+      Bid: '1700.2722'
+    - id: USDECS
+      Name: USD/ECS
+      Rate: '25000.0000'
+      Date: 2/24/2017
+      Time: 8:27pm
+      Ask: '25000.0000'
+      Bid: '25000.0000'
+    - id: USDDEM
+      Name: USD/DEM
+      Rate: '1.7175'
+      Date: 6/22/2015
+      Time: 8:35am
+      Ask: '1.7176'
+      Bid: '1.7175'
+    - id: USDITL
+      Name: USD/ITL
+      Rate: '1700.2722'
+      Date: 2/24/2017
+      Time: 8:34pm
+      Ask: '1700.4215'
+      Bid: '1700.2722'
+    - id: USDIEP
+      Name: USD/IEP
+      Rate: '0.6992'
+      Date: 6/23/2015
+      Time: 5:53am
+      Ask: '0.6993'
+      Bid: '0.6992'
+    - id: USDLVL
+      Name: USD/LVL
+      Rate: '0.6205'
+      Date: 6/22/2015
+      Time: 9:37am
+      Ask: '0.6206'
+      Bid: '0.6205'
