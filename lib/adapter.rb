@@ -50,7 +50,12 @@ module CurrencyRate
       fetch_url = url
       if self.class::API_KEY_PARAM
         api_key = CurrencyRate.configuration.api_keys[self.name]
-        fetch_url << "&#{self.class::API_KEY_PARAM}=#{api_key}" if api_key
+        if api_key.nil?
+          CurrencyRate.logger.error("API key for #{self.name} not defined")
+          return nil
+        end
+        param_symbol = fetch_url.split("/").last.include?("?") ? "&" : "?"
+        fetch_url << "#{param_symbol}#{self.class::API_KEY_PARAM}=#{api_key}" if api_key
       end
       http_client = HTTP.timeout(connect: 4, read: 4)
       JSON.parse(http_client.get(fetch_url).to_s)
