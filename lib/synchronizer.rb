@@ -10,21 +10,21 @@ module CurrencyRate
       successfull = []
       failed = []
       [CurrencyRate.configuration.fiat_adapters, CurrencyRate.configuration.crypto_adapters].each do |adapters|
-        adapters.each do |adapter_name|
-          adapter_name = "#{adapter_name}Adapter" unless adapter_name.include? "Adapter"
+        adapters.each do |provider|
+          adapter_name = "#{provider}Adapter"
           begin
             adapter = CurrencyRate::const_get(adapter_name).instance
             rates = adapter.fetch_rates
             unless rates
-              CurrencyRate.logger.warn("Synchronizer#sync!: rates for #{adapter_name} not found")
-              failed.push(adapter_name)
+              CurrencyRate.logger.warn("Synchronizer#sync!: rates for #{provider} not found")
+              failed.push(provider)
               next
             end
-            exchange_name = adapter_name[0..-8].downcase
+            exchange_name = provider.downcase
             @storage.write(exchange_name, rates)
-            successfull.push(adapter_name)
+            successfull.push(provider)
           rescue StandardError => e
-            failed.push(adapter_name)
+            failed.push(provider)
             CurrencyRate.logger.error(e)
             next
           end
