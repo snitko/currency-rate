@@ -57,7 +57,7 @@ module CurrencyRate
         param_symbol = fetch_url.split("/").last.include?("?") ? "&" : "?"
         fetch_url << "#{param_symbol}#{self.class::API_KEY_PARAM}=#{api_key}" if api_key
       end
-      http_client = HTTP.timeout(connect: 4, read: 4)
+      http_client = HTTP.timeout(connect: CurrencyRate.configuration.connect_timeout, read: CurrencyRate.configuration.read_timeout)
       JSON.parse(http_client.get(fetch_url).to_s)
     end
 
