@@ -14,6 +14,11 @@ RSpec.describe CurrencyRate::Fetcher do
     expect(fetcher.storage).to be_a(CurrencyRate::FileStorage)
   end
 
+  it "overwrites the default list of fiat exchanges" do
+    fetcher = CurrencyRate::Fetcher.new(fiat_exchanges: ["CurrencyLayer", "Forge", "Fixer"])
+    expect(fetcher.fiat_exchanges).to eq(["CurrencyLayer", "Forge", "Fixer"])
+  end
+
   describe "#fetch_crypto" do
     before do
       @from = "BTC"

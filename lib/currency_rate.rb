@@ -39,7 +39,7 @@ module CurrencyRate
   end
 
   def self.fetcher
-    @fetcher ||= Fetcher.new
+    @fetcher ||= Fetcher.new(fiat_exchanges: configuration.fiat_adapters)
   end
 
   def self.fetch_crypto(exchange, from, to)
