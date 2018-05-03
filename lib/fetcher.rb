@@ -3,9 +3,9 @@ module CurrencyRate
     attr_accessor :storage
     attr_accessor :fiat_exchanges
 
-    def initialize(storage: nil)
+    def initialize(fiat_exchanges: nil, storage: nil)
       @storage = storage || FileStorage.new
-      @fiat_exchanges = ["Yahoo", "Fixer", "Forge"]
+      @fiat_exchanges = fiat_exchanges || ["Yahoo", "Fixer", "Forge"]
     end
 
     def fetch_crypto(exchange, from, to)
