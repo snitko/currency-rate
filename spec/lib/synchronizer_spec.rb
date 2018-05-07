@@ -9,12 +9,12 @@ RSpec.describe CurrencyRate::Synchronizer do
   describe "#sync!" do
     before do
       @kraken_data = normalized_data_for :kraken
-      @crypto_adapters = ["KrakenAdapter"]
+      @crypto_adapters = ["Kraken"]
       allow(CurrencyRate::KrakenAdapter.instance).to receive(:fetch_rates).and_return(@kraken_data)
       allow(CurrencyRate.configuration).to receive(:crypto_adapters).and_return(@crypto_adapters)
 
       @yahoo_data = normalized_data_for :yahoo
-      @fiat_adapters = ["YahooAdapter"]
+      @fiat_adapters = ["Yahoo"]
       allow(CurrencyRate::YahooAdapter.instance).to receive(:fetch_rates).and_return(@yahoo_data)
       allow(CurrencyRate.configuration).to receive(:fiat_adapters).and_return(@fiat_adapters)
     end
