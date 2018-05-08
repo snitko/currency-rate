@@ -63,6 +63,14 @@ module CurrencyRate
     @synchronizer ||= Synchronizer.new
   end
 
+  def self.sync_crypto!
+    synchronizer.sync_crypto!
+  end
+
+  def self.sync_fiat!
+    synchronizer.sync_fiat!
+  end
+
   def self.sync!
     synchronizer.sync!
   end
