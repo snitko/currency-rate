@@ -26,7 +26,7 @@ module CurrencyRate
 
   def self.adapters(type)
     Dir[File.join self.root, "lib/adapters/#{type}/*"].map do |file|
-      File.basename(file, ".rb").split('_').map {|w| w.capitalize}.join
+      File.basename(file, ".rb").split('_')[0...-1].map {|w| w.capitalize}.join
     end
   end
 
