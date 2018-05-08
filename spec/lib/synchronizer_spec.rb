@@ -4,6 +4,40 @@ RSpec.describe CurrencyRate::Synchronizer do
   before do
     @storage_double = double("storage")
     @synchronizer = CurrencyRate::Synchronizer.new(storage: @storage_double)
+
+    @kraken_data = normalized_data_for :kraken
+    @crypto_adapters = ["Kraken"]
+    allow(CurrencyRate::KrakenAdapter.instance).to receive(:fetch_rates).and_return(@kraken_data)
+    allow(CurrencyRate.configuration).to receive(:crypto_adapters).and_return(@crypto_adapters)
+
+    @yahoo_data = normalized_data_for :yahoo
+    @fiat_adapters = ["Yahoo"]
+    allow(CurrencyRate::YahooAdapter.instance).to receive(:fetch_rates).and_return(@yahoo_data)
+    allow(CurrencyRate.configuration).to receive(:fiat_adapters).and_return(@fiat_adapters)
+  end
+
+  describe "#sync_crypto!" do
+    it "saves crypto rates to given storage" do
+      expect(@storage_double).to receive(:write).with("kraken", @kraken_data)
+      @synchronizer.sync_crypto!
+    end
+
+    it "doesn't fetch fiat rates" do
+      expect(@storage_double).not_to receive(:write).with("yahoo", @yahoo_data)
+      @synchronizer.sync_crypto!
+    end
+  end
+
+  describe "#sync_fiat!" do
+    it "saves fiat rates to given storage" do
+      expect(@storage_double).to receive(:write).with("yahoo", @yahoo_data)
+      @synchronizer.sync_fiat!
+    end
+
+    it "doesn't fetch crypto rates" do
+      expect(@storage_double).not_to receive(:write).with("kraken", @kraken_data)
+      @synchronizer.sync_fiat!
+    end
   end
 
   describe "#sync!" do
