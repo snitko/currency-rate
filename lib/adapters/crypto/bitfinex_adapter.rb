@@ -3,6 +3,8 @@ module CurrencyRate
     FETCH_URL = {
       "BTC_USD" => "https://api.bitfinex.com/v1/pubticker/btcusd",
       "LTC_USD" => "https://api.bitfinex.com/v1/pubticker/ltcusd",
+      "BTC_EUR" => "https://api.bitfinex.com/v1/pubticker/btceur",
+      "LTC_EUR" => "https://api.bitfinex.com/v1/pubticker/ltceur"
     }
 
     def normalize(data)
