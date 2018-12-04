@@ -2,6 +2,7 @@ module CurrencyRate
   class Adapter
     include Singleton
 
+    CRYPTOS = []
     FETCH_URL = nil
     API_KEY_PARAM = nil
 

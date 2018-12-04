@@ -1,11 +1,16 @@
 module CurrencyRate
   class BitfinexAdapter < Adapter
-    FETCH_URL = {
-      "BTC_USD" => "https://api.bitfinex.com/v1/pubticker/btcusd",
-      "LTC_USD" => "https://api.bitfinex.com/v1/pubticker/ltcusd",
-      "BTC_EUR" => "https://api.bitfinex.com/v1/pubticker/btceur",
-      "LTC_EUR" => "https://api.bitfinex.com/v1/pubticker/ltceur"
-    }
+    USD = "usd"
+    CRYPTOS = [
+                "btc","ltc","xrp","eth","etc","xtz","zec","xmr","eos","btg","etp",
+                "trx","iqx","xvg","vet","dgb","aio","bci","omn","pai","dsh"
+              ]
+
+    ASSET_MAP = {
+                  "DSH" => "DASH",
+                }
+
+    FETCH_URL = Hash[CRYPTOS.collect { |crypto| [ "#{ASSET_MAP[crypto.upcase] || crypto}_#{USD}".upcase, "https://api.bitfinex.com/v1/pubticker/#{crypto}#{USD}" ] }]
 
     def normalize(data)
       return nil unless super

@@ -1,13 +1,19 @@
 module CurrencyRate
   class CoinbaseAdapter < Adapter
-    FETCH_URL = 'https://coinbase.com/api/v1/currencies/exchange_rates'
+    CRYPTOS = ["btc","ltc","eth","etc"]
 
-    def normalize(data)
+    FETCH_URL = "https://api.coinbase.com/v2/exchange-rates?currency=BTC"
+
+    def normalize(response)
       return nil unless super
-      data.reduce({}) do |result, (pair, value)|
-        result[pair.gsub("_to_", "_").upcase] = BigDecimal.new(value.to_s)
-        result
+      data = response["data"]
+      result = {}
+
+      data["rates"].each do |currency, rate|
+        result["BTC_#{currency}"] = BigDecimal.new(rate.to_s)
       end
+
+      result
     end
 
   end

@@ -1,21 +1,24 @@
 module CurrencyRate
   class KrakenAdapter < Adapter
-    FETCH_URL = {
-      "BTC_USD" => "https://api.kraken.com/0/public/Ticker?pair=xbtusd",
-      "BTC_EUR" => "https://api.kraken.com/0/public/Ticker?pair=xbteur",
-      "LTC_USD" => "https://api.kraken.com/0/public/Ticker?pair=ltcusd",
-      "LTC_EUR" => "https://api.kraken.com/0/public/Ticker?pair=ltceur",
-    }
+    USD = "usd"
+    CRYPTOS = ["btc","ltc","xrp","eth","etc","zec","xmr","eos","dash"]
 
     ASSET_MAP = {
-      "BTC" => "XBT",
-    }
+                  "BTC" => "XBT",
+                  "XBT" => "BTC",
+                }
+
+    FETCH_URL = Hash[CRYPTOS.collect { |crypto| [ "#{crypto}_#{USD}".upcase, "https://api.kraken.com/0/public/Ticker?pair=#{ASSET_MAP[crypto.upcase]&.downcase || crypto}#{USD}" ] }]
 
     def normalize(data)
       return nil unless super
       data.reduce({}) do |result, (pair, value)|
         crypto, fiat = pair.split("_")
-        result[pair] = BigDecimal.new(value["result"]["X#{ta(crypto)}Z#{ta(fiat)}"]["c"].first.to_s)
+        begin
+          result[pair] = BigDecimal.new(value["result"]["X#{ta(crypto)}Z#{ta(fiat)}"]["c"].first.to_s)
+        rescue NoMethodError => e
+          result[pair] = BigDecimal.new(value["result"]["#{ta(crypto)}#{ta(fiat)}"]["c"].first.to_s)
+        end
         result
       end
     end
