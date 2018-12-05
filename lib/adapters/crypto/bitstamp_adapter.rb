@@ -1,8 +1,10 @@
 module CurrencyRate
   class BitstampAdapter < Adapter
-    USD = "usd"
-    CRYPTOS = ["btc","ltc","xrp","eth"]
-    FETCH_URL = Hash[CRYPTOS.collect { |crypto| [ "#{crypto}_#{USD}".upcase, "https://www.bitstamp.net/api/v2/ticker/#{crypto}#{USD}/" ] }]
+    CRYPTOS = %w[
+                  btc eth ltc xrp
+                ]
+
+    FETCH_URL = Hash[CRYPTOS.collect { |crypto| [ "#{crypto}_usd".upcase, "https://www.bitstamp.net/api/v2/ticker/#{crypto}usd/" ] }]
 
     def normalize(data)
       return nil unless super

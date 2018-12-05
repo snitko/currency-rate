@@ -7,6 +7,7 @@ module CurrencyRate
     end
 
     def sync_fiat!
+      debugger
       _sync CurrencyRate.configuration.fiat_adapters
     end
 
