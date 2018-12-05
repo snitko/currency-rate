@@ -2,14 +2,10 @@ module CurrencyRate
   class Fetcher
     attr_accessor :storage
     attr_accessor :fiat_exchanges
-    attr_accessor :crypto_exchanges
 
-    CRYPTOS = %w(btc ltc xrp eth etc xtz zec xmr eos btg etp trx iqx xvg vet dgb aio bci omn pai dash).map(&:upcase)
-
-    def initialize(fiat_exchanges: nil, storage: nil, crypto_exchanges: nil)
+    def initialize(fiat_exchanges: nil, storage: nil)
       @storage = storage || FileStorage.new
       @fiat_exchanges = fiat_exchanges || ["Yahoo", "Fixer", "Forge"]
-      @crypto_exchanges = crypto_exchanges || []
     end
 
     def fetch_crypto(exchange, from, to)
@@ -48,14 +44,6 @@ module CurrencyRate
         return BigDecimal.new(rates[left]) / BigDecimal.new(rates[right]) if rates[left] && rates[right]
       end
 
-      unless CRYPTOS.include?(left) || CRYPTOS.include?(right)
-        @crypto_exchanges.each do |exchange|
-          rates = @storage.read(exchange)
-          next if rates.nil?
-          return BigDecimal.new(rates["#{left}_#{right}"]) if rates["#{left}_#{right}"]
-          return BigDecimal.new(rates["#{right}_#{left}"]) if rates["#{right}_#{left}"]
-        end
-      end
       CurrencyRate.logger.warn("Fetcher#fetch_fiat: rate for #{from}_#{to} not found")
       nil
     end

@@ -1,0 +1,59 @@
+rates:
+  USDJPY:
+    rate: 113.7615
+    timestamp: 1508782437
+
+  USDCHF:
+    rate: 0.98699
+    timestamp: 1508782437
+  USDCAD:
+    rate: 1.26549
+    timestamp: 1508782437
+
+  USDSEK:
+    rate: 8.21227
+    timestamp: 1508782437
+
+  USDNOK:
+    rate: 8.0148
+    timestamp: 1508782437
+
+  USDMXN:
+    rate: 19.0939
+    timestamp: 1508782437
+
+  USDZAR:
+    rate: 13.7208
+    timestamp: 1508782437
+
+  USDTRY:
+    rate: 3.71892
+    timestamp: 1508782437
+
+  USDCNH:
+    rate: 6.63922
+    timestamp: 1508782437
+
+  USDEUR:
+    rate: 0.852751
+    timestamp: 1508782437
+
+  USDGBP:
+    rate: 0.757828
+    timestamp: 1508782437
+
+  USDAUD:
+    rate: 1.28239
+    timestamp: 1508782437
+
+  USDNZD:
+    rate: 1.43683
+    timestamp: 1508782437
+
+  USDXAU:
+    rate: 0.000781711
+    timestamp: 1508782437
+
+  USDXAG:
+    rate: 0.058658
+    timestamp: 1508782437

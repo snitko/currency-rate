@@ -1,6 +1,8 @@
 module CurrencyRate
   class CoinbaseAdapter < Adapter
-    CRYPTOS = ["btc","ltc","eth","etc"]
+    CRYPTOS = %w[
+                  btc etc eth ltc
+                ]
 
     FETCH_URL = "https://api.coinbase.com/v2/exchange-rates?currency=BTC"
 

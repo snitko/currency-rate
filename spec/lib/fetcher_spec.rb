@@ -19,11 +19,6 @@ RSpec.describe CurrencyRate::Fetcher do
     expect(fetcher.fiat_exchanges).to eq(["CurrencyLayer", "Forge", "Fixer"])
   end
 
-  it "overwrites the default list of crypto exchanges" do
-    fetcher = CurrencyRate::Fetcher.new(crypto_exchanges: ["Localbitcoins", "Bitfinex"])
-    expect(fetcher.crypto_exchanges).to eq(["Localbitcoins", "Bitfinex"])
-  end
-
   describe "#fetch_crypto" do
     before do
       @from = "BTC"
@@ -194,19 +189,5 @@ RSpec.describe CurrencyRate::Fetcher do
       end
     end
 
-    context "when fiat exchanges don't suppport fiat" do
-      before do
-        @from = "VES"
-        @to = "USD"
-        @ves_usd = BigDecimal.new("1000.5432")
-        @crypto_exchanges = ["Localbitcoins"]
-        @fetcher = CurrencyRate::Fetcher.new(storage: @storage_double, crypto_exchanges: @crypto_exchanges)
-
-        @fiat_exchanges.each { |ex| allow(@storage_double).to receive(:read).with(ex).and_return(nil) }
-        allow(@storage_double).to receive(:read).with(@crypto_exchanges.first).and_return({"VES_USD" => @ves_usd})
-      end
-
-      it { is_expected.to eq(@ves_usd) }
-    end
   end
 end
