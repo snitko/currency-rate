@@ -63,3 +63,11 @@ Details
 `CurrencyRate` contains two parts that can work independently: Synchronizer and Fetcher.
 `CurrencyRate::Synchronizer` loads data from selected exchanges using adapters and saves it into FileStorage in normalized format.
 `CurrencyRate::Fetch` reads data from FileStorage and returns rate for requested pair and exchange.
+
+Development
+-----------
+When adapter's output format changes you can replace fixtures by running `bin/rake update_rates['ExchangeName']`.
+For example `bin/rake update_rates['Fixer']` will update fixtures for the FixerAdapter.
+
+Some of adapters require API keys so the task searches for 'api_keys.yml` file in project root.
+You can copy it from `api_keys.yml.sample` and set up your values.

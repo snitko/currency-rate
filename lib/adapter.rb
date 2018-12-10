@@ -1,3 +1,4 @@
+
 module CurrencyRate
   class Adapter
     include Singleton
@@ -33,9 +34,8 @@ module CurrencyRate
 
       begin
         if self.class::FETCH_URL.kind_of?(Hash)
-          self.class::FETCH_URL.reduce({}) do |result, (name, url)|
+          self.class::FETCH_URL.each_with_object({}) do |(name, url), result|
             result[name] = request url
-            result
           end
         else
           request self.class::FETCH_URL
