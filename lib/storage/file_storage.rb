@@ -4,8 +4,8 @@ module CurrencyRate
     attr_accessor :serializer
 
     def initialize(path = nil, serializer: nil)
-      @path       ||= CurrencyRate.configuration.file_storage[:path]
-      @serializer ||= Storage::YAMLSerializer.new
+      @path       = path || CurrencyRate.configuration.file_storage[:path]
+      @serializer = serializer || Storage::YAMLSerializer.new
     end
 
     def read(exchange_name)

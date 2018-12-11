@@ -1,7 +1,9 @@
 module CurrencyRate
   class FixerAdapter < Adapter
-    ANCHOR_CURRENCY = "USD"
-    FETCH_URL = "http://api.fixer.io/latest?base=usd"
+    # EUR is the only currency available as a base on free plan
+    ANCHOR_CURRENCY = "EUR"
+    FETCH_URL = "http://data.fixer.io/latest"
+    API_KEY_PARAM = "access_key"
 
     def normalize(data)
       return nil unless super

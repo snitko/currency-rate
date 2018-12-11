@@ -4,12 +4,13 @@ require "singleton"
 require "json"
 require "http"
 
-require "configuration"
-require "adapter"
-require "fetcher"
-require "synchronizer"
+require_relative "configuration"
+require_relative "adapter"
+require_relative "fetcher"
+require_relative "synchronizer"
 
-Dir["#{File.expand_path File.dirname(__FILE__)}/**/*.rb"].each { |f| require f }
+Dir["#{File.expand_path __dir__}/adapters/**/*.rb"].each { |f| require f }
+Dir["#{File.expand_path __dir__}/storage/**/*.rb"].each { |f| require f }
 
 module CurrencyRate
   class << self

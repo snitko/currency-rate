@@ -7,11 +7,11 @@ require_relative "../lib/currency_rate"
 Dir[File.join CurrencyRate.root, "spec/support/**/*.rb"].each { |f| require f }
 
 def exchange_data_for(name)
-  YAML.load_file File.join(CurrencyRate.root, "spec/fixtures/adapters/#{name}_adapter.yml")
+  YAML.load_file File.join(CurrencyRate.root, "spec/fixtures/adapters/#{name}_rates.yml")
 end
 
 def normalized_data_for(name)
-  floating = YAML.load_file File.join(CurrencyRate.root, "spec/fixtures/adapters/normalized/#{name}_adapter.yml")
+  floating = YAML.load_file File.join(CurrencyRate.root, "spec/fixtures/adapters/normalized/#{name}_rates.yml")
   floating.each { |k, v| floating[k] = BigDecimal.new(v.to_s) if k != "anchor" }
 end
 
