@@ -1,15 +1,17 @@
 module CurrencyRate
   class BitstampAdapter < Adapter
-    CRYPTOS = %w[
-                  btc eth ltc xrp
-                ]
+    SUPPORTED_CURRENCIES = %w(
+      BCH BTC ETH EUR LTC XRP
+    )
 
-    FETCH_URL = Hash[CRYPTOS.collect { |crypto| [ "#{crypto}_usd".upcase, "https://www.bitstamp.net/api/v2/ticker/#{crypto}usd/" ] }]
+    ANCHOR_CURRENCY = "USD"
+
+    FETCH_URL = Hash[SUPPORTED_CURRENCIES.collect { |currency| [ currency, "https://www.bitstamp.net/api/v2/ticker/#{currency}usd/".downcase ] }]
 
     def normalize(data)
       return nil unless super
-      data.reduce({}) do |result, (pair, value)|
-        result[pair] = BigDecimal.new(value["last"].to_s)
+      data.reduce({ "anchor" => ANCHOR_CURRENCY, ANCHOR_CURRENCY => BigDecimal.new("1") }) do |result, (key, value)|
+        result[key] =  1 / BigDecimal.new(value["last"].to_s)
         result
       end
     end

@@ -4,7 +4,7 @@ RSpec.describe CurrencyRate::Fetcher do
   before do
     @usd_try = BigDecimal.new("22")
     @usd_eur = BigDecimal.new("0.8457")
-    @eur_try = @usd_eur / @usd_try
+    @eur_try = @usd_try / @usd_eur
     @storage_double = double("storage")
     @fetcher = CurrencyRate::Fetcher.new(storage: @storage_double)
   end
@@ -22,8 +22,8 @@ RSpec.describe CurrencyRate::Fetcher do
   describe "#fetch_crypto" do
     before do
       @from = "BTC"
-      @to = "TRY"
-      @btc_try = BigDecimal.new("3832.5432")
+      @to = "ETH"
+      @btc_eth = BigDecimal.new("3832.5432")
       @exchange = "Bitstamp"
     end
 
@@ -35,93 +35,25 @@ RSpec.describe CurrencyRate::Fetcher do
       it { is_expected.to be_nil }
     end
 
-    context "when pair supported by selected exchange" do
-      context "when fetching for a crypto-crypto pair" do
-        before do
-          @to = "ETH"
-          @btc_eth = BigDecimal.new("5032.5432")
-          allow(@storage_double).to receive(:read).with(@exchange).and_return({ "BTC_ETH" => @btc_eth })
-        end
-
-        it { is_expected.to eq(@btc_eth) }
-
-        it { is_expected.to be_a(BigDecimal) }
+    context "when pair is supported by selected exchange" do
+      before do
+        allow(@storage_double).to receive(:read).with(@exchange).and_return({ "anchor" => "BTC", "ETH" => @btc_eth })
       end
 
-      context "when fetching for a crypto-fiat pair" do
-        before do
-          allow(@storage_double).to receive(:read).with(@exchange).and_return({ "BTC_TRY" => @btc_try })
-        end
+      it { is_expected.to eq(@btc_eth) }
 
-        it { is_expected.to eq(@btc_try) }
-
-        it { is_expected.to be_a(BigDecimal) }
-      end
+      it { is_expected.to be_a(BigDecimal) }
     end
 
-    context "when pair not supported by selected exchange" do
+    context "when pair is not supported by selected exchange" do
       before do
-        allow(@storage_double).to receive(:read).with(@exchange).and_return({ "LTC_TRY" => @btc_try })
+        allow(@storage_double).to receive(:read).with(@exchange).and_return({ "anchor" => "BTC", "XOS" => @btc_eth })
+        allow(@storage_double).to receive(:read).with("Yahoo").and_return(nil)
+        allow(@storage_double).to receive(:read).with("Fixer").and_return(nil)
+        allow(@storage_double).to receive(:read).with("Forge").and_return(nil)
       end
 
       it { is_expected.to be_nil }
-    end
-
-    context "when requested fiat currency not supported by selected exchange" do
-      context "when selected exchange supports USD" do
-        context "when fetching for a crypto-fiat pair" do
-          before do
-            @btc_usd = @btc_try
-            allow(@storage_double).to receive(:read).with(@exchange).and_return({ "BTC_USD" => @btc_usd })
-          end
-
-          context "when any of fiat exchanges supports rate from USD to requested fiat currency" do
-            before do
-              allow(@fetcher).to receive(:fetch_fiat).with("USD", "TRY").and_return(@usd_try)
-            end
-
-            it { is_expected.to eq(@btc_usd * @usd_try) }
-          end
-        end
-
-        context "when fetching for a crypto-crypto pair" do
-          before do
-            @btc_usd = BigDecimal.new("3000.5432")
-            @eth_usd = BigDecimal.new("503.5432")
-            @from = "BTC"
-            @to = "ETH"
-            allow(@storage_double).to receive(:read).with(@exchange).and_return({ "BTC_USD" => @btc_usd, "ETH_USD" => @eth_usd })
-            allow(@fetcher).to receive(:fetch_fiat).with("USD", "ETH").and_return(nil)
-          end
-
-          context "when any of crypto exchanges supports rate from USD to requested crypto" do
-            it { is_expected.to eq(@btc_usd / @eth_usd) }
-          end
-        end
-      end
-
-      context "when selected exchange doesn't support USD" do
-        before do
-          @btc_eur = @btc_try
-          allow(@storage_double).to receive(:read).with(@exchange).and_return({ "BTC_EUR" => @btc_eur })
-        end
-
-        context "when any of fiat exchanges supports rate for one of supported by selected exchange currency" do
-          before do
-            allow(@fetcher).to receive(:fetch_fiat).with("EUR", "TRY").and_return(@eur_try)
-          end
-
-          it { is_expected.to eq(@btc_eur * @eur_try) }
-        end
-
-        context "when none of fiat exchanges support rate for one of supported by selected exchange currency" do
-          before do
-            allow(@fetcher).to receive(:fetch_fiat).with("EUR", "TRY").and_return(nil)
-          end
-
-          it { is_expected.to be_nil }
-        end
-      end
     end
   end
 
@@ -152,7 +84,6 @@ RSpec.describe CurrencyRate::Fetcher do
       before do
         allow(@storage_double).to receive(:read).with(@fiat_exchanges.first).and_return({ "anchor" => "EUR", "TRY" => @eur_try })
       end
-
       it { is_expected.to eq(@eur_try) }
     end
 

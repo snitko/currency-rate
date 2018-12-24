@@ -1,57 +1,73 @@
-BTC_COP: 3071345.70
-BTC_USD: 1327.00
-BTC_QAR: 4414.12
-BTC_NGN: 381626.58
-BTC_EGP: 21908.04
-BTC_IDR: 12280664.90
-BTC_HNL: 27029.43
-BTC_CRC: 561597.88
-BTC_PEN: 3366.88
-BTC_AED: 3665.43
-BTC_GBP: 781.86
-BTC_DOP: 54124.73
-BTC_DKK: 6668.79
-BTC_CAD: 1300.56
-BTC_PKR: 111372.40
-BTC_JPY: 165898.42
-BTC_HUF: 337882.36
-BTC_VND: 22116172.02
-BTC_RON: 4170.97
-BTC_MYR: 4500.42
-BTC_UAH: 27003.08
-BTC_UGX: 3603949.58
-BTC_JOD: 837.52
-BTC_SAR: 4392.12
-BTC_SEK: 10266.65
-BTC_SGD: 1621.91
-BTC_HKD: 8337.46
-BTC_AUD: 1473.08
-BTC_CHF: 1056.67
-BTC_IRR: 37937589.30
-BTC_TZS: 2221246.83
-BTC_CNY: 7312.62
-BTC_TRY: 6285.05
-BTC_BDT: 74927.09
-BTC_HRK: 7592.33
-BTC_NZD: 1624.19
-BTC_BYN: 2193.00
-BTC_CLP: 750433.19
-BTC_THB: 35046.97
-BTC_XAF: 501405.13
-BTC_EUR: 811.49
-BTC_VEF: 3700000.00
-BTC_ARS: 17270.75
-BTC_RWF: 1115533.23
-BTC_KZT: 329397.40
-BTC_NOK: 9377.88
-BTC_RUB: 62351.00
-BTC_KES: 111000.01
-BTC_PAB: 1036.98
-BTC_INR: 65922.33
-BTC_MXN: 20938.46
-BTC_CZK: 24783.10
-BTC_BRL: 3642.73
-BTC_MAD: 10432.89
-BTC_PLN: 4007.25
-BTC_PHP: 54806.71
-BTC_ZAR: 14919.00
+---
+anchor: BTC
+COP: !ruby/object:BigDecimal 27:0.127493114e8
+USD: !ruby/object:BigDecimal 18:0.663911e4
+TWD: !ruby/object:BigDecimal 18:0.12366578e6
+GHS: !ruby/object:BigDecimal 18:0.1940597e5
+DASH: !ruby/object:BigDecimal 18:0.4616e2
+NGN: !ruby/object:BigDecimal 18:0.1483e7
+EGP: !ruby/object:BigDecimal 18:0.7704933e5
+IDR: !ruby/object:BigDecimal 27:0.6327229927e8
+HNL: !ruby/object:BigDecimal 18:0.1e6
+CRC: !ruby/object:BigDecimal 18:0.231011811e7
+PEN: !ruby/object:BigDecimal 18:0.1465e5
+AED: !ruby/object:BigDecimal 18:0.1422976e5
+GBP: !ruby/object:BigDecimal 18:0.351652e4
+MWK: !ruby/object:BigDecimal 18:0.344837627e7
+DOP: !ruby/object:BigDecimal 18:0.19099927e6
+LKR: !ruby/object:BigDecimal 18:0.82649798e6
+DKK: !ruby/object:BigDecimal 18:0.218721e5
+AUD: !ruby/object:BigDecimal 18:0.678064e4
+PKR: !ruby/object:BigDecimal 18:0.64395025e6
+JPY: !ruby/object:BigDecimal 18:0.41299434e6
+TZS: !ruby/object:BigDecimal 18:0.91e7
+VND: !ruby/object:BigDecimal 27:0.10147828492e9
+KWD: !ruby/object:BigDecimal 18:0.128685e4
+RON: !ruby/object:BigDecimal 18:0.1479364e5
+CLP: !ruby/object:BigDecimal 18:0.33000033e7
+MYR: !ruby/object:BigDecimal 18:0.1688598e5
+THB: !ruby/object:BigDecimal 18:0.13069076e6
+UAH: !ruby/object:BigDecimal 18:0.115e6
+UGX: !ruby/object:BigDecimal 27:0.16e8
+JOD: !ruby/object:BigDecimal 18:0.310621e4
+XMR: !ruby/object:BigDecimal 18:0.7797e2
+QAR: !ruby/object:BigDecimal 18:0.1902498e5
+SAR: !ruby/object:BigDecimal 18:0.1615426e5
+ETH: !ruby/object:BigDecimal 18:0.3142e2
+CAD: !ruby/object:BigDecimal 18:0.606405e4
+SEK: !ruby/object:BigDecimal 18:0.3699445e5
+SGD: !ruby/object:BigDecimal 18:0.555581e4
+HKD: !ruby/object:BigDecimal 18:0.3377905e5
+GEL: !ruby/object:BigDecimal 18:0.1092341e5
+VES: !ruby/object:BigDecimal 18:0.296637695e7
+CHF: !ruby/object:BigDecimal 18:0.438436e4
+IRR: !ruby/object:BigDecimal 27:0.418580977e9
+XOF: !ruby/object:BigDecimal 18:0.260622993e7
+KRW: !ruby/object:BigDecimal 18:0.493323495e7
+CNY: !ruby/object:BigDecimal 18:0.2924707e5
+BYN: !ruby/object:BigDecimal 18:0.998109e4
+BDT: !ruby/object:BigDecimal 18:0.31244274e6
+NZD: !ruby/object:BigDecimal 18:0.679631e4
+TRY: !ruby/object:BigDecimal 18:0.2053274e5
+XRP: !ruby/object:BigDecimal 18:0.1111831e5
+XAF: !ruby/object:BigDecimal 18:0.216502725e7
+EUR: !ruby/object:BigDecimal 18:0.359529e4
+LTC: !ruby/object:BigDecimal 18:0.12205e3
+MGA: !ruby/object:BigDecimal 27:0.1801846442e8
+ARS: !ruby/object:BigDecimal 18:0.20910295e6
+UYU: !ruby/object:BigDecimal 18:0.15183513e6
+SZL: !ruby/object:BigDecimal 18:0.6942379e5
+KZT: !ruby/object:BigDecimal 18:0.175083871e7
+NOK: !ruby/object:BigDecimal 18:0.38584e5
+RUB: !ruby/object:BigDecimal 18:0.30800031e6
+ZAR: !ruby/object:BigDecimal 18:0.587e5
+PAB: !ruby/object:BigDecimal 18:0.41e4
+INR: !ruby/object:BigDecimal 18:0.30011104e6
+MXN: !ruby/object:BigDecimal 18:0.879e5
+CZK: !ruby/object:BigDecimal 18:0.8228387e5
+BRL: !ruby/object:BigDecimal 18:0.1732362e5
+MAD: !ruby/object:BigDecimal 18:0.4204896e5
+PLN: !ruby/object:BigDecimal 18:0.1426295e5
+PHP: !ruby/object:BigDecimal 18:0.19297456e6
+KES: !ruby/object:BigDecimal 18:0.46254363e6
+ILS: !ruby/object:BigDecimal 18:0.1445634e5
