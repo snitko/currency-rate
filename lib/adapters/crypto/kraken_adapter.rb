@@ -2,31 +2,37 @@ module CurrencyRate
   class KrakenAdapter < Adapter
     SUPPORTED_CURRENCIES = %w(
       ADA BCH BSV BTC DASH EOS ETC ETH GNO LTC MLN
-      NMC QTUM REP USDT XDG XLM XMR XRP XTZ ZEC
+      NMC QTUM REP XDG XLM XMR XRP XTZ ZEC
     )
 
     ASSET_MAP = {
                   "XXBTZ" => "BTC",
-                  "XETCZ" => "ETC",
-                  "XETHZ" => "ETH",
-                  "XLTCZ" => "LTC",
-                  "XREPZ" => "REP",
-                  "XXLMZ" => "XLM",
-                  "XXMRZ" => "XMR",
-                  "XXRPZ" => "XRP",
-                  "XZECZ" => "ZEC",
-                  "USDTZ" => "USDT",
-                  "TZUSD" => "USDT",
+                  "XETCX" => "ETC",
+                  "XETHX" => "ETH",
+                  "XLTCX" => "LTC",
+                  "XREPX" => "REP",
+                  "XXLMX" => "XLM",
+                  "XXMRX" => "XMR",
+                  "XXRPX" => "XRP",
+                  "XZECX" => "ZEC",
+                  "XZUSD" => "USD",
+                  "BTC"   => "XBT",
                 }
 
-    ANCHOR_CURRENCY = "USD"
+    ANCHOR_CURRENCY = "BTC"
 
-    FETCH_URL = "https://api.kraken.com/0/public/Ticker?pair=#{ %w(ADAUSD BCHUSD BSVUSD DASHUSD EOSUSD GNOUSD QTUMUSD XTZUSD USDTZUSD XETCZUSD XETHZUSD XLTCZUSD XREPZUSD XXLMZUSD XXMRZUSD XXRPZUSD XZECZUSD XXBTZUSD).join(",") }"
+    FETCH_URL = "https://api.kraken.com/0/public/Ticker?pair=#{ %w(ADAXBT BCHXBT BSVXBT DASHXBT EOSXBT GNOXBT QTUMXBT XTZXBT XETCXXBT XETHXXBT XLTCXXBT XREPXXBT XXLMXXBT XXMRXXBT XXRPXXBT XZECXXBT XXBTZUSD).join(",") }"
 
     def normalize(data)
       return nil unless super
-      data["result"].reduce({ "anchor" => ANCHOR_CURRENCY, ANCHOR_CURRENCY => BigDecimal.new("1") }) do |result, (pair, value)|
-        result[ta(pair.sub(ANCHOR_CURRENCY, ""))] = 1 / BigDecimal.new(value["c"].first.to_s)
+      data["result"].reduce({ "anchor" => ANCHOR_CURRENCY }) do |result, (pair, value)|
+        key = ta(pair.sub(ta(ANCHOR_CURRENCY), ""))
+
+        if key == "USD"
+          result[key] = BigDecimal.new(value["c"].first.to_s)
+        else
+          result[key] = 1 / BigDecimal.new(value["c"].first.to_s)
+        end
         result
       end
     end

@@ -1,9 +1,7 @@
 ---
-anchor: USD
-USD: !ruby/object:BigDecimal 18:0.1e1
-BCH: !ruby/object:BigDecimal 45:0.4823926676314520019295707e-2
-BTC: !ruby/object:BigDecimal 45:0.23918581149766195869261e-3
-ETH: !ruby/object:BigDecimal 45:0.6891323823306457170422438e-2
-EUR: !ruby/object:BigDecimal 45:0.878734622144112478031634447e0
-LTC: !ruby/object:BigDecimal 45:0.28579594169762789368390969e-1
-XRP: !ruby/object:BigDecimal 36:0.2314707652e1
+anchor: BTC
+BCH: !ruby/object:BigDecimal 36:0.23292236511e2
+ETH: !ruby/object:BigDecimal 36:0.28556285581e2
+LTC: !ruby/object:BigDecimal 36:0.12277470841e3
+XRP: !ruby/object:BigDecimal 36:0.10461345329009e5
+USD: !ruby/object:BigDecimal 18:0.384e4
