@@ -6,7 +6,7 @@
 
 Gem::Specification.new do |s|
   s.name = "currency-rate".freeze
-  s.version = "1.4.0"
+  s.version = "1.4.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
@@ -110,6 +110,15 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT".freeze]
   s.rubygems_version = "2.7.6".freeze
   s.summary = "Converter for fiat and crypto currencies".freeze
+
+  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
+  # to allow pushing to a single host or delete this section to allow pushing to any host.
+  if spec.respond_to?(:metadata)
+    spec.metadata["allowed_push_host"] = "http://ci2.hodlhodl.com:9292"
+  else
+    raise "RubyGems 2.0 or newer is required to protect against " \
+      "public gem pushes."
+  end
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
