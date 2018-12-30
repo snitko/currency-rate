@@ -1,21 +1,19 @@
 ---
-anchor: USD
-USD: !ruby/object:BigDecimal 18:0.1e1
-ADA: !ruby/object:BigDecimal 36:0.20704791089e2
-BCH: !ruby/object:BigDecimal 36:0.4784688995215311e-2
-BSV: !ruby/object:BigDecimal 45:0.8703220191470844212358573e-2
-DASH: !ruby/object:BigDecimal 45:0.10392957731840904603040979e-1
-EOS: !ruby/object:BigDecimal 45:0.330098369314055588565392487e0
-GNO: !ruby/object:BigDecimal 45:0.83892617449664429530201342e-1
-QTUM: !ruby/object:BigDecimal 45:0.349076692149265193563025797e0
-USDT: !ruby/object:BigDecimal 45:0.992851469420174741858617951e0
-ETC: !ruby/object:BigDecimal 45:0.184229918938835666912306559e0
-ETH: !ruby/object:BigDecimal 45:0.6795786612300373768263677e-2
-LTC: !ruby/object:BigDecimal 36:0.27777777777777778e-1
-REP: !ruby/object:BigDecimal 45:0.107654214662504037033049844e0
-XTZ: !ruby/object:BigDecimal 36:0.1716148962e1
-BTC: !ruby/object:BigDecimal 45:0.23810090716445629657849e-3
-XLM: !ruby/object:BigDecimal 36:0.7151848038e1
-XMR: !ruby/object:BigDecimal 45:0.17724211272598369372562921e-1
-XRP: !ruby/object:BigDecimal 36:0.229652765e1
-ZEC: !ruby/object:BigDecimal 45:0.14052838673412029229904441e-1
+anchor: BTC
+ADA: !ruby/object:BigDecimal 36:0.90497737556561e5
+BCH: !ruby/object:BigDecimal 36:0.23435669088e2
+BSV: !ruby/object:BigDecimal 36:0.43103448276e2
+DASH: !ruby/object:BigDecimal 36:0.47641734159e2
+EOS: !ruby/object:BigDecimal 36:0.1485222040695e4
+GNO: !ruby/object:BigDecimal 36:0.347222222222e3
+QTUM: !ruby/object:BigDecimal 36:0.1677852348993e4
+ETC: !ruby/object:BigDecimal 36:0.733675715334e3
+ETH: !ruby/object:BigDecimal 36:0.28645087368e2
+LTC: !ruby/object:BigDecimal 36:0.122503981379e3
+REP: !ruby/object:BigDecimal 36:0.474383301708e3
+XTZ: !ruby/object:BigDecimal 36:0.7564296520424e4
+USD: !ruby/object:BigDecimal 18:0.38369e4
+XLM: !ruby/object:BigDecimal 36:0.3269042170644e5
+XMR: !ruby/object:BigDecimal 36:0.80269706213e2
+XRP: !ruby/object:BigDecimal 36:0.1047668936616e5
+ZEC: !ruby/object:BigDecimal 36:0.64308681672e2
