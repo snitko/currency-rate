@@ -39,7 +39,7 @@ module CurrencyRate
           @storage.write(exchange_name, rates)
           successfull.push(provider)
         rescue StandardError => e
-          failed.push(provider)
+          failed.push({ provider: e })
           CurrencyRate.logger.error(e)
           next
         end
