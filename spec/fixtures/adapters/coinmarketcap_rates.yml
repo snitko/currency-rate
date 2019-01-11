@@ -1,0 +1,2472 @@
+---
+status:
+  timestamp: '2019-01-09T03:27:31.026Z'
+  error_code: 0
+  error_message: 
+  elapsed: 24
+  credit_count: 1
+data:
+- id: 1
+  name: Bitcoin
+  symbol: BTC
+  slug: bitcoin
+  circulating_supply: 17471175
+  total_supply: 17471175
+  max_supply: 21000000
+  date_added: '2013-04-28T00:00:00.000Z'
+  num_market_pairs: 6710
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 1
+  last_updated: '2019-01-09T03:25:23.000Z'
+  quote:
+    USD:
+      price: 4059.24129325
+      volume_24h: 5433360281.05084
+      percent_change_1h: -0.010389
+      percent_change_24h: 1.33094
+      percent_change_7d: 6.13317
+      market_cap: 70919715001.59708
+      last_updated: '2019-01-09T03:25:23.000Z'
+- id: 1027
+  name: Ethereum
+  symbol: ETH
+  slug: ethereum
+  circulating_supply: 104271723.8741
+  total_supply: 104271723.8741
+  max_supply: 
+  date_added: '2015-08-07T00:00:00.000Z'
+  num_market_pairs: 4715
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 2
+  last_updated: '2019-01-09T03:25:18.000Z'
+  quote:
+    USD:
+      price: 153.421738048
+      volume_24h: 2442951071.55014
+      percent_change_1h: 0.079499
+      percent_change_24h: 2.54115
+      percent_change_7d: 8.16385
+      market_cap: 15997549106.025558
+      last_updated: '2019-01-09T03:25:18.000Z'
+- id: 52
+  name: XRP
+  symbol: XRP
+  slug: ripple
+  circulating_supply: 40794121066
+  total_supply: 99991738974
+  max_supply: 100000000000
+  date_added: '2013-08-04T00:00:00.000Z'
+  num_market_pairs: 318
+  tags: []
+  platform: 
+  cmc_rank: 3
+  last_updated: '2019-01-09T03:25:04.000Z'
+  quote:
+    USD:
+      price: 0.36639150976
+      volume_24h: 503501699.050941
+      percent_change_1h: 0.0933382
+      percent_change_24h: 1.16644
+      percent_change_7d: 1.12988
+      market_cap: 14946619606.70396
+      last_updated: '2019-01-09T03:25:04.000Z'
+- id: 1831
+  name: Bitcoin Cash
+  symbol: BCH
+  slug: bitcoin-cash
+  circulating_supply: 17556162.5
+  total_supply: 17556162.5
+  max_supply: 21000000
+  date_added: '2017-07-23T00:00:00.000Z'
+  num_market_pairs: 222
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 4
+  last_updated: '2019-01-09T03:25:13.000Z'
+  quote:
+    USD:
+      price: 162.069760531
+      volume_24h: 165296616.216395
+      percent_change_1h: -0.0630357
+      percent_change_24h: 1.73928
+      percent_change_7d: -1.27123
+      market_cap: 2845323052.218322
+      last_updated: '2019-01-09T03:25:13.000Z'
+- id: 1765
+  name: EOS
+  symbol: EOS
+  slug: eos
+  circulating_supply: 906245117.6
+  total_supply: 1006245119.9339
+  max_supply: 
+  date_added: '2017-07-01T00:00:00.000Z'
+  num_market_pairs: 222
+  tags: []
+  platform: 
+  cmc_rank: 5
+  last_updated: '2019-01-09T03:25:12.000Z'
+  quote:
+    USD:
+      price: 2.82558317731
+      volume_24h: 679536923.665402
+      percent_change_1h: -0.0151066
+      percent_change_24h: 2.6792
+      percent_change_7d: 6.3501
+      market_cap: 2560670958.8098826
+      last_updated: '2019-01-09T03:25:12.000Z'
+- id: 2
+  name: Litecoin
+  symbol: LTC
+  slug: litecoin
+  circulating_supply: 59934811.6317876
+  total_supply: 59934811.6317876
+  max_supply: 84000000
+  date_added: '2013-04-28T00:00:00.000Z'
+  num_market_pairs: 717
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 6
+  last_updated: '2019-01-09T03:25:04.000Z'
+  quote:
+    USD:
+      price: 40.0918138286
+      volume_24h: 658100316.266647
+      percent_change_1h: -0.170096
+      percent_change_24h: 5.10405
+      percent_change_7d: 25.5063
+      market_cap: 2402895309.7938385
+      last_updated: '2019-01-09T03:25:04.000Z'
+- id: 512
+  name: Stellar
+  symbol: XLM
+  slug: stellar
+  circulating_supply: 19163348373.5681
+  total_supply: 104622670393.288
+  max_supply: 
+  date_added: '2014-08-05T00:00:00.000Z'
+  num_market_pairs: 180
+  tags: []
+  platform: 
+  cmc_rank: 7
+  last_updated: '2019-01-09T03:25:05.000Z'
+  quote:
+    USD:
+      price: 0.124157145948
+      volume_24h: 103206320.152317
+      percent_change_1h: 0.0670322
+      percent_change_24h: 2.63781
+      percent_change_7d: 7.54036
+      market_cap: 2379266640.869463
+      last_updated: '2019-01-09T03:25:05.000Z'
+- id: 825
+  name: Tether
+  symbol: USDT
+  slug: tether
+  circulating_supply: 1885043151.55801
+  total_supply: 2580062243.36343
+  max_supply: 
+  date_added: '2015-02-25T00:00:00.000Z'
+  num_market_pairs: 1606
+  tags: []
+  platform:
+    id: 83
+    name: Omni
+    symbol: OMNI
+    slug: omni
+    token_address: '31'
+  cmc_rank: 8
+  last_updated: '2019-01-09T03:26:10.000Z'
+  quote:
+    USD:
+      price: 1.01846942554
+      volume_24h: 3855482700.15579
+      percent_change_1h: -0.0740307
+      percent_change_24h: 0.264006
+      percent_change_7d: 0.096194
+      market_cap: 1919858815.6853976
+      last_updated: '2019-01-09T03:26:10.000Z'
+- id: 1958
+  name: TRON
+  symbol: TRX
+  slug: tron
+  circulating_supply: 66643558500.6477
+  total_supply: 99242770155.8789
+  max_supply: 
+  date_added: '2017-09-13T00:00:00.000Z'
+  num_market_pairs: 164
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 9
+  last_updated: '2019-01-09T03:25:19.000Z'
+  quote:
+    USD:
+      price: 0.0262531905935
+      volume_24h: 320003880.405597
+      percent_change_1h: 0.0253937
+      percent_change_24h: 11.4265
+      percent_change_7d: 35.118
+      market_cap: 1749606043.146571
+      last_updated: '2019-01-09T03:25:19.000Z'
+- id: 3602
+  name: Bitcoin SV
+  symbol: BSV
+  slug: bitcoin-sv
+  circulating_supply: 17555173.4398247
+  total_supply: 17555173.4398247
+  max_supply: 21000000
+  date_added: '2018-11-09T00:00:00.000Z'
+  num_market_pairs: 102
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 10
+  last_updated: '2019-01-09T03:25:39.000Z'
+  quote:
+    USD:
+      price: 87.6587056236
+      volume_24h: 55439062.2051541
+      percent_change_1h: -0.204396
+      percent_change_24h: -0.443369
+      percent_change_7d: -4.28979
+      market_cap: 1538863780.7328348
+      last_updated: '2019-01-09T03:25:39.000Z'
+- id: 2010
+  name: Cardano
+  symbol: ADA
+  slug: cardano
+  circulating_supply: 25927070538
+  total_supply: 31112483745
+  max_supply: 45000000000
+  date_added: '2017-10-01T00:00:00.000Z'
+  num_market_pairs: 65
+  tags: []
+  platform: 
+  cmc_rank: 11
+  last_updated: '2019-01-09T03:25:15.000Z'
+  quote:
+    USD:
+      price: 0.050406077598
+      volume_24h: 40271739.5318287
+      percent_change_1h: 0.321108
+      percent_change_24h: 6.92104
+      percent_change_7d: 19.2289
+      market_cap: 1306881929.4272475
+      last_updated: '2019-01-09T03:25:15.000Z'
+- id: 1720
+  name: IOTA
+  symbol: MIOTA
+  slug: iota
+  circulating_supply: 2779530283
+  total_supply: 2779530283
+  max_supply: 2779530283
+  date_added: '2017-06-13T00:00:00.000Z'
+  num_market_pairs: 35
+  tags: []
+  platform: 
+  cmc_rank: 12
+  last_updated: '2019-01-09T03:25:11.000Z'
+  quote:
+    USD:
+      price: 0.36791052186
+      volume_24h: 9078254.00284767
+      percent_change_1h: 0.144229
+      percent_change_24h: 1.44438
+      percent_change_7d: 0.289307
+      market_cap: 1022618436.9442035
+      last_updated: '2019-01-09T03:25:11.000Z'
+- id: 328
+  name: Monero
+  symbol: XMR
+  slug: monero
+  circulating_supply: 16697486.9382249
+  total_supply: 16697486.9382249
+  max_supply: 
+  date_added: '2014-05-21T00:00:00.000Z'
+  num_market_pairs: 113
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 13
+  last_updated: '2019-01-09T03:25:04.000Z'
+  quote:
+    USD:
+      price: 53.9763241284
+      volume_24h: 15842542.9327238
+      percent_change_1h: 0.348917
+      percent_change_24h: 2.23862
+      percent_change_7d: 11.8618
+      market_cap: 901268967.1073526
+      last_updated: '2019-01-09T03:25:04.000Z'
+- id: 1839
+  name: Binance Coin
+  symbol: BNB
+  slug: binance-coin
+  circulating_supply: 130799308.242999
+  total_supply: 190799308.242499
+  max_supply: 
+  date_added: '2017-07-25T00:00:00.000Z'
+  num_market_pairs: 110
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xB8c77482e45F1F44dE1745F52C74426C631bDD52'
+  cmc_rank: 14
+  last_updated: '2019-01-09T03:26:11.000Z'
+  quote:
+    USD:
+      price: 6.74490769109
+      volume_24h: 69050710.9818317
+      percent_change_1h: -0.102367
+      percent_change_24h: 7.63959
+      percent_change_7d: 11.9432
+      market_cap: 882229260.1574556
+      last_updated: '2019-01-09T03:26:11.000Z'
+- id: 131
+  name: Dash
+  symbol: DASH
+  slug: dash
+  circulating_supply: 8557543.36988055
+  total_supply: 8557543.36988055
+  max_supply: 18900000
+  date_added: '2014-02-14T00:00:00.000Z'
+  num_market_pairs: 207
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 15
+  last_updated: '2019-01-09T03:25:04.000Z'
+  quote:
+    USD:
+      price: 82.3051597836
+      volume_24h: 94095796.8734678
+      percent_change_1h: 0.197545
+      percent_change_24h: -0.624601
+      percent_change_7d: 1.88701
+      market_cap: 704329974.4131055
+      last_updated: '2019-01-09T03:25:04.000Z'
+- id: 1376
+  name: NEO
+  symbol: NEO
+  slug: neo
+  circulating_supply: 65000000
+  total_supply: 100000000
+  max_supply: 100000000
+  date_added: '2016-09-08T00:00:00.000Z'
+  num_market_pairs: 156
+  tags: []
+  platform: 
+  cmc_rank: 16
+  last_updated: '2019-01-09T03:25:09.000Z'
+  quote:
+    USD:
+      price: 9.54289789656
+      volume_24h: 198626037.61217
+      percent_change_1h: -0.6275
+      percent_change_24h: 13.5742
+      percent_change_7d: 22.3765
+      market_cap: 620288363.2764
+      last_updated: '2019-01-09T03:25:09.000Z'
+- id: 873
+  name: NEM
+  symbol: XEM
+  slug: nem
+  circulating_supply: 8999999999
+  total_supply: 8999999999
+  max_supply: 
+  date_added: '2015-04-01T00:00:00.000Z'
+  num_market_pairs: 77
+  tags: []
+  platform: 
+  cmc_rank: 17
+  last_updated: '2019-01-09T03:25:06.000Z'
+  quote:
+    USD:
+      price: 0.0646265216334
+      volume_24h: 13409392.5431385
+      percent_change_1h: 0.405289
+      percent_change_24h: 0.0290808
+      percent_change_7d: -1.53407
+      market_cap: 581638694.6359736
+      last_updated: '2019-01-09T03:25:06.000Z'
+- id: 1321
+  name: Ethereum Classic
+  symbol: ETC
+  slug: ethereum-classic
+  circulating_supply: 107380635
+  total_supply: 107380635
+  max_supply: 210000000
+  date_added: '2016-07-24T00:00:00.000Z'
+  num_market_pairs: 182
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 18
+  last_updated: '2019-01-09T03:25:09.000Z'
+  quote:
+    USD:
+      price: 5.0396367442
+      volume_24h: 135720095.029283
+      percent_change_1h: 0.0599487
+      percent_change_24h: 2.46426
+      percent_change_7d: -3.93629
+      market_cap: 541159393.7615286
+      last_updated: '2019-01-09T03:25:09.000Z'
+- id: 1518
+  name: Maker
+  symbol: MKR
+  slug: maker
+  circulating_supply: 728227.770105802
+  total_supply: 1000000
+  max_supply: 
+  date_added: '2017-01-29T00:00:00.000Z'
+  num_market_pairs: 37
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2'
+  cmc_rank: 19
+  last_updated: '2019-01-09T03:26:09.000Z'
+  quote:
+    USD:
+      price: 495.060206363
+      volume_24h: 219822.020260157
+      percent_change_1h: -0.490042
+      percent_change_24h: 1.55058
+      percent_change_7d: 6.66274
+      market_cap: 360516590.1478457
+      last_updated: '2019-01-09T03:26:09.000Z'
+- id: 1437
+  name: Zcash
+  symbol: ZEC
+  slug: zcash
+  circulating_supply: 5631356.25
+  total_supply: 5631356.25
+  max_supply: 
+  date_added: '2016-10-29T00:00:00.000Z'
+  num_market_pairs: 148
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 20
+  last_updated: '2019-01-09T03:25:09.000Z'
+  quote:
+    USD:
+      price: 61.6206461698
+      volume_24h: 116250459.016971
+      percent_change_1h: 0.0234012
+      percent_change_24h: 2.12631
+      percent_change_7d: 4.6518
+      market_cap: 347007810.93734175
+      last_updated: '2019-01-09T03:25:09.000Z'
+- id: 3408
+  name: USD Coin
+  symbol: USDC
+  slug: usd-coin
+  circulating_supply: 326353522.31031
+  total_supply: 327238341.19
+  max_supply: 
+  date_added: '2018-10-08T00:00:00.000Z'
+  num_market_pairs: 82
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+  cmc_rank: 21
+  last_updated: '2019-01-09T03:25:36.000Z'
+  quote:
+    USD:
+      price: 1.00580130622
+      volume_24h: 22674411.730419
+      percent_change_1h: -0.0516302
+      percent_change_24h: -0.13817
+      percent_change_7d: -0.880031
+      market_cap: 328246799.0292077
+      last_updated: '2019-01-09T03:25:36.000Z'
+- id: 2011
+  name: Tezos
+  symbol: XTZ
+  slug: tezos
+  circulating_supply: 607489040.89
+  total_supply: 763306929.69
+  max_supply: 
+  date_added: '2017-10-02T00:00:00.000Z'
+  num_market_pairs: 26
+  tags: []
+  platform: 
+  cmc_rank: 22
+  last_updated: '2019-01-09T03:25:13.000Z'
+  quote:
+    USD:
+      price: 0.485689164244
+      volume_24h: 3441949.56737037
+      percent_change_1h: 0.0802827
+      percent_change_24h: 0.772972
+      percent_change_7d: 1.56743
+      market_cap: 295050844.55725324
+      last_updated: '2019-01-09T03:25:13.000Z'
+- id: 1274
+  name: Waves
+  symbol: WAVES
+  slug: waves
+  circulating_supply: 100000000
+  total_supply: 100000000
+  max_supply: 
+  date_added: '2016-06-02T00:00:00.000Z'
+  num_market_pairs: 106
+  tags: []
+  platform: 
+  cmc_rank: 23
+  last_updated: '2019-01-09T03:25:09.000Z'
+  quote:
+    USD:
+      price: 2.90810067336
+      volume_24h: 15568563.7513922
+      percent_change_1h: -0.361397
+      percent_change_24h: -0.249501
+      percent_change_7d: -7.42619
+      market_cap: 290810067.33599997
+      last_updated: '2019-01-09T03:25:09.000Z'
+- id: 74
+  name: Dogecoin
+  symbol: DOGE
+  slug: dogecoin
+  circulating_supply: 117751214005.263
+  total_supply: 117751214005.263
+  max_supply: 
+  date_added: '2013-12-15T00:00:00.000Z'
+  num_market_pairs: 467
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 24
+  last_updated: '2019-01-09T03:25:04.000Z'
+  quote:
+    USD:
+      price: 0.00228603959498
+      volume_24h: 21802005.8125884
+      percent_change_1h: -0.28083
+      percent_change_24h: -0.738531
+      percent_change_7d: -4.00692
+      market_cap: 269183937.5729947
+      last_updated: '2019-01-09T03:25:04.000Z'
+- id: 3077
+  name: VeChain
+  symbol: VET
+  slug: vechain
+  circulating_supply: 55454734800
+  total_supply: 86712634466
+  max_supply: 
+  date_added: '2017-08-22T00:00:00.000Z'
+  num_market_pairs: 28
+  tags: []
+  platform: 
+  cmc_rank: 25
+  last_updated: '2019-01-09T03:25:31.000Z'
+  quote:
+    USD:
+      price: 0.0044497522276
+      volume_24h: 7485634.45351485
+      percent_change_1h: -0.363897
+      percent_change_24h: 8.16458
+      percent_change_7d: 8.59754
+      market_cap: 246759829.70726725
+      last_updated: '2019-01-09T03:25:31.000Z'
+- id: 2083
+  name: Bitcoin Gold
+  symbol: BTG
+  slug: bitcoin-gold
+  circulating_supply: 17413923.588994
+  total_supply: 17513923.588994
+  max_supply: 21000000
+  date_added: '2017-10-23T00:00:00.000Z'
+  num_market_pairs: 75
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 26
+  last_updated: '2019-01-09T03:25:18.000Z'
+  quote:
+    USD:
+      price: 13.5532086508
+      volume_24h: 3996350.31705936
+      percent_change_1h: -0.23902
+      percent_change_24h: 2.8295
+      percent_change_7d: 2.41476
+      market_cap: 236014539.83072367
+      last_updated: '2019-01-09T03:25:18.000Z'
+- id: 1808
+  name: OmiseGO
+  symbol: OMG
+  slug: omisego
+  circulating_supply: 140245398.245133
+  total_supply: 140245398.245133
+  max_supply: 
+  date_added: '2017-07-14T00:00:00.000Z'
+  num_market_pairs: 152
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xd26114cd6EE289AccF82350c8d8487fedB8A0C07'
+  cmc_rank: 27
+  last_updated: '2019-01-09T03:25:14.000Z'
+  quote:
+    USD:
+      price: 1.51941436449
+      volume_24h: 30974826.6451951
+      percent_change_1h: -0.293189
+      percent_change_24h: 3.06919
+      percent_change_7d: 5.25199
+      market_cap: 213090872.64727575
+      last_updated: '2019-01-09T03:25:14.000Z'
+- id: 1684
+  name: Qtum
+  symbol: QTUM
+  slug: qtum
+  circulating_supply: 89167952
+  total_supply: 101167952
+  max_supply: 
+  date_added: '2017-05-24T00:00:00.000Z'
+  num_market_pairs: 149
+  tags: []
+  platform: 
+  cmc_rank: 28
+  last_updated: '2019-01-09T03:25:10.000Z'
+  quote:
+    USD:
+      price: 2.3506783218
+      volume_24h: 131194517.479475
+      percent_change_1h: 0.108256
+      percent_change_24h: 4.34805
+      percent_change_7d: 4.81845
+      market_cap: 209605171.76570293
+      last_updated: '2019-01-09T03:25:10.000Z'
+- id: 2563
+  name: TrueUSD
+  symbol: TUSD
+  slug: trueusd
+  circulating_supply: 202500353.359
+  total_supply: 202500353.359
+  max_supply: 
+  date_added: '2018-03-06T00:00:00.000Z'
+  num_market_pairs: 120
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x8dd5fbce2f6a956c3022ba3663759011dd51e73e'
+  cmc_rank: 29
+  last_updated: '2019-01-09T03:25:25.000Z'
+  quote:
+    USD:
+      price: 1.00936368558
+      volume_24h: 63446290.9244123
+      percent_change_1h: -0.112561
+      percent_change_24h: 0.262686
+      percent_change_7d: -0.264505
+      market_cap: 204396502.99769256
+      last_updated: '2019-01-09T03:25:25.000Z'
+- id: 2469
+  name: Zilliqa
+  symbol: ZIL
+  slug: zilliqa
+  circulating_supply: 8132005790.71941
+  total_supply: 12599999804.2
+  max_supply: 
+  date_added: '2018-01-25T00:00:00.000Z'
+  num_market_pairs: 77
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x05f4a42e251f2d52b8ed15e9fedaacfcef1fad27'
+  cmc_rank: 30
+  last_updated: '2019-01-09T03:25:21.000Z'
+  quote:
+    USD:
+      price: 0.0244983830346
+      volume_24h: 23731645.6931745
+      percent_change_1h: 0.365696
+      percent_change_24h: 10.6066
+      percent_change_7d: 19.701
+      market_cap: 199220992.70062935
+      last_updated: '2019-01-09T03:25:21.000Z'
+- id: 2566
+  name: Ontology
+  symbol: ONT
+  slug: ontology
+  circulating_supply: 291115881
+  total_supply: 1000000000
+  max_supply: 
+  date_added: '2018-03-08T00:00:00.000Z'
+  num_market_pairs: 57
+  tags: []
+  platform: 
+  cmc_rank: 31
+  last_updated: '2019-01-09T03:25:23.000Z'
+  quote:
+    USD:
+      price: 0.666890190191
+      volume_24h: 19443104.5477355
+      percent_change_1h: -0.180275
+      percent_change_24h: 7.96838
+      percent_change_7d: 9.15497
+      market_cap: 194142325.24771053
+      last_updated: '2019-01-09T03:25:23.000Z'
+- id: 1896
+  name: 0x
+  symbol: ZRX
+  slug: 0x
+  circulating_supply: 552734443.377957
+  total_supply: 1000000000
+  max_supply: 
+  date_added: '2017-08-16T00:00:00.000Z'
+  num_market_pairs: 121
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xe41d2489571d322189246dafa5ebde1f4699f498'
+  cmc_rank: 32
+  last_updated: '2019-01-09T03:25:14.000Z'
+  quote:
+    USD:
+      price: 0.327986116706
+      volume_24h: 7030436.09547947
+      percent_change_1h: -0.252037
+      percent_change_24h: 1.75747
+      percent_change_7d: 3.10239
+      market_cap: 181289223.65318853
+      last_updated: '2019-01-09T03:25:14.000Z'
+- id: 1697
+  name: Basic Attention Token
+  symbol: BAT
+  slug: basic-attention-token
+  circulating_supply: 1221699089.04718
+  total_supply: 1500000000
+  max_supply: 
+  date_added: '2017-06-01T00:00:00.000Z'
+  num_market_pairs: 68
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x0d8775f648430679a709e98d2b0cb6250d2887ef'
+  cmc_rank: 33
+  last_updated: '2019-01-09T03:25:10.000Z'
+  quote:
+    USD:
+      price: 0.143013401445
+      volume_24h: 2477592.19096954
+      percent_change_1h: 0.202767
+      percent_change_24h: 3.25121
+      percent_change_7d: 9.05676
+      market_cap: 174719342.26689515
+      last_updated: '2019-01-09T03:25:10.000Z'
+- id: 1168
+  name: Decred
+  symbol: DCR
+  slug: decred
+  circulating_supply: 9119686.20207781
+  total_supply: 9119686.20207781
+  max_supply: 21000000
+  date_added: '2016-02-10T00:00:00.000Z'
+  num_market_pairs: 34
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 34
+  last_updated: '2019-01-09T03:26:09.000Z'
+  quote:
+    USD:
+      price: 18.5778310982
+      volume_24h: 1598818.43060152
+      percent_change_1h: -0.214011
+      percent_change_24h: -0.878925
+      percent_change_7d: 6.15201
+      market_cap: 169423989.93078658
+      last_updated: '2019-01-09T03:26:09.000Z'
+- id: 1214
+  name: Lisk
+  symbol: LSK
+  slug: lisk
+  circulating_supply: 113668138.521928
+  total_supply: 128783269
+  max_supply: 
+  date_added: '2016-04-06T00:00:00.000Z'
+  num_market_pairs: 59
+  tags: []
+  platform: 
+  cmc_rank: 35
+  last_updated: '2019-01-09T03:25:07.000Z'
+  quote:
+    USD:
+      price: 1.3840365836
+      volume_24h: 2669446.41100038
+      percent_change_1h: -0.999303
+      percent_change_24h: -1.00977
+      percent_change_7d: 0.151977
+      market_cap: 157320862.10406077
+      last_updated: '2019-01-09T03:25:07.000Z'
+- id: 1975
+  name: Chainlink
+  symbol: LINK
+  slug: chainlink
+  circulating_supply: 350000000
+  total_supply: 1000000000
+  max_supply: 
+  date_added: '2017-09-20T00:00:00.000Z'
+  num_market_pairs: 28
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x514910771af9ca656af840dff83e8264ecf986ca'
+  cmc_rank: 36
+  last_updated: '2019-01-09T03:25:14.000Z'
+  quote:
+    USD:
+      price: 0.426231268704
+      volume_24h: 7706254.35032245
+      percent_change_1h: 0.616525
+      percent_change_24h: 15.3272
+      percent_change_7d: 42.6025
+      market_cap: 149180944.0464
+      last_updated: '2019-01-09T03:25:14.000Z'
+- id: 2222
+  name: Bitcoin Diamond
+  symbol: BCD
+  slug: bitcoin-diamond
+  circulating_supply: 153756875
+  total_supply: 156756875
+  max_supply: 210000000
+  date_added: '2017-11-24T00:00:00.000Z'
+  num_market_pairs: 21
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 37
+  last_updated: '2019-01-09T03:25:17.000Z'
+  quote:
+    USD:
+      price: 0.933467150177
+      volume_24h: 1454853.95323687
+      percent_change_1h: -0.370762
+      percent_change_24h: 1.83269
+      percent_change_7d: 1.75726
+      market_cap: 143526991.92637122
+      last_updated: '2019-01-09T03:25:17.000Z'
+- id: 372
+  name: Bytecoin
+  symbol: BCN
+  slug: bytecoin-bcn
+  circulating_supply: 184066828814.059
+  total_supply: 184066828814.059
+  max_supply: 184470000000
+  date_added: '2014-06-17T00:00:00.000Z'
+  num_market_pairs: 13
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 38
+  last_updated: '2019-01-09T03:26:04.000Z'
+  quote:
+    USD:
+      price: 0.000737935684377
+      volume_24h: 183447.207667673
+      percent_change_1h: -0.113134
+      percent_change_24h: 0.921875
+      percent_change_7d: 3.34769
+      market_cap: 135829481.2920067
+      last_updated: '2019-01-09T03:26:04.000Z'
+- id: 1567
+  name: Nano
+  symbol: NANO
+  slug: nano
+  circulating_supply: 133248289.1965
+  total_supply: 133248289.1965
+  max_supply: 133248290
+  date_added: '2017-03-06T00:00:00.000Z'
+  num_market_pairs: 44
+  tags: []
+  platform: 
+  cmc_rank: 39
+  last_updated: '2019-01-09T03:25:08.000Z'
+  quote:
+    USD:
+      price: 1.00016779177
+      volume_24h: 1500979.17341636
+      percent_change_1h: -0.0947492
+      percent_change_24h: 4.46297
+      percent_change_7d: 5.03634
+      market_cap: 133270647.16279376
+      last_updated: '2019-01-09T03:25:08.000Z'
+- id: 2099
+  name: ICON
+  symbol: ICX
+  slug: icon
+  circulating_supply: 473406687.603972
+  total_supply: 800460000
+  max_supply: 
+  date_added: '2017-10-27T00:00:00.000Z'
+  num_market_pairs: 39
+  tags: []
+  platform: 
+  cmc_rank: 40
+  last_updated: '2019-01-09T03:25:17.000Z'
+  quote:
+    USD:
+      price: 0.281158158254
+      volume_24h: 7803585.37837751
+      percent_change_1h: -0.283289
+      percent_change_24h: 4.2896
+      percent_change_7d: 15.5075
+      market_cap: 133102152.3918595
+      last_updated: '2019-01-09T03:25:17.000Z'
+- id: 109
+  name: DigiByte
+  symbol: DGB
+  slug: digibyte
+  circulating_supply: 11284561392.4355
+  total_supply: 11284561392.4355
+  max_supply: 21000000000
+  date_added: '2014-02-06T00:00:00.000Z'
+  num_market_pairs: 53
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 41
+  last_updated: '2019-01-09T03:26:02.000Z'
+  quote:
+    USD:
+      price: 0.0117259440539
+      volume_24h: 1438338.17094829
+      percent_change_1h: -0.244331
+      percent_change_24h: -0.485299
+      percent_change_7d: 9.98103
+      market_cap: 132322135.56049854
+      last_updated: '2019-01-09T03:26:02.000Z'
+- id: 3330
+  name: Paxos Standard Token
+  symbol: PAX
+  slug: paxos-standard-token
+  circulating_supply: 130753266.082465
+  total_supply: 131803985.81
+  max_supply: 
+  date_added: '2018-09-27T00:00:00.000Z'
+  num_market_pairs: 61
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x8e870d67f660d95d5be530380d0ec0bd388289e1'
+  cmc_rank: 42
+  last_updated: '2019-01-09T03:25:33.000Z'
+  quote:
+    USD:
+      price: 1.00906384345
+      volume_24h: 84306274.6259082
+      percent_change_1h: -0.126307
+      percent_change_24h: 0.241946
+      percent_change_7d: -0.0529095
+      market_cap: 131938393.21681267
+      last_updated: '2019-01-09T03:25:33.000Z'
+- id: 2135
+  name: Revain
+  symbol: R
+  slug: revain
+  circulating_supply: 484450000
+  total_supply: 484450000
+  max_supply: 484450000
+  date_added: '2017-11-01T00:00:00.000Z'
+  num_market_pairs: 15
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x48f775efbe4f5ece6e0df2f7b5932df56823b990'
+  cmc_rank: 43
+  last_updated: '2019-01-09T03:25:16.000Z'
+  quote:
+    USD:
+      price: 0.253464844186
+      volume_24h: 3439826.71293637
+      percent_change_1h: -0.953062
+      percent_change_24h: -2.63841
+      percent_change_7d: 3.24255
+      market_cap: 122791043.7659077
+      last_updated: '2019-01-09T03:25:16.000Z'
+- id: 463
+  name: BitShares
+  symbol: BTS
+  slug: bitshares
+  circulating_supply: 2681590000
+  total_supply: 2681590000
+  max_supply: 3600570502
+  date_added: '2014-07-21T00:00:00.000Z'
+  num_market_pairs: 73
+  tags: []
+  platform: 
+  cmc_rank: 44
+  last_updated: '2019-01-09T03:26:05.000Z'
+  quote:
+    USD:
+      price: 0.0435969179901
+      volume_24h: 2604313.1192084
+      percent_change_1h: -0.14113
+      percent_change_24h: 1.23163
+      percent_change_7d: 10.3407
+      market_cap: 116909059.31307226
+      last_updated: '2019-01-09T03:26:05.000Z'
+- id: 1343
+  name: Stratis
+  symbol: STRAT
+  slug: stratis
+  circulating_supply: 99164615.1706162
+  total_supply: 99164615.1706162
+  max_supply: 
+  date_added: '2016-08-12T00:00:00.000Z'
+  num_market_pairs: 22
+  tags: []
+  platform: 
+  cmc_rank: 45
+  last_updated: '2019-01-09T03:26:10.000Z'
+  quote:
+    USD:
+      price: 1.16008896867
+      volume_24h: 2826485.85375932
+      percent_change_1h: 0.543846
+      percent_change_24h: 5.17735
+      percent_change_7d: -1.13364
+      market_cap: 115039776.14183758
+      last_updated: '2019-01-09T03:26:10.000Z'
+- id: 1104
+  name: Augur
+  symbol: REP
+  slug: augur
+  circulating_supply: 11000000
+  total_supply: 11000000
+  max_supply: 
+  date_added: '2015-10-27T00:00:00.000Z'
+  num_market_pairs: 57
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x1985365e9f78359a9b6ad760e32412f4a445e862'
+  cmc_rank: 46
+  last_updated: '2019-01-09T03:25:07.000Z'
+  quote:
+    USD:
+      price: 10.1639750144
+      volume_24h: 1700395.69872768
+      percent_change_1h: 0.111843
+      percent_change_24h: 6.38147
+      percent_change_7d: 24.1564
+      market_cap: 111803725.1584
+      last_updated: '2019-01-09T03:25:07.000Z'
+- id: 693
+  name: Verge
+  symbol: XVG
+  slug: verge
+  circulating_supply: 15172086051.1052
+  total_supply: 15172086051.1052
+  max_supply: 16555000000
+  date_added: '2014-10-25T00:00:00.000Z'
+  num_market_pairs: 55
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 47
+  last_updated: '2019-01-09T03:26:05.000Z'
+  quote:
+    USD:
+      price: 0.00729702950364
+      volume_24h: 1415427.4883945
+      percent_change_1h: 0.347179
+      percent_change_24h: 1.90687
+      percent_change_7d: 3.85718
+      market_cap: 110711159.54667956
+      last_updated: '2019-01-09T03:26:05.000Z'
+- id: 1042
+  name: Siacoin
+  symbol: SC
+  slug: siacoin
+  circulating_supply: 38839483499
+  total_supply: 38839483499
+  max_supply: 
+  date_added: '2015-08-26T00:00:00.000Z'
+  num_market_pairs: 20
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 48
+  last_updated: '2019-01-09T03:26:08.000Z'
+  quote:
+    USD:
+      price: 0.00281829704518
+      volume_24h: 961910.659095184
+      percent_change_1h: -0.302946
+      percent_change_24h: 2.40479
+      percent_change_7d: 4.65935
+      market_cap: 109461201.58154906
+      last_updated: '2019-01-09T03:26:08.000Z'
+- id: 2682
+  name: Holo
+  symbol: HOT
+  slug: holo
+  circulating_supply: 133214575156
+  total_supply: 177619433541.141
+  max_supply: 
+  date_added: '2018-04-29T00:00:00.000Z'
+  num_market_pairs: 22
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x6c6ee5e31d828de241282b9606c8e98ea48526e2'
+  cmc_rank: 49
+  last_updated: '2019-01-09T03:25:25.000Z'
+  quote:
+    USD:
+      price: 0.000798033107782
+      volume_24h: 14768974.4803687
+      percent_change_1h: 7.77772
+      percent_change_24h: 39.4858
+      percent_change_7d: 62.93
+      market_cap: 106309641.41360149
+      last_updated: '2019-01-09T03:25:25.000Z'
+- id: 1230
+  name: Steem
+  symbol: STEEM
+  slug: steem
+  circulating_supply: 307964368.243
+  total_supply: 324938462.243
+  max_supply: 
+  date_added: '2016-04-18T00:00:00.000Z'
+  num_market_pairs: 21
+  tags: []
+  platform: 
+  cmc_rank: 50
+  last_updated: '2019-01-09T03:26:08.000Z'
+  quote:
+    USD:
+      price: 0.309711628957
+      volume_24h: 2397935.46656957
+      percent_change_1h: -0.0956156
+      percent_change_24h: 1.88541
+      percent_change_7d: 12.9133
+      market_cap: 95380146.14925292
+      last_updated: '2019-01-09T03:26:08.000Z'
+- id: 1700
+  name: Aeternity
+  symbol: AE
+  slug: aeternity
+  circulating_supply: 233020472.114
+  total_supply: 273685830.164
+  max_supply: 
+  date_added: '2017-06-01T00:00:00.000Z'
+  num_market_pairs: 52
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x5ca9a71b1d01849c0a95490cc00559717fcf0d1d'
+  cmc_rank: 51
+  last_updated: '2019-01-09T03:25:09.000Z'
+  quote:
+    USD:
+      price: 0.40682798293
+      volume_24h: 2997997.18566534
+      percent_change_1h: -0.0614667
+      percent_change_24h: 0.968647
+      percent_change_7d: 2.61184
+      market_cap: 94799248.65153493
+      last_updated: '2019-01-09T03:25:09.000Z'
+- id: 3306
+  name: Gemini Dollar
+  symbol: GUSD
+  slug: gemini-dollar
+  circulating_supply: 90115947.26
+  total_supply: 90115947.26
+  max_supply: 
+  date_added: '2018-10-05T00:00:00.000Z'
+  num_market_pairs: 57
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd'
+  cmc_rank: 52
+  last_updated: '2019-01-09T03:25:35.000Z'
+  quote:
+    USD:
+      price: 0.998177964365
+      volume_24h: 229503490.219538
+      percent_change_1h: -0.451979
+      percent_change_24h: 0.434107
+      percent_change_7d: -0.903062
+      market_cap: 89951752.7928105
+      last_updated: '2019-01-09T03:25:35.000Z'
+- id: 2603
+  name: Pundi X
+  symbol: NPXS
+  slug: pundi-x
+  circulating_supply: 166614999532.039
+  total_supply: 274555193861
+  max_supply: 
+  date_added: '2018-03-22T00:00:00.000Z'
+  num_market_pairs: 36
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xa15c7ebe1f07caf6bff097d8a589fb8ac49ae5b3'
+  cmc_rank: 53
+  last_updated: '2019-01-09T03:25:23.000Z'
+  quote:
+    USD:
+      price: 0.000538506986207
+      volume_24h: 9048991.75411894
+      percent_change_1h: -1.18325
+      percent_change_24h: 18.6534
+      percent_change_7d: 21.6937
+      market_cap: 89723341.25487903
+      last_updated: '2019-01-09T03:25:23.000Z'
+- id: 2405
+  name: IOST
+  symbol: IOST
+  slug: iostoken
+  circulating_supply: 12003807130.9
+  total_supply: 21000000000
+  max_supply: 
+  date_added: '2018-01-16T00:00:00.000Z'
+  num_market_pairs: 55
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xfa1a856cfa3409cfa145fa4e20eb270df3eb21ab'
+  cmc_rank: 54
+  last_updated: '2019-01-09T03:25:20.000Z'
+  quote:
+    USD:
+      price: 0.00733348910065
+      volume_24h: 10955975.2273516
+      percent_change_1h: 0.515236
+      percent_change_24h: 14.8234
+      percent_change_7d: 32.6237
+      market_cap: 88029788.76075989
+      last_updated: '2019-01-09T03:25:20.000Z'
+- id: 1521
+  name: Komodo
+  symbol: KMD
+  slug: komodo
+  circulating_supply: 111372106.38817
+  total_supply: 111372106.38817
+  max_supply: 
+  date_added: '2017-02-05T00:00:00.000Z'
+  num_market_pairs: 16
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 55
+  last_updated: '2019-01-09T03:26:10.000Z'
+  quote:
+    USD:
+      price: 0.787937495179
+      volume_24h: 329043.425398106
+      percent_change_1h: 0.0434969
+      percent_change_24h: 2.65989
+      percent_change_7d: -0.986641
+      market_cap: 87754258.54030378
+      last_updated: '2019-01-09T03:26:10.000Z'
+- id: 3415
+  name: Buggyra Coin Zero
+  symbol: BCZERO
+  slug: buggyra-coin-zero
+  circulating_supply: 1678609241.46
+  total_supply: 10000000000
+  max_supply: 
+  date_added: '2018-10-09T00:00:00.000Z'
+  num_market_pairs: 3
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xd45247c07379d94904e0a87b4481f0a1ddfa0c64'
+  cmc_rank: 56
+  last_updated: '2019-01-09T03:25:39.000Z'
+  quote:
+    USD:
+      price: 0.0495833710232
+      volume_24h: 90030.1616703351
+      percent_change_1h: -1.11847
+      percent_change_24h: -0.0633998
+      percent_change_7d: 49.9138
+      market_cap: 83231104.82228349
+      last_updated: '2019-01-09T03:25:39.000Z'
+- id: 1866
+  name: Bytom
+  symbol: BTM
+  slug: bytom
+  circulating_supply: 1002499275
+  total_supply: 1407000000
+  max_supply: 
+  date_added: '2017-08-08T00:00:00.000Z'
+  num_market_pairs: 39
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 57
+  last_updated: '2019-01-09T03:25:12.000Z'
+  quote:
+    USD:
+      price: 0.0829838848825
+      volume_24h: 2163508.14096681
+      percent_change_1h: -0.173546
+      percent_change_24h: 3.10779
+      percent_change_7d: 4.82175
+      market_cap: 83191284.4313897
+      last_updated: '2019-01-09T03:25:12.000Z'
+- id: 1789
+  name: Populous
+  symbol: PPT
+  slug: populous
+  circulating_supply: 53252245.9943896
+  total_supply: 53252246
+  max_supply: 53252246
+  date_added: '2017-07-10T00:00:00.000Z'
+  num_market_pairs: 27
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xd4fa1460f537bb9085d22c7bccb5dd450ef28e3a'
+  cmc_rank: 58
+  last_updated: '2019-01-09T03:25:12.000Z'
+  quote:
+    USD:
+      price: 1.54351830104
+      volume_24h: 1103358.7052602
+      percent_change_1h: 0.184379
+      percent_change_24h: 1.20356
+      percent_change_7d: 2.4215
+      market_cap: 82195816.26382439
+      last_updated: '2019-01-09T03:25:12.000Z'
+- id: 2829
+  name: REPO
+  symbol: REPO
+  slug: repo
+  circulating_supply: 109958607
+  total_supply: 356999900
+  max_supply: 
+  date_added: '2018-05-28T00:00:00.000Z'
+  num_market_pairs: 2
+  tags: []
+  platform:
+    id: 512
+    name: Stellar
+    symbol: XLM
+    slug: stellar
+    token_address: GCZNF24HPMYTV6NOEHI7Q5RJFFUI23JKUKY3H3XTQAFBQIBOHD5OXG3B
+  cmc_rank: 59
+  last_updated: '2019-01-09T03:25:27.000Z'
+  quote:
+    USD:
+      price: 0.652076824912
+      volume_24h: 37107.9517790556
+      percent_change_1h: 0.11766
+      percent_change_24h: -3.16433
+      percent_change_7d: 178.667
+      market_cap: 71701459.32430641
+      last_updated: '2019-01-09T03:25:27.000Z'
+- id: 1455
+  name: Golem
+  symbol: GNT
+  slug: golem-network-tokens
+  circulating_supply: 959842000
+  total_supply: 1000000000
+  max_supply: 
+  date_added: '2016-11-18T00:00:00.000Z'
+  num_market_pairs: 75
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xa74476443119A942dE498590Fe1f2454d7D4aC0d'
+  cmc_rank: 60
+  last_updated: '2019-01-09T03:25:09.000Z'
+  quote:
+    USD:
+      price: 0.0738289382316
+      volume_24h: 2220937.02893104
+      percent_change_1h: 0.101758
+      percent_change_24h: 3.75589
+      percent_change_7d: 8.72539
+      market_cap: 70864115.7300954
+      last_updated: '2019-01-09T03:25:09.000Z'
+- id: 2308
+  name: Dai
+  symbol: DAI
+  slug: dai
+  circulating_supply: 69547127.3377605
+  total_supply: 69547127.3377605
+  max_supply: 
+  date_added: '2017-12-24T00:00:00.000Z'
+  num_market_pairs: 54
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359'
+  cmc_rank: 61
+  last_updated: '2019-01-09T03:25:19.000Z'
+  quote:
+    USD:
+      price: 1.00248067469
+      volume_24h: 3178612.16720152
+      percent_change_1h: 0.201325
+      percent_change_24h: 0.336873
+      percent_change_7d: -0.559923
+      market_cap: 69719651.13630947
+      last_updated: '2019-01-09T03:25:19.000Z'
+- id: 1759
+  name: Status
+  symbol: SNT
+  slug: status
+  circulating_supply: 3470483788
+  total_supply: 6804870174
+  max_supply: 
+  date_added: '2017-06-28T00:00:00.000Z'
+  num_market_pairs: 80
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x744d70fdbe2ba4cf95131626614a1763df805b9e'
+  cmc_rank: 62
+  last_updated: '2019-01-09T03:25:13.000Z'
+  quote:
+    USD:
+      price: 0.0196679455843
+      volume_24h: 14535189.5976141
+      percent_change_1h: 0.622297
+      percent_change_24h: 3.43636
+      percent_change_7d: 8.76025
+      market_cap: 68257286.29357934
+      last_updated: '2019-01-09T03:25:13.000Z'
+- id: 2027
+  name: Cryptonex
+  symbol: CNX
+  slug: cryptonex
+  circulating_supply: 55658008.8769568
+  total_supply: 107106733.836957
+  max_supply: 210000000
+  date_added: '2017-10-07T00:00:00.000Z'
+  num_market_pairs: 20
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 63
+  last_updated: '2019-01-09T03:25:15.000Z'
+  quote:
+    USD:
+      price: 1.20155433278
+      volume_24h: 6308722.58078976
+      percent_change_1h: 0.565259
+      percent_change_24h: 2.58959
+      percent_change_7d: 7.44413
+      market_cap: 66876121.720015146
+      last_updated: '2019-01-09T03:25:15.000Z'
+- id: 2137
+  name: Electroneum
+  symbol: ETN
+  slug: electroneum
+  circulating_supply: 8700502849.24
+  total_supply: 8700502849.24
+  max_supply: 21000000000
+  date_added: '2017-11-02T00:00:00.000Z'
+  num_market_pairs: 22
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 64
+  last_updated: '2019-01-09T03:25:16.000Z'
+  quote:
+    USD:
+      price: 0.00753826748032
+      volume_24h: 399705.081256555
+      percent_change_1h: -0.467306
+      percent_change_24h: -1.10102
+      percent_change_7d: -0.55994
+      market_cap: 65586717.690857396
+      last_updated: '2019-01-09T03:25:16.000Z'
+- id: 1087
+  name: Factom
+  symbol: FCT
+  slug: factom
+  circulating_supply: 8745102
+  total_supply: 8745102
+  max_supply: 
+  date_added: '2015-10-06T00:00:00.000Z'
+  num_market_pairs: 5
+  tags: []
+  platform: 
+  cmc_rank: 65
+  last_updated: '2019-01-09T03:26:06.000Z'
+  quote:
+    USD:
+      price: 7.45688218971
+      volume_24h: 164656.060632308
+      percent_change_1h: -1.90386
+      percent_change_24h: -2.49364
+      percent_change_7d: -10.5458
+      market_cap: 65211195.3509973
+      last_updated: '2019-01-09T03:26:06.000Z'
+- id: 2631
+  name: ODEM
+  symbol: ODE
+  slug: odem
+  circulating_supply: 220771135.832452
+  total_supply: 268946131
+  max_supply: 
+  date_added: '2018-04-10T00:00:00.000Z'
+  num_market_pairs: 6
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xbf52f2ab39e26e0951d2a02b49b7702abe30406a'
+  cmc_rank: 66
+  last_updated: '2019-01-09T03:25:24.000Z'
+  quote:
+    USD:
+      price: 0.293417869399
+      volume_24h: 954777.903624781
+      percent_change_1h: 0.240607
+      percent_change_24h: 2.05552
+      percent_change_7d: 46.8521
+      market_cap: 64778196.30075529
+      last_updated: '2019-01-09T03:25:24.000Z'
+- id: 1876
+  name: Dentacoin
+  symbol: DCN
+  slug: dentacoin
+  circulating_supply: 326822211298
+  total_supply: 1963173416170
+  max_supply: 8000000000000
+  date_added: '2017-08-11T00:00:00.000Z'
+  num_market_pairs: 14
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x08d32b0da63e2c3bcf8019c9c5d849d7a9d791e6'
+  cmc_rank: 67
+  last_updated: '2019-01-09T03:26:12.000Z'
+  quote:
+    USD:
+      price: 0.000189373827511
+      volume_24h: 31606.7481775199
+      percent_change_1h: -0.998945
+      percent_change_24h: -6.79174
+      percent_change_7d: 25.574
+      market_cap: 61891573.06911105
+      last_updated: '2019-01-09T03:26:12.000Z'
+- id: 1320
+  name: Ardor
+  symbol: ARDR
+  slug: ardor
+  circulating_supply: 998999495
+  total_supply: 998999495
+  max_supply: 998999495
+  date_added: '2016-07-23T00:00:00.000Z'
+  num_market_pairs: 15
+  tags: []
+  platform: 
+  cmc_rank: 68
+  last_updated: '2019-01-09T03:26:08.000Z'
+  quote:
+    USD:
+      price: 0.0618735204451
+      volume_24h: 383792.53237893
+      percent_change_1h: 0.261949
+      percent_change_24h: 2.36156
+      percent_change_7d: 14.7585
+      market_cap: 61811615.67852707
+      last_updated: '2019-01-09T03:26:08.000Z'
+- id: 291
+  name: MaidSafeCoin
+  symbol: MAID
+  slug: maidsafecoin
+  circulating_supply: 452552412
+  total_supply: 452552412
+  max_supply: 
+  date_added: '2014-04-28T00:00:00.000Z'
+  num_market_pairs: 7
+  tags: []
+  platform:
+    id: 83
+    name: Omni
+    symbol: OMNI
+    slug: omni
+    token_address: '3'
+  cmc_rank: 69
+  last_updated: '2019-01-09T03:26:04.000Z'
+  quote:
+    USD:
+      price: 0.128465993743
+      volume_24h: 338360.474285125
+      percent_change_1h: 0.559694
+      percent_change_24h: -8.02129
+      percent_change_7d: -8.5558
+      market_cap: 58137595.328371555
+      last_updated: '2019-01-09T03:26:04.000Z'
+- id: 2874
+  name: Aurora
+  symbol: AOA
+  slug: aurora
+  circulating_supply: 6542330148.20859
+  total_supply: 10000000000
+  max_supply: 
+  date_added: '2018-06-26T00:00:00.000Z'
+  num_market_pairs: 9
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x9ab165d795019b6d8b3e971dda91071421305e5a'
+  cmc_rank: 70
+  last_updated: '2019-01-09T03:25:27.000Z'
+  quote:
+    USD:
+      price: 0.00875378336784
+      volume_24h: 2022248.62721122
+      percent_change_1h: 5.31413
+      percent_change_24h: -10.3393
+      percent_change_7d: -20.4171
+      market_cap: 57270140.838306546
+      last_updated: '2019-01-09T03:25:27.000Z'
+- id: 2502
+  name: Huobi Token
+  symbol: HT
+  slug: huobi-token
+  circulating_supply: 50000200
+  total_supply: 500000000
+  max_supply: 
+  date_added: '2018-02-03T00:00:00.000Z'
+  num_market_pairs: 19
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x6f259637dcd74c767781e37bc6133cd6a68aa161'
+  cmc_rank: 71
+  last_updated: '2019-01-09T03:25:21.000Z'
+  quote:
+    USD:
+      price: 1.10596648774
+      volume_24h: 7459293.03014249
+      percent_change_1h: -0.303122
+      percent_change_24h: 1.25622
+      percent_change_7d: -0.490848
+      market_cap: 55298545.580297545
+      last_updated: '2019-01-09T03:25:21.000Z'
+- id: 2087
+  name: KuCoin Shares
+  symbol: KCS
+  slug: kucoin-shares
+  circulating_supply: 90138154
+  total_supply: 180138154
+  max_supply: 
+  date_added: '2017-10-24T00:00:00.000Z'
+  num_market_pairs: 9
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x039b5649a59967e3e936d7471f9c3700100ee1ab'
+  cmc_rank: 72
+  last_updated: '2019-01-09T03:25:15.000Z'
+  quote:
+    USD:
+      price: 0.605734307228
+      volume_24h: 85624.9941956571
+      percent_change_1h: -0.168432
+      percent_change_24h: 1.83858
+      percent_change_7d: -5.14905
+      market_cap: 54599772.26800078
+      last_updated: '2019-01-09T03:25:15.000Z'
+- id: 1169
+  name: PIVX
+  symbol: PIVX
+  slug: pivx
+  circulating_supply: 56781165.992094
+  total_supply: 56781165.992094
+  max_supply: 
+  date_added: '2016-02-13T00:00:00.000Z'
+  num_market_pairs: 23
+  tags: []
+  platform: 
+  cmc_rank: 73
+  last_updated: '2019-01-09T03:26:07.000Z'
+  quote:
+    USD:
+      price: 0.927061910065
+      volume_24h: 1293530.75089057
+      percent_change_1h: -1.78055
+      percent_change_24h: 9.65997
+      percent_change_7d: 9.08949
+      market_cap: 52639656.20034849
+      last_updated: '2019-01-09T03:26:07.000Z'
+- id: 1925
+  name: Waltonchain
+  symbol: WTC
+  slug: waltonchain
+  circulating_supply: 40994759.4106683
+  total_supply: 70000000
+  max_supply: 100000000
+  date_added: '2017-08-27T00:00:00.000Z'
+  num_market_pairs: 24
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74'
+  cmc_rank: 74
+  last_updated: '2019-01-09T03:25:12.000Z'
+  quote:
+    USD:
+      price: 1.25691412888
+      volume_24h: 1397780.37917276
+      percent_change_1h: -0.473609
+      percent_change_24h: 4.37922
+      percent_change_7d: 10.3767
+      market_cap: 51526892.31330533
+      last_updated: '2019-01-09T03:25:12.000Z'
+- id: 1586
+  name: Ark
+  symbol: ARK
+  slug: ark
+  circulating_supply: 107564754
+  total_supply: 138814754
+  max_supply: 
+  date_added: '2017-03-22T00:00:00.000Z'
+  num_market_pairs: 22
+  tags: []
+  platform: 
+  cmc_rank: 75
+  last_updated: '2019-01-09T03:26:11.000Z'
+  quote:
+    USD:
+      price: 0.459496527462
+      volume_24h: 229550.403077977
+      percent_change_1h: -0.0200687
+      percent_change_24h: 2.77498
+      percent_change_7d: 17.3545
+      market_cap: 49425630.94030427
+      last_updated: '2019-01-09T03:26:11.000Z'
+- id: 1966
+  name: Decentraland
+  symbol: MANA
+  slug: decentraland
+  circulating_supply: 1050141509.426
+  total_supply: 2644403343.1583
+  max_supply: 
+  date_added: '2017-09-17T00:00:00.000Z'
+  num_market_pairs: 54
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x0f5d2fb29fb7d3cfee444a200298f468908cc942'
+  cmc_rank: 76
+  last_updated: '2019-01-09T03:25:15.000Z'
+  quote:
+    USD:
+      price: 0.0459286553629
+      volume_24h: 2072770.62006966
+      percent_change_1h: 0.632565
+      percent_change_24h: 3.2605
+      percent_change_7d: -0.361541
+      market_cap: 48231587.46870235
+      last_updated: '2019-01-09T03:25:15.000Z'
+- id: 3116
+  name: Insight Chain
+  symbol: INB
+  slug: insight-chain
+  circulating_supply: 166543913.082005
+  total_supply: 10000000000
+  max_supply: 
+  date_added: '2018-08-08T00:00:00.000Z'
+  num_market_pairs: 1
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x17aa18a4b64a55abed7fa543f2ba4e91f2dce482'
+  cmc_rank: 77
+  last_updated: '2019-01-09T03:25:31.000Z'
+  quote:
+    USD:
+      price: 0.277997038757
+      volume_24h: 2050777.93404981
+      percent_change_1h: -0.422276
+      percent_change_24h: -0.727684
+      percent_change_7d: -8.421
+      market_cap: 46298714.65980058
+      last_updated: '2019-01-09T03:25:31.000Z'
+- id: 2349
+  name: Mixin
+  symbol: XIN
+  slug: mixin
+  circulating_supply: 445729.392996036
+  total_supply: 1000000
+  max_supply: 
+  date_added: '2018-01-09T00:00:00.000Z'
+  num_market_pairs: 4
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xa974c709cfb4566686553a20790685a47aceaa33'
+  cmc_rank: 78
+  last_updated: '2019-01-09T03:25:21.000Z'
+  quote:
+    USD:
+      price: 102.235105767
+      volume_24h: 11893.3372522919
+      percent_change_1h: 1.59221
+      percent_change_24h: 5.17478
+      percent_change_7d: 14.0804
+      market_cap: 45569191.636410445
+      last_updated: '2019-01-09T03:25:21.000Z'
+- id: 2062
+  name: Aion
+  symbol: AION
+  slug: aion
+  circulating_supply: 274151662
+  total_supply: 274151662
+  max_supply: 
+  date_added: '2017-10-18T00:00:00.000Z'
+  num_market_pairs: 25
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 79
+  last_updated: '2019-01-09T03:25:15.000Z'
+  quote:
+    USD:
+      price: 0.160448271752
+      volume_24h: 2293759.17331161
+      percent_change_1h: 0.367604
+      percent_change_24h: 0.124735
+      percent_change_7d: 10.0309
+      market_cap: 43987160.36583845
+      last_updated: '2019-01-09T03:25:15.000Z'
+- id: 2694
+  name: Nexo
+  symbol: NEXO
+  slug: nexo
+  circulating_supply: 560000011
+  total_supply: 1000000000
+  max_supply: 
+  date_added: '2018-05-01T00:00:00.000Z'
+  num_market_pairs: 15
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206'
+  cmc_rank: 80
+  last_updated: '2019-01-09T03:25:26.000Z'
+  quote:
+    USD:
+      price: 0.0775661604704
+      volume_24h: 3855131.6918478
+      percent_change_1h: 0.0203001
+      percent_change_24h: 2.81942
+      percent_change_7d: 0.24769
+      market_cap: 43437050.71665177
+      last_updated: '2019-01-09T03:25:26.000Z'
+- id: 1776
+  name: Crypto.com
+  symbol: MCO
+  slug: crypto-com
+  circulating_supply: 15793831.0949625
+  total_supply: 31587682.3632061
+  max_supply: 
+  date_added: '2017-07-03T00:00:00.000Z'
+  num_market_pairs: 38
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xb63b606ac810a52cca15e44bb630fd42d8d1d83d'
+  cmc_rank: 81
+  last_updated: '2019-01-09T03:25:11.000Z'
+  quote:
+    USD:
+      price: 2.66826850057
+      volume_24h: 9049707.11524143
+      percent_change_1h: -0.0125459
+      percent_change_24h: -1.43938
+      percent_change_7d: 19.1098
+      market_cap: 42142182.01401143
+      last_updated: '2019-01-09T03:25:11.000Z'
+- id: 1727
+  name: Bancor
+  symbol: BNT
+  slug: bancor
+  circulating_supply: 61610999.2143662
+  total_supply: 75160613.2791798
+  max_supply: 
+  date_added: '2017-06-18T00:00:00.000Z'
+  num_market_pairs: 136
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c'
+  cmc_rank: 82
+  last_updated: '2019-01-09T03:25:13.000Z'
+  quote:
+    USD:
+      price: 0.683899970155
+      volume_24h: 1050737.08199517
+      percent_change_1h: 0.080041
+      percent_change_24h: 0.841852
+      percent_change_7d: 4.71759
+      market_cap: 42135760.523924775
+      last_updated: '2019-01-09T03:25:13.000Z'
+- id: 1229
+  name: DigixDAO
+  symbol: DGD
+  slug: digixdao
+  circulating_supply: 2000000
+  total_supply: 2000000
+  max_supply: 
+  date_added: '2016-04-18T00:00:00.000Z'
+  num_market_pairs: 22
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xe0b7927c4af23765cb51314a0e0521a9645f0e2a'
+  cmc_rank: 83
+  last_updated: '2019-01-09T03:26:08.000Z'
+  quote:
+    USD:
+      price: 20.8387935172
+      volume_24h: 347291.173173819
+      percent_change_1h: -0.0228246
+      percent_change_24h: -1.21196
+      percent_change_7d: 13.5815
+      market_cap: 41677587.0344
+      last_updated: '2019-01-09T03:26:08.000Z'
+- id: 1903
+  name: HyperCash
+  symbol: HC
+  slug: hypercash
+  circulating_supply: 43529780.865052
+  total_supply: 43529780.865052
+  max_supply: 84000000
+  date_added: '2017-08-20T00:00:00.000Z'
+  num_market_pairs: 20
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 84
+  last_updated: '2019-01-09T03:25:14.000Z'
+  quote:
+    USD:
+      price: 0.955915157065
+      volume_24h: 12172390.5925619
+      percent_change_1h: 0.0911732
+      percent_change_24h: 5.99683
+      percent_change_7d: 7.14803
+      market_cap: 41610777.31262121
+      last_updated: '2019-01-09T03:25:14.000Z'
+- id: 1715
+  name: MobileGo
+  symbol: MGO
+  slug: mobilego
+  circulating_supply: 99998615
+  total_supply: 99998615
+  max_supply: 
+  date_added: '2017-06-11T00:00:00.000Z'
+  num_market_pairs: 17
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x40395044Ac3c0C57051906dA938B54BD6557F212'
+  cmc_rank: 85
+  last_updated: '2019-01-09T03:25:11.000Z'
+  quote:
+    USD:
+      price: 0.415104047872
+      volume_24h: 15169945.2979452
+      percent_change_1h: -0.511579
+      percent_change_24h: 0.839828
+      percent_change_7d: -25.1835
+      market_cap: 41509829.8680937
+      last_updated: '2019-01-09T03:25:11.000Z'
+- id: 2577
+  name: Ravencoin
+  symbol: RVN
+  slug: ravencoin
+  circulating_supply: 2638690000
+  total_supply: 2638690000
+  max_supply: 21000000000
+  date_added: '2018-03-10T00:00:00.000Z'
+  num_market_pairs: 27
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 86
+  last_updated: '2019-01-09T03:25:24.000Z'
+  quote:
+    USD:
+      price: 0.0155482221031
+      volume_24h: 3212358.53079323
+      percent_change_1h: -0.429974
+      percent_change_24h: 6.57141
+      percent_change_7d: 15.9031
+      market_cap: 41026938.181228936
+      last_updated: '2019-01-09T03:25:24.000Z'
+- id: 213
+  name: MonaCoin
+  symbol: MONA
+  slug: monacoin
+  circulating_supply: 64934049.8711679
+  total_supply: 64934049.8711679
+  max_supply: 
+  date_added: '2014-03-20T00:00:00.000Z'
+  num_market_pairs: 20
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 87
+  last_updated: '2019-01-09T03:26:04.000Z'
+  quote:
+    USD:
+      price: 0.629564794377
+      volume_24h: 225414.818232348
+      percent_change_1h: 0.341916
+      percent_change_24h: 0.348391
+      percent_change_7d: -0.190528
+      market_cap: 40880191.75520768
+      last_updated: '2019-01-09T03:26:04.000Z'
+- id: 2496
+  name: Polymath
+  symbol: POLY
+  slug: polymath-network
+  circulating_supply: 288427106.860699
+  total_supply: 1000000000
+  max_supply: 
+  date_added: '2018-02-02T00:00:00.000Z'
+  num_market_pairs: 35
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x9992ec3cf6a55b00978cddf2b27bc6882d88d1ec'
+  cmc_rank: 88
+  last_updated: '2019-01-09T03:25:21.000Z'
+  quote:
+    USD:
+      price: 0.141567671505
+      volume_24h: 2611209.62229747
+      percent_change_1h: 0.0998421
+      percent_change_24h: 2.3815
+      percent_change_7d: -0.341863
+      market_cap: 40831953.917192966
+      last_updated: '2019-01-09T03:25:21.000Z'
+- id: 2606
+  name: Wanchain
+  symbol: WAN
+  slug: wanchain
+  circulating_supply: 106152492.636
+  total_supply: 210000000
+  max_supply: 
+  date_added: '2018-03-23T00:00:00.000Z'
+  num_market_pairs: 13
+  tags: []
+  platform: 
+  cmc_rank: 89
+  last_updated: '2019-01-09T03:25:23.000Z'
+  quote:
+    USD:
+      price: 0.369527568959
+      volume_24h: 2043035.87619288
+      percent_change_1h: 0.454723
+      percent_change_24h: 2.22957
+      percent_change_7d: 6.24405
+      market_cap: 39226272.54271924
+      last_updated: '2019-01-09T03:25:23.000Z'
+- id: 3115
+  name: Maximine Coin
+  symbol: MXM
+  slug: maximine-coin
+  circulating_supply: 3999999999.15
+  total_supply: 16000000000
+  max_supply: 
+  date_added: '2018-08-07T00:00:00.000Z'
+  num_market_pairs: 5
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x6a750d255416483bec1a31ca7050c6dac4263b57'
+  cmc_rank: 90
+  last_updated: '2019-01-09T03:25:31.000Z'
+  quote:
+    USD:
+      price: 0.00978932705981
+      volume_24h: 991550.378042481
+      percent_change_1h: -1.08965
+      percent_change_24h: 1.90919
+      percent_change_7d: 5.71083
+      market_cap: 39157308.23091907
+      last_updated: '2019-01-09T03:25:31.000Z'
+- id: 118
+  name: ReddCoin
+  symbol: RDD
+  slug: reddcoin
+  circulating_supply: 28808713173.7887
+  total_supply: 28808713173.7887
+  max_supply: 
+  date_added: '2014-02-10T00:00:00.000Z'
+  num_market_pairs: 20
+  tags: []
+  platform: 
+  cmc_rank: 91
+  last_updated: '2019-01-09T03:26:03.000Z'
+  quote:
+    USD:
+      price: 0.00134086735056
+      volume_24h: 131470.325020539
+      percent_change_1h: -1.69779
+      percent_change_24h: 0.485634
+      percent_change_7d: 5.01491
+      market_cap: 38628662.906381026
+      last_updated: '2019-01-09T03:26:03.000Z'
+- id: 3178
+  name: Linkey
+  symbol: LKY
+  slug: linkey
+  circulating_supply: 50000000
+  total_supply: 195000000
+  max_supply: 
+  date_added: '2018-08-16T00:00:00.000Z'
+  num_market_pairs: 2
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x49bd2da75b1f7af1e4dfd6b1125fecde59dbec58'
+  cmc_rank: 92
+  last_updated: '2019-01-09T03:25:32.000Z'
+  quote:
+    USD:
+      price: 0.757642645688
+      volume_24h: 644435.943893316
+      percent_change_1h: 0.0354721
+      percent_change_24h: 0.00091539
+      percent_change_7d: -4.70604
+      market_cap: 37882132.2844
+      last_updated: '2019-01-09T03:25:32.000Z'
+- id: 3635
+  name: Crypto.com Chain
+  symbol: CRO
+  slug: crypto-com-chain
+  circulating_supply: 1840182648.40182
+  total_supply: 100000000000
+  max_supply: 
+  date_added: '2018-12-14T00:00:00.000Z'
+  num_market_pairs: 3
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b'
+  cmc_rank: 93
+  last_updated: '2019-01-09T03:25:39.000Z'
+  quote:
+    USD:
+      price: 0.0204062561627
+      volume_24h: 1438606.01913435
+      percent_change_1h: 2.03992
+      percent_change_24h: 0.643539
+      percent_change_7d: -3.64824
+      market_cap: 37551238.509443246
+      last_updated: '2019-01-09T03:25:39.000Z'
+- id: 1414
+  name: Zcoin
+  symbol: XZC
+  slug: zcoin
+  circulating_supply: 6416397.32977799
+  total_supply: 21400000
+  max_supply: 21400000
+  date_added: '2016-10-06T00:00:00.000Z'
+  num_market_pairs: 23
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 94
+  last_updated: '2019-01-09T03:26:10.000Z'
+  quote:
+    USD:
+      price: 5.8379096581
+      volume_24h: 508000.349093326
+      percent_change_1h: -0.053048
+      percent_change_24h: 5.22416
+      percent_change_7d: 8.72314
+      market_cap: 37458347.941717975
+      last_updated: '2019-01-09T03:26:10.000Z'
+- id: 2772
+  name: Digitex Futures
+  symbol: DGTX
+  slug: digitex-futures
+  circulating_supply: 731250000
+  total_supply: 1000000000
+  max_supply: 
+  date_added: '2018-05-23T00:00:00.000Z'
+  num_market_pairs: 7
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x1c83501478f1320977047008496dacbd60bb15ef'
+  cmc_rank: 95
+  last_updated: '2019-01-09T03:25:27.000Z'
+  quote:
+    USD:
+      price: 0.0511426476903
+      volume_24h: 576433.631115485
+      percent_change_1h: -1.05414
+      percent_change_24h: 3.48695
+      percent_change_7d: -17.7318
+      market_cap: 37398061.12353187
+      last_updated: '2019-01-09T03:25:27.000Z'
+- id: 2300
+  name: WAX
+  symbol: WAX
+  slug: wax
+  circulating_supply: 937634722.302148
+  total_supply: 1850000000
+  max_supply: 
+  date_added: '2017-12-21T00:00:00.000Z'
+  num_market_pairs: 26
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x39Bb259F66E1C59d5ABEF88375979b4D20D98022'
+  cmc_rank: 96
+  last_updated: '2019-01-09T03:25:18.000Z'
+  quote:
+    USD:
+      price: 0.0392262173796
+      volume_24h: 345693.801030723
+      percent_change_1h: 0.0400739
+      percent_change_24h: -0.791558
+      percent_change_7d: 1.31045
+      market_cap: 36779863.439684935
+      last_updated: '2019-01-09T03:25:18.000Z'
+- id: 2492
+  name: Elastos
+  symbol: ELA
+  slug: elastos
+  circulating_supply: 14344718.1304782
+  total_supply: 33982812.620437
+  max_supply: 
+  date_added: '2018-01-31T00:00:00.000Z'
+  num_market_pairs: 14
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 97
+  last_updated: '2019-01-09T03:25:22.000Z'
+  quote:
+    USD:
+      price: 2.54096098099
+      volume_24h: 8553341.69437999
+      percent_change_1h: -0.636439
+      percent_change_24h: -3.69118
+      percent_change_7d: -9.50643
+      market_cap: 36449369.05284493
+      last_updated: '2019-01-09T03:25:22.000Z'
+- id: 2213
+  name: QASH
+  symbol: QASH
+  slug: qash
+  circulating_supply: 350000000
+  total_supply: 1000000000
+  max_supply: 
+  date_added: '2017-11-21T00:00:00.000Z'
+  num_market_pairs: 35
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x618e75ac90b12c6049ba3b27f5d5f8651b0037f6'
+  cmc_rank: 98
+  last_updated: '2019-01-09T03:25:17.000Z'
+  quote:
+    USD:
+      price: 0.104116517485
+      volume_24h: 195101.112249245
+      percent_change_1h: 0.0780555
+      percent_change_24h: -2.4296
+      percent_change_7d: -10.4779
+      market_cap: 36440781.11975
+      last_updated: '2019-01-09T03:25:17.000Z'
+- id: 2416
+  name: THETA
+  symbol: THETA
+  slug: theta
+  circulating_supply: 708002689
+  total_supply: 1000000000
+  max_supply: 
+  date_added: '2018-01-17T00:00:00.000Z'
+  num_market_pairs: 22
+  tags: []
+  platform:
+    id: 1027
+    name: Ethereum
+    symbol: ETH
+    slug: ethereum
+    token_address: '0x3883f5e181fccaf8410fa61e12b59bad963fb645'
+  cmc_rank: 99
+  last_updated: '2019-01-09T03:25:21.000Z'
+  quote:
+    USD:
+      price: 0.0508857794125
+      volume_24h: 1070755.72924263
+      percent_change_1h: 0.418061
+      percent_change_24h: -0.925237
+      percent_change_7d: 4.04774
+      market_cap: 36027268.65591084
+      last_updated: '2019-01-09T03:25:21.000Z'
+- id: 1703
+  name: Metaverse ETP
+  symbol: ETP
+  slug: metaverse
+  circulating_supply: 54731035.1692794
+  total_supply: 57260168.5148794
+  max_supply: 100000000
+  date_added: '2017-06-05T00:00:00.000Z'
+  num_market_pairs: 25
+  tags:
+  - mineable
+  platform: 
+  cmc_rank: 100
+  last_updated: '2019-01-09T03:25:11.000Z'
+  quote:
+    USD:
+      price: 0.6540250417
+      volume_24h: 7730285.05459718
+      percent_change_1h: 0.362033
+      percent_change_24h: -2.64957
+      percent_change_7d: 11.2752
+      market_cap: 35795467.558872126
+      last_updated: '2019-01-09T03:25:11.000Z'

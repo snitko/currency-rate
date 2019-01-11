@@ -1,3 +1,4 @@
 ForgeAdapter: "<your_key>"
 CurrencyLayerAdapter: "<your_key>"
 FixerAdapter: "<your_key>"
+CoinMarketCapAdapter: "<your_key>"
