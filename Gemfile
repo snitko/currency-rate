@@ -1,11 +1,6 @@
 source "https://rubygems.org"
 
-gem "http"
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-group :development do
-  gem "byebug"
-  gem "jeweler", "~> 2.3.7", git: 'git@github.com:technicalpickles/jeweler.git'
-  gem "rake"
-  gem "rspec"
-  gem "webmock"
-end
+# Specify your gem's dependencies in currency-rate.gemspec
+gemspec
