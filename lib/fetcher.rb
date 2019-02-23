@@ -25,6 +25,7 @@ module CurrencyRate
         usd_fiat = fetch_fiat("USD", to)
         return BigDecimal.new(rates["USD"] * usd_fiat) if usd_fiat && rates["USD"]
       end
+      nil
     end
 
     def fetch_fiat(from, to)
@@ -38,6 +39,7 @@ module CurrencyRate
         rate = calculate_rate(rates, from, to)
         return rate unless rate.nil?
       end
+      nil
     end
 
     private
