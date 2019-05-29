@@ -2,10 +2,12 @@ module CurrencyRate
   class Fetcher
     attr_accessor :storage
     attr_accessor :fiat_exchanges
+    attr_accessor  :limit_sources_for_fiat_currencies
 
-    def initialize(fiat_exchanges: nil, storage: nil)
+    def initialize(fiat_exchanges: nil, storage: nil, limit_sources_for_fiat_currencies: {})
       @storage = storage || FileStorage.new
       @fiat_exchanges = fiat_exchanges || ["Yahoo", "Fixer", "Forge"]
+      @limit_sources_for_fiat_currencies = limit_sources_for_fiat_currencies
     end
 
     def fetch_crypto(exchange, from, to)
@@ -32,7 +34,15 @@ module CurrencyRate
       from = from.strip.upcase
       to = to.strip.upcase
 
-      @fiat_exchanges.each do |exchange|
+      fiat_exchanges = @fiat_exchanges
+      if(@limit_sources_for_fiat_currencies[from])
+        fiat_exchanges.select! { |ex| @limit_sources_for_fiat_currencies[from].include?(ex) }
+      end
+      if(@limit_sources_for_fiat_currencies[to])
+        fiat_exchanges.select! { |ex| @limit_sources_for_fiat_currencies[to].include?(ex) }
+      end
+
+      fiat_exchanges.each do |exchange|
         rates = @storage.read(exchange)
         next if rates.nil?
 
@@ -47,9 +57,9 @@ module CurrencyRate
       def calculate_rate(rates, from, to)
         anchor = rates.delete("anchor")
 
-        return BigDecimal.new(rates[to]) if anchor == from && rates[to]
-        return BigDecimal.new(1 / rates[from]) if anchor == to && rates[from]
-        return BigDecimal.new(rates[to] / rates[from]) if rates[from] && rates[to]
+        return BigDecimal.new(rates[to].to_s)                 if anchor == from && rates[to]
+        return BigDecimal.new((1 / rates[from]).to_s)         if anchor == to && rates[from]
+        return BigDecimal.new((rates[to] / rates[from]).to_s) if rates[from] && rates[to]
 
         CurrencyRate.logger.warn("Fetcher: rate for #{from}_#{to} not found.")
         nil
