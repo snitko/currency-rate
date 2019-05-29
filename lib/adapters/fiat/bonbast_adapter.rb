@@ -8,7 +8,7 @@ module CurrencyRate
     def normalize(data)
       sell = data.match(/<td id="usd1"[^>]*>(\d+)<\/td>/)[1].to_f
       buy  = data.match(/<td id="usd2"[^>]*>(\d+)<\/td>/)[1].to_f
-      { "anchor" => self.class::ANCHOR_CURRENCY, "IRR" => [buy, sell].reduce(:+).fdiv(2)*10 }
+      { "anchor" => self.class::ANCHOR_CURRENCY, "IRR" => BigDecimal.new(([buy, sell].reduce(:+).fdiv(2)*10).to_s) }
     end
 
     def request(url)

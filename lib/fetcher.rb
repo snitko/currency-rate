@@ -57,9 +57,9 @@ module CurrencyRate
       def calculate_rate(rates, from, to)
         anchor = rates.delete("anchor")
 
-        return BigDecimal.new(rates[to].to_s)                 if anchor == from && rates[to]
-        return BigDecimal.new((1 / rates[from]).to_s)         if anchor == to && rates[from]
-        return BigDecimal.new((rates[to] / rates[from]).to_s) if rates[from] && rates[to]
+        return BigDecimal.new(rates[to])               if anchor == from && rates[to]
+        return BigDecimal.new(1 / rates[from])         if anchor == to && rates[from]
+        return BigDecimal.new(rates[to] / rates[from]) if rates[from] && rates[to]
 
         CurrencyRate.logger.warn("Fetcher: rate for #{from}_#{to} not found.")
         nil
