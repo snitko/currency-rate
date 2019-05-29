@@ -7,6 +7,7 @@ module CurrencyRate
     attr_accessor :fiat_adapters
     attr_accessor :connect_timeout
     attr_accessor :read_timeout
+    attr_accessor :limit_sources_for_fiat_currencies
 
     def initialize
       @api_keys         = { }
@@ -20,6 +21,7 @@ module CurrencyRate
        @fiat_adapters   = CurrencyRate.adapters :fiat
        @connect_timeout = 4
        @read_timeout    = 4
+       @limit_sources_for_fiat_currencies = {}
     end
   end
 end

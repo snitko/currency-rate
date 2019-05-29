@@ -61,7 +61,7 @@ RSpec.describe CurrencyRate::Fetcher do
     before do
       @from = "EUR"
       @to = "TRY"
-      @fiat_exchanges = ["Yahoo", "Fixer", "Forge"]
+      @fiat_exchanges = ["Yahoo", "Fixer", "Forge", "Bonbast"]
     end
 
     subject { @fetcher.fetch_fiat(@from, @to) }
@@ -78,6 +78,14 @@ RSpec.describe CurrencyRate::Fetcher do
       expect(@storage_double).to receive(:read).with(@fiat_exchanges[1]).and_return(nil)
       expect(@storage_double).to receive(:read).with(@fiat_exchanges[2]).and_return(nil)
       @fetcher.fetch_fiat("EUR", "TRY")
+    end
+
+
+    it "limits sources (exchanges) for fiat currencies if specifed" do
+      @fetcher.fiat_exchanges = ["Yahoo", "Bonbast"]
+      @fetcher.limit_sources_for_fiat_currencies = { "IRR" => ["Bonbast"]}
+      expect(@storage_double).to receive(:read).with("Bonbast").and_return(nil)
+      @fetcher.fetch_fiat("USD", "IRR")
     end
 
     context 'when first exchange has "from" currency as an anchor' do
