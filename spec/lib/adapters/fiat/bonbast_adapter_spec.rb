@@ -6,7 +6,7 @@ RSpec.describe CurrencyRate::BonbastAdapter do
 
   describe "#normalize" do
     it "brings data to canonical form" do
-      expect(@adapter.fetch_rates).to eq({ "anchor" => "USD", "IRR" => 137000.0 })
+      expect(@adapter.fetch_rates).to eq({ "anchor" => "USD", "IRR" => 1/BigDecimal.new("137000.0") })
     end
   end
 
